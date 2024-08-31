@@ -30,11 +30,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Objetivo
 
-Descrever as ideias básicas sobre o ambiente R:
+Descrever as ideias básicas sobre a linguagem Markdown:
 
-- Como instalar o R e RStudio;
-- Diferenças entre o R e a IDE RStudio;
-- Como o R trabalha;
+- O que é Markdown?;
+- Diferenças entre o Markdown e HTML;
+- Como o Markdown trabalha;
 - Comandos elementares;
 - Objetos;
 - Manipulação com objetos;
