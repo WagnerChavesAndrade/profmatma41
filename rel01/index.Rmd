@@ -1,5 +1,5 @@
 ---
-title: "Relatório 01 - Introdução ao Markdown e Latex"
+title: "Relatório 01 - Introdução ao Markdown e Late"
 author: "Wagner Chaves Andrade"
 date: "01/09/2024"
 header-includes:
