@@ -34,7 +34,7 @@ Descrever as ideias básicas sobre a linguagem Markdown:
 
 - O que é Markdown e LATEX?;
 - Diferenças entre o Markdown e HTML;
-    sao linguagens de programacao muito utilizadas
+    sao linguagens de programacao muito utilizadas nos cursos de programação
 - Como o Markdown trabalha;
 - Comandos elementares;
 - Objetos;
