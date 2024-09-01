@@ -1,7 +1,7 @@
 ---
 title: "Relatório 01 - Introdução ao Markdown e Latex"
 author: "Wagner Chaves Andrade"
-date: "01/09/ 2024"
+date: "01/09/2024"
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -34,6 +34,7 @@ Descrever as ideias básicas sobre a linguagem Markdown:
 
 - O que é Markdown?;
 - Diferenças entre o Markdown e HTML;
+    linguagem de programacao 
 - Como o Markdown trabalha;
 - Comandos elementares;
 - Objetos;
