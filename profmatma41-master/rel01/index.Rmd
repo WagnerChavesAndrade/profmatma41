@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Descrever as ideias básicas sobre a linguagem Markdown:
 
-- O que é Markdown?;
+- O que é Markdown e Latex ?;
     - Linuagem de progração para websites.
 - Diferenças entre o Markdown e HTML;
 - Como o Markdown trabalha;
