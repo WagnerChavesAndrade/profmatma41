@@ -29,45 +29,87 @@ knitr::opts_chunk$set(echo = TRUE)
 --- 
 # Markedown
 ## Guia básico de Markdown
-_Markdown Syntax_ é uma sintaxe usada para padronizar e facilitar formatação de texto na web, utilizada em aplicativos como Slack e GitHub. Textos estilizados com Markdown são, na maioria dos casos, apenas texto com caracteres não-alfabéticos, como ![.](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_18.jpg), usados para a configuração de títulos, listas, itálico, negrito e inserção de imagens.
-![img_01](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_01.jpg)
-
+_Markdown Syntax_ é uma sintaxe usada para padronizar e facilitar formatação de texto na web, utilizada em aplicativos como Slack e GitHub. Textos estilizados com Markdown são, na maioria dos casos, apenas texto com caracteres não-alfabéticos, como ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_18.jpg), usados para a configuração de títulos, listas, itálico, negrito e inserção de imagens.
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_01.jpg)
 ## Lista de comandos em Markdown
+Veja abaixo uma lista dos comandos em markdown e alguns exemplos de seu uso:
+
+ TITULAÇÃO 
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_02.jpg)
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_19.jpg)
+
 ## Ênfase
+Para adicionar ênfase ao conteúdo que será escrito, usa-se o asterisco ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_20.jpg) ou traço-baixo (underline) ![.](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_21.jpg)
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_22.jpg)
+
 ## Links
+Existem duas formas de inserir link em Markdown, através de um link **direto** ou usando um **texto-âncora**:
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_23.jpg)
+
 ## Lista de itens
+
+Para listas não ordenadas, utilize um asterisco ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_20.jpg) na frente to item da lista:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_05.jpg)
+Para listas ordenadas, utilize o número do item seguido de ponto ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_24.jpg)
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_06.jpg)
+As listas acima serão exibidas dessa maneira, respectivamente:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_25.jpg)
+
 ## Imagens
+
+O código para inserir uma imagem no conteúdo é semelhante ao código de inserir links-âncora, adicionando um ponto de exclamação ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_26.jpg) no início do código, como no exemplo abaixo:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_07.jpg)
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_08.jpg)
+
 ## Citação (Quote)
+Para transformar um texto em uma citação ou comentário, semelhante ao código HTML ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_27.jpg), utilize o sinal ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_28.jpg) no início da linha que será formatada:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_09.jpg)
+
+Como aparece no HTML:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_10.jpg)
+
 ## Código (Code Highlight)
+
+Há dois modos de adicionar trechos de código ao Markdown:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_29.jpg)
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_11.jpg)
+
+
+Para especificar que tipo de linguagem está sendo apresentada no bloco de códigos adicionando o nome da linguagem de programação após o ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_30.jpg) por exemplo ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_31.jpg). Veja nos exemplos abaixo:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_12.jpg)
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_13.jpg)
+
 ## Tabela
+Escolha os títulos das colunas e use | para delimitar as colunas. Depois, utilize hífen - na segunda linha para indicar que acima estão os títulos das colunas, usando novamente o | para delimitar colunas. Veja um exemplo abaixo:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_14.jpg)
+
+Como aparece no **Learning Center**:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_15.jpg)
+
 ## Próximos passos
 * <https://docs.pipz.com/central-de-ajuda/learning-center/criacao-e-gerenciamento/>
 * <https://docs.pipz.com/central-de-ajuda/learning-center/importacaoexportacao/>
 * <https://docs.pipz.com/central-de-ajuda/learning-center/personalizacao/>
 * <https://docs.pipz.com/central-de-ajuda/learning-center/configuracao-de-seo/>
 
-
 # Latex
-## Objetivo
-Descrever as ideias básicas sobre a linguagem Markdown:
-
-- O que é Markdown e LATEX?xx;
-- Diferenças entre o Markdown e HTML;
-    sao linguagens de programacao muito utilizadas nos cursos de programação
-- Como o Markdown trabalha;
-- Comandos elementares;
-- Objetos;
-- Manipulação com objetos;
-- Importação de dados;
-- Pacotes:
-  - Instalação;
-  - Como usar.
-
-# Apresentação do relatório
 
 Diante do objetivo do relatório, apresentaremos nas próximas subseções, os pontos a serem discutidos.
 
-## Como instalar o R e o RStudio
+
 
 
 
