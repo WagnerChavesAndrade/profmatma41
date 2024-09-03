@@ -27,9 +27,28 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
+# Markedown
+## Guia básico de Markdown
+_Markdown Syntax_ é uma sintaxe usada para padronizar e facilitar formatação de texto na web, utilizada em aplicativos como Slack e GitHub. Textos estilizados com Markdown são, na maioria dos casos, apenas texto com caracteres não-alfabéticos, como ![.](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_18.jpg), usados para a configuração de títulos, listas, itálico, negrito e inserção de imagens.
+![img_01](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_01.jpg)
 
-# Objetivo
+## Lista de comandos em Markdown
+## Ênfase
+## Links
+## Lista de itens
+## Imagens
+## Citação (Quote)
+## Código (Code Highlight)
+## Tabela
+## Próximos passos
+* <https://docs.pipz.com/central-de-ajuda/learning-center/criacao-e-gerenciamento/>
+* <https://docs.pipz.com/central-de-ajuda/learning-center/importacaoexportacao/>
+* <https://docs.pipz.com/central-de-ajuda/learning-center/personalizacao/>
+* <https://docs.pipz.com/central-de-ajuda/learning-center/configuracao-de-seo/>
 
+
+# Latex
+## Objetivo
 Descrever as ideias básicas sobre a linguagem Markdown:
 
 - O que é Markdown e LATEX?xx;
