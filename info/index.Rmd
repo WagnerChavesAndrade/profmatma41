@@ -1,6 +1,6 @@
 ---
 title: "Wagner Andrade"
-image: "logo.png"
+image: "C:/Users/Teste/Desktop/profmatma41-master/info/prof.wagner.jpg"
 links:
   - label: GitHub
     url: "https://github.com/"
