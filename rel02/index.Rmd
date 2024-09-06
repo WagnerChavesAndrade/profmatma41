@@ -1,7 +1,7 @@
 ---
-title: "Relatório 02 - Como usar o projeto Relatórios"
-author: "Ben Dêivide"
-date: "12/04/2022"
+title: "Relatório 01 - Introdução ao Markdown e Latex"
+author: "Wagner Chaves Andrade"
+date: "01/09/2024"
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -9,6 +9,7 @@ header-includes:
   - \posttitle{\end{center}}
 toc-title: "Sumário"
 output:
+  
   bookdown::html_document2: 
     theme: journal
     highlight: tango
@@ -26,12 +27,147 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
+# Markdown
+## Guia básico de Markdown
+_Markdown Syntax_ é uma sintaxe usada para padronizar e facilitar formatação de texto na web, utilizada em aplicativos como Slack e GitHub. Textos estilizados com Markdown são, na maioria dos casos, apenas texto com caracteres não-alfabéticos, como ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_18.jpg), usados para a configuração de títulos, listas, itálico, negrito e inserção de imagens.
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_01.jpg)
+## Lista de comandos em Markdown
+Veja abaixo uma lista dos comandos em markdown e alguns exemplos de seu uso:
 
-# Objetivo
+ TITULAÇÃO 
 
-Descrever como realizar os relatórios.
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_02.jpg)
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_19.jpg)
 
-# Apresentação do relatório
+## Ênfase
+Para adicionar ênfase ao conteúdo que será escrito, usa-se o asterisco ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_20.jpg) ou traço-baixo (underline) ![.](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_21.jpg)
 
-Aqui será o local para apresentar o material sobre o relatório.
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_22.jpg)
+
+## Links
+Existem duas formas de inserir link em Markdown, através de um link **direto** ou usando um **texto-âncora**:
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_23.jpg)
+
+## Lista de itens
+
+Para listas não ordenadas, utilize um asterisco ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_20.jpg) na frente to item da lista:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_05.jpg)
+Para listas ordenadas, utilize o número do item seguido de ponto ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_24.jpg)
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_06.jpg)
+As listas acima serão exibidas dessa maneira, respectivamente:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_25.jpg)
+
+## Imagens
+
+O código para inserir uma imagem no conteúdo é semelhante ao código de inserir links-âncora, adicionando um ponto de exclamação ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_26.jpg) no início do código, como no exemplo abaixo:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_07.jpg)
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_08.jpg)
+
+## Citação (Quote)
+Para transformar um texto em uma citação ou comentário, semelhante ao código HTML ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_27.jpg), utilize o sinal ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_28.jpg) no início da linha que será formatada:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_09.jpg)
+
+Como aparece no HTML:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_10.jpg)
+
+## Código (Code Highlight)
+
+Há dois modos de adicionar trechos de código ao Markdown:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_29.jpg)
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_11.jpg)
+
+
+Para especificar que tipo de linguagem está sendo apresentada no bloco de códigos adicionando o nome da linguagem de programação após o ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_30.jpg) por exemplo ![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_31.jpg). Veja nos exemplos abaixo:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_12.jpg)
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_13.jpg)
+
+## Tabela
+Escolha os títulos das colunas e use | para delimitar as colunas. Depois, utilize hífen - na segunda linha para indicar que acima estão os títulos das colunas, usando novamente o | para delimitar colunas. Veja um exemplo abaixo:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_14.jpg)
+
+Como aparece no **Learning Center**:
+
+![](C:/Users/Teste/Desktop/profmatma41-master/imagens/Markdown/markdown_15.jpg)
+
+## Próximos passos
+* <https://docs.pipz.com/central-de-ajuda/learning-center/criacao-e-gerenciamento/>
+* <https://docs.pipz.com/central-de-ajuda/learning-center/importacaoexportacao/>
+* <https://docs.pipz.com/central-de-ajuda/learning-center/personalizacao/>
+* <https://docs.pipz.com/central-de-ajuda/learning-center/configuracao-de-seo/>
+
+# Latex
+## O que é o LaTex?
+
+LaTeX é um sistema ou programa de marcação para a editoração de documentos de alta qualidade tipográfica, específico para a elaboração de textos científicos. Trata-se de um conjunto de macros ou marcações para o processador de textos TeX.
+
+Contudo, antes de pensar em desinstalar algum programa, um aviso: o LaTeX não é um processador de texto do tipo OpenOffice ou o Word do Office.
+
+## Formatação LaTex.
+
+Ao contrário dos sistemas WYSIWYG, o conceito do LaTeX é visualizar a apresentação do resultado final do texto apenas após a preparação do mesmo, evitando assim distracções quanto à forma durante a preparação do conteúdo.
+
+Depois de produzido o documento é possível obtê-lo em diversos formatos entre eles os formatos PDF, PS, HTML, ABNT, duas colunas e muito mais.
+
+## Vantagens em usar o editor LaTec.
+
+* Algoritmo avançado do TeX, que permite criar documentos de aparência verdadeiramente profissional;
+
+* Ausência de bugs;
+
+* Encoraja as pessoas a concentrar suas atenções no conteúdo e na distribuição lógica das ideias, e não na aparência;
+
+* As versões dos arquivos na plataforma não sofrem de incompatibilidade. Ou seja, um arquivo salvo em TeX, no dia da sua criação em 1978 – sim, ele é um senhor já – pode ser acessado e aberto hoje sem qualquer problema;
+
+* Os documentos em TeX são leves e de fácil exportação;
+
+* É possível utilizar o LaTeX sem efetivamente aprender muitos comandos;
+
+* Edição de fórmulas matemáticas robusta e apresentação visualmente agradável;
+
+* Estruturas tipográficas complexas como bibliografia, tabela de conteúdo e citações estão abstraídas, podendo ser geradas facilmente e de forma consistente ao longo do documento;
+
+* É possível editar e imprimir mesmo em um computador remoto, através de uma sessão SSH ou telnet. O processador também não precisa trabalhar durante o tempo todo para criar a formatação do documento;
+
+* Ideal para documentos com grande número de páginas, devido à maior leveza dos documentos de edição (documento de texto) e à maior confiança proporcionada ao nível da formatação;
+
+* Templates mais consistentes e seguros;
+
+* Possibilidade de incorporação vídeos, áudio e animações.
+
+## Como usar o editor LaTex.
+
+Os documentos escritos para o LaTeX estão em texto simples, sem qualquer formatação. Nesse sentido, é possível escrever documentos para o LaTeX em qualquer editor de texto, mesmo nos mais simples graficamente, como o Vi ou o Bloco de Notas. No entanto recomenda-se a utilização de programas específicos, muitos deles software livre.
+
+## OverLeaf
+
+[OverLeaf](https://pt.overleaf.com/) é uma ótima ferramenta de edição de LaTeX online é o Overleaf. Entre os principais recursos do Overleaf estão a capacidade de colaborar com os membros de sua equipe em trabalhos técnicos ou acadêmicos em tempo real.
+
+## TeXMaker.
+
+[TeXmaker](https://www.xm1math.net/texmaker/) é uma das mais populares soluções multi-plataforma de código aberto para edição de LaTeX. Esta ferramenta está disponível para todas as plataformas principais e possui recursos que são um ótimo caso para qualquer editor de texto LaTeX.
+
+## TeXnicCenter
+
+[TeXnicCenter](https://www.texniccenter.org/) é outro grande editor LaTeX desenvolvido especificamente para o sistema operacional Windows. Por ser executado no Windows, o TeXnicCenter usa a distribuição de composição tipográfica MiKTeX da Microsoft, o que torna mais fácil para o Microsoft Word processar documentos LaTeX.
+
+## LyX
+
+LyX é um editor de código aberto que está entre os editores de LaTeX mais populares no momento, com suporte para muitos recursos modernos e exclusivos. Ele enfatiza a abordagem de escrita WYSIWYM, com uma interface simples baseada em GUI.
+
+## TeXstudio
+
+[TeXstudio](https://texstudio.sourceforge.net/) é outro editor de LaTeX de código aberto e multiplataforma, bastante popular entre a academia. Embora a interface possa parecer muito semelhante ao TeXmaker, recursos adicionais como contagem de palavras de documento, análise de contagem de frequência e muito mais o tornaram uma ferramenta de edição LaTeX completa e independente.
+
+
+
 
