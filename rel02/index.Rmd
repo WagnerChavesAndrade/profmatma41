@@ -226,7 +226,7 @@ Também chamada de média ou valor esperado é a mais famosa e mais usada para r
 
 Para isso, precisamos inicialmente de medidas descritivas de dispersão, como a variância ou o desvio-padrão que nos dizem quanto os dados variam em torno dessa média. De forma geral, para tomar boas decisões, o ideal é que tenhamos a média juntamente com a variância ou o desvio-padrão.
   
-### Mediana
+## Mediana
 
 A mediana (representada por Md) é uma medida de tendência central cujo valor é posicionado exatamente na metade do conjunto de dados quando eles estão ordenados em ordem crescente ou decrescente. 
 
@@ -238,7 +238,58 @@ Nesse exemplo, identificamos que temos um conjunto par, com 10 valores:
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_06.jpg)
 
-Por ser um conjunto par, identificamos os dois números do centro que irão dividir igualmente o conjunto. Nesse caso, temos $\frac{4+4}{2}=4$. Em seguida, tiramos a média aritmética:
+Por ser um conjunto par, identificamos os dois números do centro que irão dividir igualmente o conjunto. Nesse caso, temos. Em seguida, tiramos a média aritmética:
+
+$\frac{4+4}{2}=4$.Assim a mediana será de 4 meses.
 
 E quando temos um conjunto ímpar de valores? Vamos supor que na nossa amostra, acrescentamos mais uma aluno. Agora temos um grupo com 11 valores no total:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_07.jpg)
+Com um conjunto ímpar, precisamos apenas encontrar o único número central que divide o conjunto igualmente. Nesse caso, a mediana ainda será o número 4. 
+
+Interpretamos esse resultado como: 50% dos alunos precisam de até 4 meses para finalizar o curso de Estatística e os outros 50% precisam de 4 meses ou mais para finalizá-lo.
+
+## Moda
+
+A moda é o valor que ocorre com maior frequência em um conjunto de dados.
+
+Se todos os valores ocorrem com a mesma frequência, não haverá moda (amodal);
+
+Ex: {12, 13, 14, 16 e 17}, não há moda nesse conjunto.
+
+Quando há apenas um valor que se repete com maior frequência, será unimodal:
+
+Ex: {**22, 22**, 26, 24, 23}. Há uma moda: 22
+
+Quando dois valores ocorrem com maior frequência, será bimodal
+
+Ex: {**42, 42, 42**, **43, 43, 43**, 44, 44, 46, 47}. 
+
+Há duas modas: 42 e 43
+
+Quando mais de dois valores ocorrem com maior frequência, será multimodal
+
+Ex: {**7, 7, 8, 9, 9 , 11, 11**, 13, 15, 15, 17, 19, 20}. 
+
+Há quatro modas: 7, 9, 11 e 15.
+
+Apesar de não ser utilizada tanto quanto a média e a mediana, a moda tem como vantagem a sua aplicação também para variáveis categóricas nominais. Suponhamos que temos uma amostra (fictícia) de alunos que responderam qual módulo de Estatística foi o mais desafiador para eles:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_08.jpg)
+
+# Medidas de Dispersão
+
+## Introdução
+
+É importante ressaltar nessa altura que a análise completa dos dados requer não apenas sua apresentação, através de gráficos e tabelas, ou o cálculo de promédios ou outras medida de posição. Caracterizar um conjunto de valores apenas através de uma média, por exemplo, é descrevê-lo inadequadamente, uma vez que os dados diferem entre si, em maior ou menor grau. Assim, suponhamos que se deseja comparar a performance de dois empregados, com base na seguinte produção diária de determinada peça:
+
+Empregado **A**: 70, 71, 69, 70, 70
+
+Empregado **B**: 60, 80, 70, 62, 83
+
+De acordo com o resultado da produção diária em cinco dias, verificamos que a performance média do empregado **A** é de 70 peças produzidas diariamente, enquanto que a do empregado **B** é de 71 peças. Por conseguinte, baseados nestes únicos resultados (\bar{x_A}=70)e \bar{x_B}=71), diríamos que a performance de **B** é melhor do que a de **A**. Se nos fixarmos mais detidamente nos dados, entretanto, percebemos que a produção de **A** varia apenas de 69 a 71 peças, ao passo que a de **B** varia de 60 a 83 peças, o que revela que a performance de **A** é bem mais uniforme do que a de **B**. Ocorre por outro lado, que um alto grau de uniformidade ou pequena dispersão costuma ser considerado como algo de qualidade desejável em um processo produtivo. Qualquer produção em série seria antieconômica se houvesse muita varialbilidade nos materiais ou peças fabricadas.
+
+Iremos tratar de dois tipos de medidas de dispersão:
+
+1) *Medidas de Dispersão Absoluta*
 
