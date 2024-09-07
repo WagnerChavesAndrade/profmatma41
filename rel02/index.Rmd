@@ -149,4 +149,96 @@ O símbolo $\dashv$ indica inclusão na classe do valor situado à sua direita e
 
 
 ## Elementos de uma Distribuição de Frequência
+
+### Amplitude de um Intervalo de Classes(hi)
+
+Também conhecida como intervalo de classe, **o valor obtido nada mais é do que a medida do intervalo que tem a capacidade de definir uma classe**. Esta medida pode ser obtida por meio da diferença entre os limites superiores e inferiores. Para alcançá-la, é possível fazer a seguinte equação: **hi = Li – li**.
+
+Exemplo na tabela superior, sendo que a amplitude de intervalo deve ser igual para todas as classes:
+
+* hi = 1,57 – 1,55 = 0,02 
+
+### Amplitude Total da Distribuição(H)
+
+A amplitude total de distribuição é a diferença estabelecida entre o limite superior máximo e o limite inferior mínimo. Isso quer dizer que a equação que deve ser realizada para garantir um resultado assertivo é: **H = L (max) – l (min)**.
+
+Exemplo na tabela superior, sendo que a amplitude de intervalo deve ser igual para todas as classes:
+
+* H = 1,67 – 1,55 = 0,12
+
+### Ponto Médio de uma Classe($x_i$)
+
+O ponto médio de uma classe se expressa, dentro da Tabela de Frequência, como um ponto capaz de dividir o intervalo de classe em duas partes iguais. Para que o ponto médio seja obtido, é preciso calcular a soma dos limites e dividi-los por 2, usando essa fórmula apenas para quando houver intervalos de classes.
+
+Exemplo na tabela superior:
+
+* $x_i = \frac{(1.59+1.61)}{2} = 1,6$
+
 ## Tipos de Frequência
+
+Após descobrir o que é Tabela de Frequência, é preciso compreender quais as subcategorias envolvidas nesse tipo de organização de dados. A Tabela de Frequência Simples é utilizada para variáveis de caráter qualitativo ou quantitativo discreto, com poucos valores possíveis para a inserção.
+
+Dentro desse tipo de tabela, os valores são definidos como:
+
+* **k** sendo o número que representa as classes da tabela;
+* $n_i$ como a frequência absoluta;
+* $f_i$ como a frequência relativa;
+* **$Fac$** como a frequência relativa acumulada;
+* $n$ como o total de elementos da amostra. Caso as medições sejam feitas em todos os elementos da população, obtemos o **N** maiúsculo.
+
+Esse tipo de tabela pode ser observado em entrevistas de captação de gênero. A distribuição de frequência pode ser feita pelo sexo dos entrevistados e fazer com que, ao finalizar a pesquisa, o resultado mostre quantos homens e quantas mulheres responderam a uma determinada questão.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_03.jpg)
+
+# Medidas de Posição
+
+## Introdução
+
+As medidas de tendência central ou posição fazem parte da Estatística Descritiva. Após identificarmos os tipos de variáveis e antes de aplicar testes estatísticos, devemos conhecer algumas características fundamentais sobre eles.
+
+Quando temos conjuntos de dados numéricos (discretos ou contínuos), geralmente estamos interessados em saber: qual a posição (centralidade) e dispersão dos meus dados? Qual forma eles apresentam? Há valores discrepantes (outliers)?
+
+Hoje, vamos nos atentar para três medidas descritivas que nos ajudam na tarefa de encontrar o centro dos dados: a média aritmética, mediana e moda, também denominadas como medidas de tendência central ou de posição na Estatística Descritiva.
+
+Como o nome já sugere, tais medidas sumarizam todo o nosso conjunto de dados/variáveis através de um único valor que ocupa a posição central naquele conjunto. Esse número é hipotético e não precisa necessariamente fazer parte do conjunto de dados. Mas ele é importante porque nos oferece um valor representativo sobre a amostra/população.
+
+## Média Aritmética
+
+Também chamada de média ou valor esperado é a mais famosa e mais usada para resumir um grupo de números. Na média aritmética todos os os dados são igualmente importantes e por isso, fazemos:
+
+ Média = $\frac{Soma\:de\: todos\: os\: valores}{Número\: total\: de\: valores}$
+ 
+ Podemos escrever em notação para uma amostra e população, respectivamente:
+ 
+ ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_04.jpg)
+ 
+ Como exemplo de aplicação, imagine que queremos saber quanto tempo um aluno precisa para finalizar um curso de Estatística? Vamos definir que alguém finalizou o curso quando todas as vídeo-aulas foram assistidas.
+ 
+ Considere que temos a seguinte amostra de alunos (dados fictícios):
+ 
+ ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_05.jpg)
+ 
+ A média aritmética simples é igual a: 
+ 
+ $\bar{x}=\frac{1+4+5+4+3+4+2+2+5+4}{10} = \frac{34}{10}=3,4$
+ 
+ Assim, se sortearmos um aluno (dentro da população de alunos que fizeram o curso) iremos esperar que ele tenha gasto em média, 3 meses e meio para estudar o conteúdo do curso. Porém, qual a confiança que teremos que essa média é uma boa medida para descrever os dados? 
+
+Para isso, precisamos inicialmente de medidas descritivas de dispersão, como a variância ou o desvio-padrão que nos dizem quanto os dados variam em torno dessa média. De forma geral, para tomar boas decisões, o ideal é que tenhamos a média juntamente com a variância ou o desvio-padrão.
+  
+### Mediana
+
+A mediana (representada por Md) é uma medida de tendência central cujo valor é posicionado exatamente na metade do conjunto de dados quando eles estão ordenados em ordem crescente ou decrescente. 
+
+Desse modo, primeiramente ordenamos os nossos dados e verificamos se temos um conjunto de números ímpar ou par. Vamos voltar para a amostra anterior:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_05.jpg)
+
+Nesse exemplo, identificamos que temos um conjunto par, com 10 valores:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_06.jpg)
+
+Por ser um conjunto par, identificamos os dois números do centro que irão dividir igualmente o conjunto. Nesse caso, temos $\frac{4+4}{2}=4$. Em seguida, tiramos a média aritmética:
+
+E quando temos um conjunto ímpar de valores? Vamos supor que na nossa amostra, acrescentamos mais uma aluno. Agora temos um grupo com 11 valores no total:
+
