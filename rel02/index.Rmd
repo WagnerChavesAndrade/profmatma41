@@ -1,7 +1,7 @@
 ---
-title: "Relatório 02 - Como usar o projeto Relatórios"
+title: "Relatório 02 - Estatística Básica e Probabilidade"
 author: "Wagner Andrade"
-date: "06/09/2024
+date: "06/09/2024"
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -27,11 +27,68 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
 
-# Estatísticas
+# CAPÍTULO 1: População, Amostra e Variável
 
-Descrever como realizar os relatórios.
+Três conceitos largamente usado em Estatística são população(ou universo estatístico), amostra e variável.
 
-# Apresentação do relatório
+## População
 
-Aqui será o local para apresentar o material sobre o relatório.
+O conjunto da totalidade dos indivíduos sobre o qual se faz uma inferência recebe o nome de população ou unverso. A população congrega todas as observações que sejam relevantes para o estudo de uma ou mais características dos indivíduos, os quais podem ser concebidos tanto como seres animados ou inanimados. Em linguagem mais formal, a população é o conjunto constituído por todos os indivíduos que apresentem pelo menos uma característica comum, cujo comportamento interessa analisar(inferir).
 
+Como exemplo podemos citar o estudo censitário das rendas das famílias no Brasil. Poderia existir uma observação para cada família que medisse, sem erro, a renda dessas famílias e, nenhuma observação adicional concebível esclarecia mais alguma coisa. Essa coleção de observações constituiria a população, ou seja, represntaria todas as observações possíveis relativas ao assunto, que é a característica que se pretende estudar.
+
+É importante ficar bem claro que uma população é estudada em termos de observações de características nos indivíduos, e não em termos de pessoas ou objetos em si. Assim, por exemplo, as alturas dos cidadãos do Brasil constituem uma população. Poderia haver uma população correspondente aos pesos desses mesmos cidadãos.
+
+Quanto ao número de elementos, a população pode ser finita ou infinita. A primeira é aquela que apresenta um número limitado de indivíduos, por exemplo, os alunos que estudam Matemática ou, os jogadores profissionais de futebol. Muitas vezes, entretanto, o número de observações é infinito, como por exemplo, a temperatura em cada ponto da cidade de Belo Horizonte ou, os pontos de uma reta.
+
+## Amostra
+
+A amostra pode ser definida como um subconjunto, uma parte selecionada da totalidade de observações abrangidas pela polulação, através da qual se faz um juízo ou inferência sobre as características da população. As características da amostra são chamadas de estatísticas(descritivas), sendo simbolizadas por caracteres latinos, enquanto que os parâmetros da população terão como símbolos, via de regra, os caracteres gregos.
+
+Suponha-se, para exemplificar, que se pretenda conhecer o conteúdo de ferro natural a ser exportado por um navio. O agregado ou população consiste em todo o minério de ferro a ser exportado por esse navio. Parte do minério é examinada, a fim de determinar seu teor de ferro, com o objetivo de tirar uma conclusão a respeito do teor de ferro natural do embarque completo. A parte de mineral selicionada constitui a amostra do embarque.
+
+## Variável
+
+O observador poderá também anotar ou medir a intensidade efetiva de um caráter variável em cada um dos objetos ou pessoas observadas. Pode, por exemplo, registrar a idade das pessoas ao morrer, a estatura ou o peso dos indiviíduos, o rendimento das famílias em uma grande cidade, o número de empregados dispensados, por mês, em uma grande empresa e assim por diante.
+
+Os resultados das observações serão expressos sempre através de valores numéricos. Os dados são de caráter nitidamente quantitativo, e o conjunto dos resultados possui uma estrutura numérica. Dir-se-á, então, que se trata de estatística quantitativa ou estatística de variáveis.
+
+### Variável descontínua ou Discreta e Variável Contínua
+
+Trata-se de estatística de variável, é possível distinguir duas características de variável: discreta, ou descontínua, e contínua.
+
+#### Variável Discreta ou Descontínua
+
+Suponha que uma instituição de ensino esteja interessada em saber qual o número de alunos presentes às aulas de um determinado professor, em certo período da vida escolar. Se *X* simbolizar esse número, então *X* será uma variável que só pode assumir valores inteiros, inclusive zero. Mais precisamente, diz-se que *X* será uma variável discreta quando a menosr diferença não-nula entre dois valores possíveis dessa variável for finita.
+
+Normalmente a variável discreta resulta de contagem, razão pela qual seus valores são expressos através de números inteiros não-negativos.
+
+#### Variável Contínua
+
+Se *X* representar, por exemplo, o número de metros percorridos por um atleta durante certo período de tempo em uma pista circular, *X* não será certamente uma variável discreta. Agora, *X* pode assumir o valor de qualquer número real positivo, uma vez que para o cálculo de comprimento da circunferência é necessário introduzir o número real $\pi$.
+
+Formalmente, diz-se que *X* é uma variável contínua quando, ao passar de um valor real *a* para outro valor *b*, assume todos os valores intermediários entre *a* e *b*. Assim sendo, pode-se dizer que a variável contínua resulta normalmente de mensuração, e a escala de seus possíveis valores correspondente ao conjunto *\( \mathbb{R} \)**R** dos números reais.
+
+# Capítulo 2: Distribuição de Frequência
+
+Uma das vantagens das tabelas, relativamente a apresentação tabular de dados, é a de condensar, de forma consistente, as informações necessárias ao estudo desejado. Isto porque, frequentemente, o estudo de um determinado fenômeno requer a coleta de uma grande massa de dados numéricos, difícil de ser tratada se esses dados não forem organizados e condensados em uma tabela. Essa providência favorece evidentimente uma análise e interpretação mais rápida da natureza e comportamento do fenômeno observado.
+
+## Dados Brutos
+
+Feita a coleta, os dados originais ainda não se encontram prontos para análise, por não estarem numericamente organizados. Por essa razão, costuma-se chamá-los de dados brutos.
+
+Na tabela 2.1, estão relacionados os valores correspondentes ao consumo individual de energia elétrica, medido em quilowatts-hora, em um grupo de 50 usuários.
+
+|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 58 | 62 | 80  | 57  | 8   | 126 | 136 | 96 | 144 | 19|
+| 90 | 86 | 38  | 94  | 82  | 75  | 148 | 114| 131 | 28|
+| 66 | 95 | 121 | 158 | 64  | 105 | 118 | 73 | 83  | 81|
+| 50 | 92 | 60  | 52  | 89  | 58  | 10  | 90 | 94  | 74|
+| 09 | 75 | 72  | 157 | 125 | 76  | 78  | 114| 36  | 28|
+
+Como pode ser observado, as cifras estão dispostas de forma desordenada. Em razão disso, pouca iformação se consegue obter inspecionando os dados anotados. Mesmo uma informação tão simples como a de saber os consumos máximo e mínimo requer um certo exame dos dados de tabela.
+## Rol
+## Tabela de Frequências
+## Elementos de uma Distribuição de Frequência
+## Tipos de Frequência
