@@ -347,7 +347,10 @@ display: none;
 <ul>
 <li><a href="#dados-brutos" id="toc-dados-brutos"><span class="toc-section-number">2.1</span> Dados Brutos</a></li>
 <li><a href="#rol" id="toc-rol"><span class="toc-section-number">2.2</span> Rol</a></li>
-<li><a href="#tabela-de-frequências" id="toc-tabela-de-frequências"><span class="toc-section-number">2.3</span> Tabela de Frequências</a></li>
+<li><a href="#tabela-de-frequências" id="toc-tabela-de-frequências"><span class="toc-section-number">2.3</span> Tabela de Frequências</a>
+<ul>
+<li><a href="#distribuição-de-frequências-de-dados-não-agrupados-em-classes" id="toc-distribuição-de-frequências-de-dados-não-agrupados-em-classes"><span class="toc-section-number">2.3.1</span> Distribuição de Frequências de Dados Não-Agrupados em Classes</a></li>
+</ul></li>
 <li><a href="#elementos-de-uma-distribuição-de-frequência" id="toc-elementos-de-uma-distribuição-de-frequência"><span class="toc-section-number">2.4</span> Elementos de uma Distribuição de Frequência</a></li>
 <li><a href="#tipos-de-frequência" id="toc-tipos-de-frequência"><span class="toc-section-number">2.5</span> Tipos de Frequência</a></li>
 </ul></li>
@@ -397,10 +400,13 @@ display: none;
 <h2><span class="header-section-number">2.1</span> Dados Brutos</h2>
 <p>Feita a coleta, os dados originais ainda não se encontram prontos para análise, por não estarem numericamente organizados. Por essa razão, costuma-se chamá-los de dados brutos.</p>
 <p>Na tabela 2.1, estão relacionados os valores correspondentes ao consumo individual de energia elétrica, medido em quilowatts-hora, em um grupo de 50 usuários.</p>
+<p><strong>Tabela 2.1</strong> -
+<strong>Consumo Mensal de Energia Elétrica, por 50 usuários Particulares - KWH</strong></p>
 <table>
 <thead>
 <tr class="header">
 <th>—</th>
+<th></th>
 <th></th>
 <th></th>
 <th></th>
@@ -428,6 +434,7 @@ display: none;
 <td>19</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>90</td>
@@ -440,6 +447,7 @@ display: none;
 <td>114</td>
 <td>131</td>
 <td>28</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -456,6 +464,7 @@ display: none;
 <td>81</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>50</td>
@@ -468,6 +477,7 @@ display: none;
 <td>90</td>
 <td>94</td>
 <td>74</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -484,15 +494,130 @@ display: none;
 <td>28</td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<p>Como pode ser observado, as cifras estão dispostas de forma desordenada. Em razão disso, pouca iformação se consegue obter inspecionando os dados anotados. Mesmo uma informação tão simples como a de saber os consumos máximo e mínimo requer um certo exame dos dados de tabela.</p>
 </div>
 <div id="rol" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Rol</h2>
+<p>O rol é uma lista em que os valores estão dispostos em uma determinada ordem, crescente ou decrescente. Dispondo os dados de acordo com o consumo, obtém-se um ordenação da Tabela 2.1.</p>
+<table>
+<thead>
+<tr class="header">
+<th>—</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3</td>
+<td>58</td>
+<td>75</td>
+<td>89</td>
+<td>118</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>58</td>
+<td>76</td>
+<td>90</td>
+<td>121</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>60</td>
+<td>78</td>
+<td>90</td>
+<td>125</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>62</td>
+<td>80</td>
+<td>92</td>
+<td>126</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>64</td>
+<td>81</td>
+<td>94</td>
+<td>131</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>36</td>
+<td>66</td>
+<td>82</td>
+<td>94</td>
+<td>136</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>72</td>
+<td>83</td>
+<td>95</td>
+<td>144</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>50</td>
+<td>73</td>
+<td>84</td>
+<td>96</td>
+<td>148</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>52</td>
+<td>74</td>
+<td>86</td>
+<td>105</td>
+<td>157</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>57</td>
+<td>75</td>
+<td>88</td>
+<td>114</td>
+<td>158</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Essa classificação dos dados proporciona algumas vantagens concretas com relação à sua forma original. Em primeiro lugar, ela torna possível visualizar, de form bem ampla, as variações de consumo, uma vez que os valores extremos são percebidos de imediato. Em segundo lugar, é possível observar uma teendência de concentração dos valores na faixa de 50-90 kwh.</p>
 </div>
 <div id="tabela-de-frequências" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Tabela de Frequências</h2>
+<p>As tabelas de frequências são representações nas quais os valores se apresentam em correspondência com suas repetições, evitando-se assim que eles apareçam mais de uma vez na tabela, como ocorre com o rol.</p>
+<p>O número de observações ou repetições de um valor ou de uma modalidade, em um levantamento qualquer, e chamado frequência desse valor ou dessa modalidade. Uma tabela de frequência é uma tabela onde se procura fazer corresponder os valores observados da variável em estudo e as respectivas frequência. A tabela de frequência proporciona uma apresentação esteticamente mais vantajosa dos dados, facilitando ainda a verificação do comportamento do fenômeno.</p>
+<p>As tabelas de frequências podem representar tanto valores individuais como valores agrupados em classes.</p>
+<div id="distribuição-de-frequências-de-dados-não-agrupados-em-classes" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Distribuição de Frequências de Dados Não-Agrupados em Classes</h3>
+</div>
 </div>
 <div id="elementos-de-uma-distribuição-de-frequência" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Elementos de uma Distribuição de Frequência</h2>

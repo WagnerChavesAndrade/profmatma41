@@ -79,8 +79,11 @@ Feita a coleta, os dados originais ainda não se encontram prontos para análise
 
 Na tabela 2.1, estão relacionados os valores correspondentes ao consumo individual de energia elétrica, medido em quilowatts-hora, em um grupo de 50 usuários.
 
+**Tabela 2.1** -
+**Consumo Mensal de Energia Elétrica, por 50 usuários Particulares - KWH**
+
 |---|
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 58 | 62 | 80  | 57  | 8   | 126 | 136 | 96 | 144 | 19|
 | 90 | 86 | 38  | 94  | 82  | 75  | 148 | 114| 131 | 28|
 | 66 | 95 | 121 | 158 | 64  | 105 | 118 | 73 | 83  | 81|
@@ -88,7 +91,37 @@ Na tabela 2.1, estão relacionados os valores correspondentes ao consumo individ
 | 09 | 75 | 72  | 157 | 125 | 76  | 78  | 114| 36  | 28|
 
 Como pode ser observado, as cifras estão dispostas de forma desordenada. Em razão disso, pouca iformação se consegue obter inspecionando os dados anotados. Mesmo uma informação tão simples como a de saber os consumos máximo e mínimo requer um certo exame dos dados de tabela.
+
 ## Rol
+
+O rol é uma lista em que os valores estão dispostos em uma determinada ordem, crescente ou decrescente. Dispondo os dados de acordo com o consumo, obtém-se um ordenação da Tabela 2.1.
+
+|---|
+|---|---|---|---|---|---|---|
+|3  |58|75|89 |118 | 
+|8  |58|76|90 |121|
+|10 |60|78|90 |125| 
+|19 |62|80|92 |126| 
+|28 |64|81|94 |131| 
+|36 |66|82|94 |136| 
+|38 |72|83|95 |144| 
+|50 |73|84|96 |148| 
+|52 |74|86|105|157| 
+|57 |75|88|114|158| 
+
+Essa classificação dos dados proporciona algumas vantagens concretas com relação à sua forma original. Em primeiro lugar, ela torna possível visualizar, de form bem ampla, as variações de consumo, uma vez que os valores extremos são percebidos de imediato. Em segundo lugar, é possível observar uma teendência de concentração dos valores na faixa de 50-90 kwh.
+
+
 ## Tabela de Frequências
+
+As tabelas de frequências são representações nas quais os valores se apresentam em correspondência com suas repetições, evitando-se assim que eles apareçam mais de uma vez na tabela, como ocorre com o rol.
+
+O número de observações ou repetições de um valor ou de uma modalidade, em um levantamento qualquer, e chamado frequência desse valor ou dessa modalidade. Uma tabela de frequência é uma tabela onde se procura fazer corresponder os valores observados da variável em estudo e as respectivas frequência. A tabela de frequência proporciona uma apresentação esteticamente mais vantajosa dos dados, facilitando ainda a verificação do comportamento do fenômeno.
+
+As tabelas de frequências podem representar tanto valores individuais como valores agrupados em classes.
+
+### Distribuição de Frequências de Dados Não-Agrupados em Classes
+
+
 ## Elementos de uma Distribuição de Frequência
 ## Tipos de Frequência
