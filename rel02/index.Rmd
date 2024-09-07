@@ -1,6 +1,6 @@
 ---
 title: "Relatório 02 - Como usar o projeto Relatórios"
-author: "Ben Dêivide"
+author: "Wagner Andrade"
 date: "06/09/2024
 header-includes:
   - \usepackage{titling}
