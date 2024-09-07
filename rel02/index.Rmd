@@ -122,6 +122,9 @@ As tabelas de frequências podem representar tanto valores individuais como valo
 
 ### Distribuição de Frequências de Dados Não-Agrupados em Classes
 
+Exemplo | Valor do Exemplo
+---     |---
+Exemplo 1 | 10
 
 ## Elementos de uma Distribuição de Frequência
 ## Tipos de Frequência
