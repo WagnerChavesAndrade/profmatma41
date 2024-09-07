@@ -122,9 +122,31 @@ As tabelas de frequências podem representar tanto valores individuais como valo
 
 ### Distribuição de Frequências de Dados Não-Agrupados em Classes
 
-Exemplo | Valor do Exemplo
----     |---
-Exemplo 1 | 10
+Esse tipo de apresentação é utilizado para representar uma variável discreta ou descontínua. Veja o exemplo abaixo.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_01.jpg)
+Na primeira coluna aparecem o número de irmãos. A segunda coluna é uma coluna auxiliar, utilizada para que se possa processar a contagem dos valores repetidos, sem grande esforço. A última coluna, encabeçada por $F_i$, apresenta as frequências, que são os resultados numéricos provenientes da contagem. A soma das frequências é sempre igual ao número total de valores observados: $\sum_{j=1}^{5}F_i$
+
+### Distribuição de Frequências de Dados Agrupados em Classes
+
+Muitas vezes, mesmo com o risco de se sacrificar algum detalhe manifestado na ordenação de valores individuais, há vantagem em resumir os dados originais em uma distribuição de frequeências, onde os valores observados não mais aparecerão individualmente, mas agrupados em classes.
+
+Quando a variável objeto do estudo for contínua, será sempre conveniente agrupar os valores observados em classees. Se, por outro lado, a variável for discreta e o número de valores representativos dessa variável for muito grande, recomenda-se o agrupamento dos dados em classes. Nesse último caso, o procedimento visa a evitar certos inconvenientes, como:
+
+a. grande extensão da tabela, tanto quanto os dados brutos, a leitura e a interpretação dos resultados apurados.
+
+b. Aparecimento de diversos valores da variável com frequência nula.
+
+c. Impossibilidade ou dificuldade de visualiação deo comportamento do fenômeno como um todo, bem como de sua variação.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_02.jpg)
+
+Para construção dessa tabela, não há necessidade de se ordenarem os valores originais. Pode-se partir diretamente da lista de dados brutos. É fácil ver, por outro lado, que, a na distribuição de frequência de valores agrupados em classes, não figuram mais os valores exatos de cada item em particular.Não é possível, da mesma forma, obter diretamente da tabela o valor exato dos itens mais alto e mais baixo, Apesar disso, a tabela informa, de imediato, a tendência de a série se concentrar em torno de um valor central, além de proporcionar uma visão panorâmica do comportamento da variável, o que seria impossível de se fazer a partir da lista dos dados brutos.
+
+O símbolo $\vdash$ indica inclusão na classe do valor situado à sua esquerda e exclusão do valor sutuado à sua direita. 
+
+O símbolo $\dashv$ indica inclusão na classe do valor situado à sua direita e exclusão do valor sutuado à sua esquerda. 
+
 
 ## Elementos de uma Distribuição de Frequência
 ## Tipos de Frequência
