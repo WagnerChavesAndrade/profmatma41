@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
 
-# Estatística
+# Estatísticas
 
 Descrever como realizar os relatórios.
 
