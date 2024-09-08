@@ -1,5 +1,5 @@
 ---
-title: "Relatório 03 - Distribuição de probabilidade"
+title: "Relatório 03 - Distribuição de Probabilidade"
 author: "Wagner Andrade"
 date: "09/09/2024"
 header-includes:
@@ -37,8 +37,4 @@ A Teoria da Probabilidade visa, fundamentalmente, a modelagem de fenômenos suje
 # Espaço Amostral Equiprovável
 
  
-
-# Apresentação do relatório
-
-Aqui será o local para apresentar o material sobre o relatório.
 
