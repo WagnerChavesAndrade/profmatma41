@@ -1,7 +1,7 @@
 ---
 title: "Relatório 03 - Distribuição de probabilidade"
 author: "Ben Dêivide"
-date: "12/04/2022"
+date: "09/09/2024"
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -27,11 +27,16 @@ output:
 
 --- 
 
-# Objetivo
+# Introdução
 
-Descrever o objetivo do relatório!
+A Teoria da Probabilidade visa, fundamentalmente, a modelagem de fenômenos sujeitos a incertezas. Sua utilização no planejamento e inferência estatística é bastante conhecida. Tem se revelado de grande importância em áreas, como Engenharia Elétrica, Teoria da Informação (detecção de sinal, controle) e Física (Mecânica Estatística, Clássica ou Quântica). Ademais, modelos, conceitos e métodos probabilísticos são hoje amplamente utilizados em Química, Ciências Sociais e Ciências Econômicas.
 
-# Apresentação do relatório
+ 
+
+# Conceitos Básicos
 
 Aqui será o local para apresentar o material sobre o relatório.
+
+# Probabilidade
+# Espaço Amostral Equiprovável
 
