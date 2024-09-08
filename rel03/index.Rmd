@@ -1,7 +1,7 @@
 ---
 title: "Relatório 03 - Distribuição de probabilidade"
 author: "Ben Dêivide"
-date: "12/04/2022"
+date: "08/09/2024"
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
 
-# Objetivo
+# Introdução
 
 Descrever o objetivo do relatório!
 
