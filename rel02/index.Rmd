@@ -289,7 +289,27 @@ Empregado **B**: 60, 80, 70, 62, 83
 
 De acordo com o resultado da produção diária em cinco dias, verificamos que a performance média do empregado **A** é de 70 peças produzidas diariamente, enquanto que a do empregado **B** é de 71 peças. Por conseguinte, baseados nestes únicos resultados (\bar{x_A}=70)e \bar{x_B}=71), diríamos que a performance de **B** é melhor do que a de **A**. Se nos fixarmos mais detidamente nos dados, entretanto, percebemos que a produção de **A** varia apenas de 69 a 71 peças, ao passo que a de **B** varia de 60 a 83 peças, o que revela que a performance de **A** é bem mais uniforme do que a de **B**. Ocorre por outro lado, que um alto grau de uniformidade ou pequena dispersão costuma ser considerado como algo de qualidade desejável em um processo produtivo. Qualquer produção em série seria antieconômica se houvesse muita varialbilidade nos materiais ou peças fabricadas.
 
-Iremos tratar de dois tipos de medidas de dispersão:
 
-1) *Medidas de Dispersão Absoluta*
+## Variância e Desvio Padrão
+
+A variância e o desvio padrão são medidas que levam em consideração
+a totalidade dos valores da variável em estudo, e não apenas os valores
+externos, como a amplitude total (CRESPO, 2002). Por isso, essas medidas
+são índices de variabilidade bastantes estáveis e, consequentemente, muito
+utilizados no cotidiano. Além disso, a variância e o desvio padrão
+complementam informações obtidas pelas medidas de tendência central.
+ A variância, denotada por $s^2$, é encontrada a partir dos desvios em torno
+da média aritmética, conforme pode ser observado na fórmula a seguir:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_09.jpg)
+
+Aqui $x_i$ representa cada elemento do conjunto de dados, $\bar{x}$ é a média do
+conjunto e ) representa o número de elementos do conjunto.
+ O desvio padrão, denotado por $s$, é a raiz quadrada da variância. Assim
+teremos:
+
+$s = \sqrt{s^2}$  ou  
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_10.jpg)
+
 
