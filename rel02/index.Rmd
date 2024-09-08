@@ -313,3 +313,104 @@ $s = \sqrt{s^2}$  ou
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_10.jpg)
 
 
+O desvio padrão é a medida de dispersão mais utilizada porque aponta
+de forma mais precisa a dispersão dos valores em relação à média aritmética
+(NAZARETH, 2003). Para exemplificar o cálculo do desvio padrão para dados
+não agrupados, considere a série de valores a seguir:
+
+18, 22, 15, 17, 19, 21, 16
+
+ Inicialmente, precisamos encontrar a média dessa série, que é 18,2.
+Depois, precisaremos encontrar, para cada elemento, a diferença do seu valor
+e a média. Para facilitar o processo, vamos criar uma tabela contendo duas
+colunas, uma para o valor de $x_i$
+, e outra para o valor de $x_i-\bar{x}$, conforme pode ser visto na tabela abaixo. 
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_11.jpg)
+
+A partir dos valores da tabela, calculamos $\sum (x_i-\bar{x})^2$, que é igual a 0,36.
+
+Assim, aplicando a fórmula do desvio padrão, teríamos o seguinte: 
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_12.jpg)
+
+O desvio padrão de uma série será sempre um valor positivo, e quanto maior esse valor, maior será a dispersão entre os elementos.
+
+ Quando nos deparamos com dados agrupados, o valor das frequências também precisa ser levado em consideração para o cálculo do desvio padrão.
+ 
+ Assim sendo, a fórmula para o cálculo do desvio padrão para dados agrupados é a seguinte: 
+ 
+ ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_13.jpg)
+ 
+ Temos $f_i$, que representa a frequência de um determinado elemento.
+ 
+Para exemplificar o cálculo do desvio padrão para dados agrupados sem intervalos de classe, vamos considerar os dados apresentados abaixo.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_14.jpg)
+
+
+Para auxiliar a aplicação da fórmula do desvio padrão, criaremos um quadro
+para encontrar os somatórios da frequência dos valores existentes (equivalente
+a n), de $f_ix_i$ e de $f_ix_i^2$, conforme pode ser visualizado na tabela abaixo.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_15.jpg)
+
+Aplicando, agora, a regra do desvio padrão para dados agrupados, teríamos:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_16.jpg)
+
+O processo para encontrar o desvio padrão para dados agrupados com intervalos de classe é semelhante ao anterior, sendo apenas necessário encontrar o ponto médio ($x_i$) de cada uma das classes antes de calcular o produto de $f_ix_i$ e de $f_ix_i^2$. 
+
+Assim realizaremos a multiplicação do ponto médio de cada classe com a sua respectiva frequência ao invés do valor exato da variável.
+Para exemplificar o cálculo do desvio padrão, vamos considerar os dados da variável idade na tabela abaixo. 
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_18.jpg)
+
+
+De modo similar, construiremos uma tabela para apresentar os valores de $x_i, f_i$ e $f_ix_i^2$  para cada uma das classes da variável idade, conforme pode ser
+observado na tabela abaixo.
+
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_19.jpg)
+
+Ao aplicar a fórmula com os dados obtidos na tabela, teríamos o seguinte: 
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_20.jpg)
+
+Segundo Crespo (2002), o desvio padrão possui algumas propriedades
+que permitem introduzir, no cálculo do desvio padrão, simplificações úteis.
+Entre as propriedades existentes, destacam-se:
+
+* somando-se (ou subtraindo-se) uma constante a (de) todos osvalores de uma variável, o desvio padrão permanecerá o mesmo;
+
+* multiplicando-se todos os valores de uma variável por uma constante (diferente de zero), o desvio padrão ficará multiplicado por essa constante. 
+
+## Coeficiente de Variação
+
+O coeficiente de variação é uma medida relativa de dispersão. Ela é útil
+quando se deseja comparar em termos relativos o grau de concentração em
+torno da média de séries distintas. É calculado por:
+
+$CV=\frac{S}{\bar{x}}*100$
+
+Em que:   **S** é o desvio padrão e $\bar{x}$ a média.
+
+O coeficiente de variação é expresso em porcentatem.
+
+Para exemplificar, suponha que o acesso médio de homens em um mês em um sítio web é de 3.500, com desvio padrão de 900; e das mulheres é em média 2.700, com desvio padrão de 1.100. Então:
+
+Para os homens: $CV=\frac{S}{\bar{x}}=\frac{900}{3.500}*100=25,71\%$
+
+Para as mulheres: $CV=\frac{S}{\bar{x}}=\frac{1.100}{2.700}*100=40,74\%$
+
+
+Assim concluímos que os acessos das mulheres apresentam maior dispersão relativa do que os dos homens.
+
+Na prática, considera-se que um coeficiente de variância superior a 50% indica alto grau de dispersão e, por consequência, baixa representatividade da média. Por outro lado, quanto menor for o valor de seu coeficiente de variância, mais representativa é a média (MARTINS; DONAIRE, 2004, p. 164). 
+
+ 
+ 
+
+
+
+
