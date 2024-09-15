@@ -27,11 +27,61 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
 
-# Introdução
+# Conjuntos
+## Introdução
 
-A Teoria da Probabilidade visa, fundamentalmente, a modelagem de fenômenos sujeitos a incertezas. Sua utilização no planejamento e inferência estatística é bastante conhecida. Tem se revelado de grande importância em áreas, como Engenharia Elétrica, Teoria da Informação (detecção de sinal, controle) e Física (Mecânica Estatística, Clássica ou Quântica). Ademais, modelos, conceitos e métodos probabilísticos são hoje amplamente utilizados em Química, Ciências Sociais e Ciências Econômicas.
+A noção de conjunto, em Matemática, é a mesma da linguagem corrente, ou seja, conjunto é sinônimo de agrupamento, coleção, classe, etc. Os objetos que constituem determinado conjunto são chamados de elementos do conjunto. Se um elemento é constituinte de um conjunto significa que ele pertence ao conjunto. Esse fato é indicado pelo símbolo  ∈ . Por exemplo, chamando de P o conjunto dos números pares, escrevemos: $2\in P$ e  $3 \not\in P$.
 
-# Conceitos Básicos
+## Representação
+
+Por enumeração do seus elementos: $A = \{4, 5, 6, 7, 8, 9, 10\}$;
+
+Por uma propriedade que satisfaz todos os elementos do conjunto: $A = \{3\leq x \leq 10\}$.
+
+Através de Diagrams: 
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/conjuntos_01.jpg)
+
+## Conjunto vazio.
+
+Chama-se vazio e indica-se por ∅ ou $\{\}$ o conjunto que não possue elemento algum.
+
+## Igualdade de Conjuntos.
+
+Dois conjuntos, A  e  B, são iguais quando possuem os mesmos elementos.
+
+## Subconjunto.
+
+Se **A** e **B** são dois conjuntos, pode ocorrer que todo elemento de **A** seja também elemento de **B**. Quando isso ocorrer, dizemos que **A** é subconjunto de **B** ou que **A** é parte de **B** ou, ainda, que 
+**A** está contido em **B**.
+
+**Notação:** $A \subset B$ {Lê-se: A está contido em B}  ou  $B \supset A$ {Lê-se: B contém A}.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/conjuntos_02.jpg)
+
+
+Se $A \subset B$ mas existe um elemento $b\in B$ tal que $b\notin A$, (b não pertence a A), diremos que $A$ é um subconjunto próprio de $B$.
+
+Observe que o conjunto vazio é suconjunto de qualquer conjunto $A$.  Com efeito, se isso não fosse verdade, deveria haver um elemento $x\in ∅ $ tal que $ x\not\in A$, o que é impossível.
+
+## Operações
+
+### União.
+
+Dados dois conjuntos $A$ e $B$ indicaremos por $A\cup B$ O conjunto dos elementos que pertencem a $A$ ou a $B$, isto é, o conjunto dos elementos que pertencem a pelo menos um dos conjuntos "A" e "B". Este conjunto é chamado de _união_ de $A$ com $B$. Simbolicamente,
+                          $A \cup B = \{\omega \in \Omega\, |\, \omega \in A\; ou\; \omega \in B\}$.
+                          
+A parte sombreada da Figura abaixo ilustra o conjunto $A \cup B$.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/conjuntos_03.jpg)
+
+A união de três conjuntos A, B e C será representada por $A\;\cup\,B\,\cup\,C$.
+
+
+
+
+## Propriedades
+# Probabilidade - Exemplos
 # Definição
 # Probabilidade
 # Espaço Amostral Equiprovável

@@ -1,6 +1,6 @@
 ---
 title: "Wagner Andrade"
-image: "logo.png"
+image: "prof.wagner.jpg"
 links:
   - label: GitHub
     url: "https://github.com/"
