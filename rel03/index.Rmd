@@ -77,7 +77,7 @@ A parte sombreada da Figura abaixo ilustra o conjunto $A \cup B$.
 
 A união de três conjuntos A, B e C será representada por $A\;\cup\,B\,\cup\,C$.
 
-
+$A      
 
 
 ## Propriedades
