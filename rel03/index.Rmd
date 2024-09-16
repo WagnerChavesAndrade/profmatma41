@@ -77,7 +77,32 @@ A parte sombreada da Figura abaixo ilustra o conjunto $A \cup B$.
 
 A união de três conjuntos A, B e C será representada por $A\;\cup\,B\,\cup\,C$.
 
-$A      
+$A\;\cup\;B\;\cup\;C = \{\omega\,\in\,\Omega\,|\,\omega\,\in\,A\:ou\:\omega\,\in B \;ou\;\;\omega \;\in C\}$     
+
+Mais geralmente, a união de **n** conjuntos $A_1 , A_2 , . . . , A_n$ é chamada analogamente e representada por  $\bigcup_{i=1}^{n}A_i$.
+
+### Interseção.
+
+Dados dois conjuntos **A** e **B**, definimos o conjunto **interseção** de **A** e **B** como o conjunto dos elementos que pertencem simultaneamente a **A** e a **B**, ou seja
+
+$A\;\cap\;B \,=\;\{\omega\;\in\,\Omega\,|\,\omega\,\in\,A\;\;e\;\;\omega\,\in\,B\}$
+
+A parte sombreada da figura abaixo ilustra a interseção de **A**  e  **B**.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/conjuntos_04.jpg)
+
+No caso de termos por exemplo três conjuntos **A**, **B** e **C**, a interseção é representada por $A\;\cap\;B\;\cap\;C$:
+
+$A\;\cap\;B\;\;\cap\;C = \{\,\omega\,\in\,\Omega\,|\;\omega\,\in\,A\;\;e\;\;\omega\,\in\,B\;\;e\;\;\omega\,\in\,C\;\}$
+
+A interseção de **n** conjuntos $A_1,\,A_2,\,...,A_n$ é representada por $\bigcap_{i=1}^{n}A_i$.
+
+Dizemos que dois conjuntos **A** e **B** são **disjuntos** se $A\;\cap\;B = \emptyset$. Quando temos mais de dois conjuntos, dizemos que eles são disjuntos quando forem disjuntos tomados 2 a 2. A figura abaixo ilustra o caso de três conjuntos disjuntos.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/conjuntos_05.jpg)
+
+### Complementar.
+
 
 
 ## Propriedades
