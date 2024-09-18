@@ -103,6 +103,14 @@ Dizemos que dois conjuntos **A** e **B** são **disjuntos** se $A\;\cap\;B = \em
 
 ### Complementar.
 
+Dados um conjunto **A**. chamaremos _conjunto conplementar_ de **A** o conjunto dos elementos de $\Omega$ que não pertencem a **A**. Simbolicamente
+
+$A^C$ = $\{\;\omega\in\,\Omega\,|\;\omega\;\notin\;A\}$
+
+A parte sombreada da figura abaixo indica o complementar de **A**.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_21.jpg)
+
 
 
 ## Propriedades
