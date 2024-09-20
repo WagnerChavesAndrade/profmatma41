@@ -105,15 +105,50 @@ Dizemos que dois conjuntos **A** e **B** são **disjuntos** se $A\;\cap\;B = \em
 
 Dados um conjunto **A**. chamaremos _conjunto conplementar_ de **A** o conjunto dos elementos de $\Omega$ que não pertencem a **A**. Simbolicamente
 
+
 $A^C$ = $\{\;\omega\in\,\Omega\,|\;\omega\;\notin\;A\}$
 
 A parte sombreada da figura abaixo indica o complementar de **A**.
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_21.jpg)
 
+### Diferença.
 
+Dados dois conjuntos **A**  e  **B**. o conjunto
 
-## Propriedades
+$A\;\cap B^C$ = $\{\;\omega\in\,\Omega\,|\;\omega\;\in\;A\;\;e\;\;\omega\notin B\}$ é chamado de _diferença de A e B_, é representado geralmente por _A - B_. A parte sombreada da figura abaixo mostra a diferença de _A e B_.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_22.jpg)
+
+Se $B\subset A$, a diferença $A-B$ é chamada **diferença própria**.
+
+## Propriedades Importantes.
+
+O Teorema a seguir lista as propriedades mais importantes que relacionam os conceitos definidos anteriormente.
+
+**Teorema 1.**
+
+1. Para todo conjunto $A\subset \Omega$, $A\cup\emptyset = A$, $A\cap\emptyset = \emptyset$.
+2. $A\subset B$ se somente se $A\cup B = B$.
+3. $A\subset B$ se somente se $A\cup B = A$.
+4. $A\cup(B\cup C) = (A\cup B)\cup C$.
+5. $A\cap(B\cap C) = (A\cap B)\cap C$.
+6. $A\cap(B\cup C) = (A\cap B)\cup (A\cap C)$.
+7. $A\cup(B\cap C) = (A\cup B)\cap (A\cup C)$.
+8. $A\cup A^C = \Omega$, $\;$$A\cap A^C = \emptyset$,$\;$ $\emptyset^C =\Omega$, $\;$$\Omega^C =\emptyset$.
+9. $(A^C)^C = A$;$\;$$A\subset B$ se somente $B^C\subset A^C$.
+10. $(A \cup B\,)^C=A^C \cap B^C$.
+11. $(A \cap B\,)^C=A^C \cup B^C$.
+
+## Partição.
+
+Seja _A_ um conjunto finito não vazio. Uma _partição de A_ é uma família de conjuntos $A_1 , A_2, ...,A_k$, todos não vazios, e tais que:
+
+1) $A_1\cup A_2\cup...\cup A_k = A$.
+2) $A_i\cap A_j = \emptyset$ $\;$se $i\neq j$.
+
+Ou seja, os conjuntos $A_1\cup A_2\cup...\cup A_k$ são disjuntos dois-a-dois e sua união é o conjunto _A_. Dizemos também que _A_ foi _particionado_ pelos conjuntos $A_1 , A_2, ...,A_k$.
+
 # Probabilidade - Exemplos
 # Definição
 # Probabilidade
