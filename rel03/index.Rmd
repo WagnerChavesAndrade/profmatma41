@@ -316,4 +316,39 @@ $P(A_i/B) = \frac{P(A_i)\,\cdot P(B/A_i)}{P(A_1)P(B/A_1) + P(A_2)P(B/A_2) + . . 
 
 ## A Distribuição Binomial.
 
+_O problema que queremos resolver é o seguinte: Qual é a probabilidade de obtemos k sucessos em n provas?_
+
+A probabilidade de nessas n provas obtermos k sucessos e, em consequência, n - k fracassos em uma ordem pré-determinada, por exemplo, os sucessos na k primeiras provas e os fracassos nas demais: 
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_24.jpg)
+pois as provas são independentes.
+
+**Teorema Binomial:**
+
+A probabilidade de ocorrerem exatamente k sucessos em sequência  de n provas independentes, na quala probabilidade de sucesso em cada prova é p, é igual a 
+
+$\binom{n}{k}p^k(1-p)^{n-k}$
+
+
 ### Exemplos e Aplicações.
+
+1\) Jogamos uma moeda não viciada 10 vezes. Qual é a probabilidade de obtermos exatamente 5 caras?
+
+_Solução:_
+
+Pondo sucesso = cara, temos p = 1/2 em cada prova e as provas são independentes. Queremos achar a probabilidade de k = 5 sucessos em n = 10 provas. Pelo teorema binomial, a rsposta é
+
+$\binom{10}{5}{(\frac{1}{2}})^k(1-{\frac{1}{2}})^{5} = \frac{252}{1024} = \frac{63}{256}$.
+
+2\) Um aluno marca ao acaso as respostas em um teste múltipla-escolha com 10 questões e cinco alternativas por questão. Qual é a probabilidade dele acertar exatamente 4 questões? 
+
+_Solução:_
+
+Pondo sucesso = acerto, temos p = 1/5 em cada prova, e as provas são independentes.
+
+A probabilidade dele acertar exatamente k = 4 questões é
+
+$p_k = \binom{10}{4}{(\frac{1}{5}})^4(1-{\frac{1}{5}})^{6} = \frac{172 032}{1 953 125}\approx 0,088$.
+
+
+
