@@ -179,7 +179,7 @@ Dado o espaço amostral $\Omega$ de certo experimento aleatório, uma _Probabili
 
 * $P(A\cup B) = P(A) + P(B) - P(A\cap B)$.
 
-## Exemplos e Aplicações.
+### Exemplos e Aplicações.
 
 1) Sejam A e B eventos tais que $P(A) = \frac{1}{2}\; , P(B) = \frac{1}{4}\;, P(A\cap B) = \frac{1}{5}$.
 
@@ -217,15 +217,103 @@ f\) $P(A^C\cap B^C) = 1 - P[(A\cup B)^C] = 1 - \frac{11}{20} = \frac{20-11}{10} 
 
 g\) $P(A^C\cup B^C) = 1 - P[(A\cap B) = 1 - \frac{1}{5} = \frac{4}{5}$.
 
+2\) Uma caixa contém 20 peças em boas condições e 15 em más condições. Uma amostra de de 10 peças é extraída. Calcular a probabilidade de que ao menos uma peça na amostra seja defeituosa.
+
+_Solução;_
+
+Sejam:  
+
+Variável aleatória (X) = Quantidade de peças extraídas= 10; 
+
+A variável aleatória (X) pode assumir os valores: 0, 1, 2,.., 10;
+
+Vamos atribuir o valor $0$ para o sucesso (Peças defeituosas) e $1$ para o sucesso ( peças sem defeitos). Temos que,
+
+$P(0)$ = $\frac{15}{35} = \frac{3}{7}$.
+
+$P(1)$ = $\frac{20}{35} = \frac{4}{7}$.
+
+$P(X= 0)$, significa a probabilidade de termos nenhuma peça com defeito;
+
+$P(X=1)$, significa a probabilidade de termos $1$ peça com defeito;
+
+$P(X=2)$, significa a probabilidade de termos $2$ peças com defeito;
+
+................................................................................;
+
+$P(X=10)$, significa a probabilidade de termos (10) peças com defeito;
+
+A probabilidade para que tenhamos, exatamente, nenhuma, uma, duas,..., dez peças defeituosas é dada pela expressão:
+
+$\binom{n}{k}p^k(1-p)^{n-k}$, onde _p_ é a probabilidade do fracasso, isto é, peças defeituosas.
+
+Para exatamente 4 peças defeituosas, a probabilidade é:
+
+$\binom{10}{4}{(\frac{3}{7}})^4(\frac{4}{7})^{6} = 0,24665$.
+
+Na tabela abaixo estão todas as probabilidades para as peças defeituosas, considerando exatamente 0,1,2, . . ..
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_23.jpg)
+
+É claro que para resolver o nosso problema não precisava de tudo isso.
+
+Basta calcularmos $P(X\geq 1)= 1- P(X = 0) = 1 - 0,00371 = 0,9963$.
+
+3\) (Pôquer com dados) Cinco dados são jogados simultaneamente e os resultados são classificados em:
+
+$A_1 =$ todos diferentes;
+
+$A_2 =$ um par;
+
+$A_3 =$ dois pares;
+
+$A_4 =$ três iguais;
+
+$A_5 =$ full (três iguais e dois iguais);
+
+$A_6 =$ quatro iguais (pôquer);
+
+$A_7 =$ cinco iguais;
+
+$A_8 =$ uma sequência.
+
+Calcular as probabilidades de $A_i\, i = 1, 2, 3, ..., 8$.
+
 
 
 ## Probabilidades Condicionais.
 
+Dados dois eventos _A_ e _B_, a _probabilidade condicional_ de _B_ dado _A_ é o número $P(A\cap B) / P(A)$. Representaremos este número pelo símbolo $P(B/A)$. Temos então simbolicamente 
+
+$P(B/A) = \frac{P(A\cap\, B)}{P(A)}$.
+
+### Exemplos e Aplicações.
+
+
 ## Probabilidade Total.
+
+
+**(Teorema da Probabilidade Total)** 
+
+Se _B_ é um evento contido numa união de eventos disjuntos $A_1, A_2, ..., A_n$  e  $P(A_1)>0$ , $P(A_2)>0$ ,..., $P(A_n)>0$ , então
+
+$P(B) = P(A_1)P(B/A_1) + P(A_2)P(B/A_2) + . . .+ P(A_n)P(B/A_n)$.
+
+### Exemplos e Aplicações.
+
 
 ## Probabilidade de Bayes.
 
 
+**(Teorema de Bayes)** 
+
+Nas condições do Teorma da Probabilidade Total, Se $P(B) > 0$, então, para $i$, $i = 1, 2, ..., n$,
+
+$P(A_i/B) = \frac{P(A_i)\,\cdot P(B/A_i)}{P(A_1)P(B/A_1) + P(A_2)P(B/A_2) + . . .+ P(A_n)P(B/A_n)}$
 
  
+### Exemplos e Aplicações.
 
+## A Distribuição Binomial.
+
+### Exemplos e Aplicações.
