@@ -11,7 +11,6 @@
 
 <meta name="author" content="Wagner Andrade" />
 
-<meta name="date" content="2024-09-09" />
 
 <title>Relatório 03 - Distribuição de Probabilidade</title>
 
@@ -327,7 +326,7 @@ display: none;
 
 <h1 class="title toc-ignore">Relatório 03 - Distribuição de Probabilidade</h1>
 <h4 class="author">Wagner Andrade</h4>
-<h4 class="date">09/09/2024</h4>
+<h4 class="date">20/09/2024</h4>
 
 </div>
 
@@ -351,10 +350,15 @@ display: none;
 <li><a href="#propriedades-importantes." id="toc-propriedades-importantes."><span class="toc-section-number">1.7</span> Propriedades Importantes.</a></li>
 <li><a href="#partição." id="toc-partição."><span class="toc-section-number">1.8</span> Partição.</a></li>
 </ul></li>
-<li><a href="#probabilidade---exemplos" id="toc-probabilidade---exemplos"><span class="toc-section-number">2</span> Probabilidade - Exemplos</a></li>
-<li><a href="#definição" id="toc-definição"><span class="toc-section-number">3</span> Definição</a></li>
-<li><a href="#probabilidade" id="toc-probabilidade"><span class="toc-section-number">4</span> Probabilidade</a></li>
-<li><a href="#espaço-amostral-equiprovável" id="toc-espaço-amostral-equiprovável"><span class="toc-section-number">5</span> Espaço Amostral Equiprovável</a></li>
+<li><a href="#probabilidade" id="toc-probabilidade"><span class="toc-section-number">2</span> Probabilidade</a>
+<ul>
+<li><a href="#conceitos-básicos" id="toc-conceitos-básicos"><span class="toc-section-number">2.1</span> Conceitos Básicos</a></li>
+<li><a href="#principais-propriedades." id="toc-principais-propriedades."><span class="toc-section-number">2.2</span> Principais Propriedades.</a></li>
+<li><a href="#exemplos-e-aplicações." id="toc-exemplos-e-aplicações."><span class="toc-section-number">2.3</span> Exemplos e Aplicações.</a></li>
+<li><a href="#probabilidades-condicionais." id="toc-probabilidades-condicionais."><span class="toc-section-number">2.4</span> Probabilidades Condicionais.</a></li>
+<li><a href="#probabilidade-total." id="toc-probabilidade-total."><span class="toc-section-number">2.5</span> Probabilidade Total.</a></li>
+<li><a href="#probabilidade-de-bayes." id="toc-probabilidade-de-bayes."><span class="toc-section-number">2.6</span> Probabilidade de Bayes.</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -456,17 +460,66 @@ display: none;
 <p>Ou seja, os conjuntos <span class="math inline">\(A_1\cup A_2\cup...\cup A_k\)</span> são disjuntos dois-a-dois e sua união é o conjunto <em>A</em>. Dizemos também que <em>A</em> foi <em>particionado</em> pelos conjuntos <span class="math inline">\(A_1 , A_2, ...,A_k\)</span>.</p>
 </div>
 </div>
-<div id="probabilidade---exemplos" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Probabilidade - Exemplos</h1>
+<div id="probabilidade" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Probabilidade</h1>
+<div id="conceitos-básicos" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Conceitos Básicos</h2>
+<ul>
+<li><p><strong>Experimento aleatório</strong> é qualquer experimento cujo resultado não se consegue prever.</p></li>
+<li><p><strong>Espaço amostral</strong> é o conjunto de todos os resultados possíveis de um experimento aleatório.</p></li>
+<li><p><strong>Evento</strong> é um subconjunto qualquer do espaço amostral.</p></li>
+<li><p><strong>Espaço de Probabilidade</strong>:</p></li>
+</ul>
+<p>Dado o espaço amostral <span class="math inline">\(\Omega\)</span> de certo experimento aleatório, uma <em>Probabilidade</em> é uma função que atribui a cada evento <span class="math inline">\(E \subset \Omega\)</span> um determinado valor P(A) que satifaz as seguintes condições:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(0 \leq PA) \leq 1\)</span>, para todo evento <span class="math inline">\(A \subset \Omega\)</span>;</p></li>
+<li><p><span class="math inline">\(P(\emptyset) = 0\)</span>, <span class="math inline">\(\,P(\Omega) = 1\)</span>;</p></li>
+<li><p>Se <em>A</em> e <em>B</em> são eventos disjuntos (também chamados mutuamente exclusivos) <span class="math inline">\(P(A\cup B) = P(A) + P(B)\)</span>.</p></li>
+</ol>
+<ul>
+<li><strong>Espaço Amostral Equiprovável</strong> é quando as probabilidades dos eventos simples são todas iguais. Se o espaço amostral equiprovável possui <em>n</em> elementos, como a soma das probabilidades dos eventos simples correspondentes é igual a 1. podemos concluir que cada evento simples deve ter probabilidade igual a 1/n.</li>
+</ul>
 </div>
-<div id="definição" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Definição</h1>
+<div id="principais-propriedades." class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Principais Propriedades.</h2>
+<ul>
+<li><p><span class="math inline">\(P(A^C) = 1 - P(A)\)</span>.</p></li>
+<li><p>Se <span class="math inline">\(A\subset B\)</span> então <span class="math inline">\(P(A) = P(B) - P(B -A)\)</span>.</p></li>
+<li><p><span class="math inline">\(P(A\cup B) = P(A) + P(B) - P(A\cap B)\)</span>.</p></li>
+</ul>
 </div>
-<div id="probabilidade" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Probabilidade</h1>
+<div id="exemplos-e-aplicações." class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Exemplos e Aplicações.</h2>
+<ol style="list-style-type: decimal">
+<li>Sejam A e B eventos tais que <span class="math inline">\(P(A) = \frac{1}{2}\; , P(B) = \frac{1}{4}\;, P(A\cap B) = \frac{1}{5}\)</span>.</li>
+</ol>
+<p>Calcular:</p>
+<p>a) <span class="math inline">\(P(A\cup B)\)</span>;</p>
+<p>b) <span class="math inline">\(P(A^C)\)</span>;</p>
+<p>c) <span class="math inline">\(P(B^C)\)</span>;</p>
+<p>d) <span class="math inline">\(P(A\cap B^C)\)</span>;</p>
+<p>e) <span class="math inline">\(P(A^C\cap B)\)</span>;</p>
+<p>f) <span class="math inline">\(P(A^C\cap B^C)\)</span>;</p>
+<p>g) <span class="math inline">\(P(A^C\cup B^C)\)</span>;</p>
+<p><em>Soluções</em>:</p>
+<p>a) <span class="math inline">\(P(A\cup B) = P(A) + P(B) - P(A\cap B)\)</span></p>
+<p><span class="math inline">\(P(A\cup B) = \frac{1}{2} + \frac{1}{4} - \frac{1}{5} = \frac{10+5-4}{20} = \frac{11}{20}\)</span></p>
+<p>b) <span class="math inline">\(P(A^C) = 1 - P(A) = 1 - \frac{1}{2} = \frac{1}{2}\)</span>.</p>
+<p>c) <span class="math inline">\(P(B^C) = 1 - P(B) = 1 - \frac{1}{4} = \frac{3}{4}\)</span>.</p>
+<p>d) <span class="math inline">\(P(A\cap B^C) = P(A) - P(A\cap B) = \frac{1}{2} - \frac{1}{5} = \frac{5-2}{10} = \frac{3}{10}\)</span>.</p>
+<p>e) <span class="math inline">\(P(A^C\cap B) = P(B) - P(A\cap B) = \frac{1}{4} - \frac{1}{5} = \frac{5-4}{20} = \frac{1}{20}\)</span>.</p>
+<p>f) <span class="math inline">\(P(A^C\cap B^C) = 1 - P[(A\cup B)^C] = 1 - \frac{11}{20} = \frac{20-11}{10} = \frac{9}{20}\)</span>.</p>
+<p>g) <span class="math inline">\(P(A^C\cup B^C) = 1 - P[(A\cap B) = 1 - \frac{1}{5} = \frac{4}{5}\)</span>.</p>
 </div>
-<div id="espaço-amostral-equiprovável" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Espaço Amostral Equiprovável</h1>
+<div id="probabilidades-condicionais." class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Probabilidades Condicionais.</h2>
+</div>
+<div id="probabilidade-total." class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Probabilidade Total.</h2>
+</div>
+<div id="probabilidade-de-bayes." class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Probabilidade de Bayes.</h2>
+</div>
 </div>
 
 

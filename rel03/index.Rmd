@@ -149,10 +149,83 @@ Seja _A_ um conjunto finito não vazio. Uma _partição de A_ é uma família de
 
 Ou seja, os conjuntos $A_1\cup A_2\cup...\cup A_k$ são disjuntos dois-a-dois e sua união é o conjunto _A_. Dizemos também que _A_ foi _particionado_ pelos conjuntos $A_1 , A_2, ...,A_k$.
 
-# Probabilidade - Exemplos
-# Definição
 # Probabilidade
-# Espaço Amostral Equiprovável
+
+## Conceitos Básicos
+
+* **Experimento aleatório** é qualquer experimento cujo resultado não se consegue prever.
+
+* **Espaço amostral** é o conjunto de todos os resultados possíveis de um experimento aleatório.
+
+* **Evento** é um subconjunto qualquer do espaço amostral.
+
+* **Espaço de Probabilidade**:
+
+Dado o espaço amostral $\Omega$ de certo experimento aleatório, uma _Probabilidade_ é uma função que atribui a cada evento $E \subset \Omega$ um determinado valor P(A) que satifaz as seguintes condições:
+
+1) $0 \leq PA) \leq 1$, para todo evento $A \subset \Omega$;
+
+2) $P(\emptyset) = 0$, $\,P(\Omega) = 1$;
+
+3) Se _A_ e _B_ são eventos disjuntos (também chamados mutuamente exclusivos) $P(A\cup B) = P(A) + P(B)$.
+
+* **Espaço Amostral Equiprovável** é quando as probabilidades dos eventos simples são todas iguais. Se o espaço amostral equiprovável possui _n_ elementos, como a soma das probabilidades dos eventos simples correspondentes é igual a 1. podemos concluir que cada evento simples deve ter probabilidade igual a 1/n.
+
+## Principais Propriedades.
+
+* $P(A^C) = 1 - P(A)$.
+
+* Se $A\subset B$ então $P(A) = P(B) - P(B -A)$.
+
+* $P(A\cup B) = P(A) + P(B) - P(A\cap B)$.
+
+## Exemplos e Aplicações.
+
+1) Sejam A e B eventos tais que $P(A) = \frac{1}{2}\; , P(B) = \frac{1}{4}\;, P(A\cap B) = \frac{1}{5}$.
+
+Calcular:
+
+a\) $P(A\cup B)$;
+
+b\) $P(A^C)$;
+
+c\) $P(B^C)$;
+
+d\) $P(A\cap B^C)$;
+
+e\) $P(A^C\cap B)$;
+
+f\) $P(A^C\cap B^C)$;
+
+g\) $P(A^C\cup B^C)$;
+
+_Soluções_:
+
+a\) $P(A\cup B) = P(A) + P(B) - P(A\cap B)$
+
+$P(A\cup B) = \frac{1}{2} + \frac{1}{4} - \frac{1}{5} = \frac{10+5-4}{20} = \frac{11}{20}$
+
+b\) $P(A^C) = 1 - P(A) = 1 - \frac{1}{2} = \frac{1}{2}$.
+
+c\) $P(B^C) = 1 - P(B) = 1 - \frac{1}{4} = \frac{3}{4}$.
+
+d\) $P(A\cap B^C) = P(A) - P(A\cap B) = \frac{1}{2} - \frac{1}{5} = \frac{5-2}{10} = \frac{3}{10}$.
+
+e\) $P(A^C\cap B) = P(B) - P(A\cap B) = \frac{1}{4} - \frac{1}{5} = \frac{5-4}{20} = \frac{1}{20}$.
+
+f\) $P(A^C\cap B^C) = 1 - P[(A\cup B)^C] = 1 - \frac{11}{20} = \frac{20-11}{10} = \frac{9}{20}$.
+
+g\) $P(A^C\cup B^C) = 1 - P[(A\cap B) = 1 - \frac{1}{5} = \frac{4}{5}$.
+
+
+
+## Probabilidades Condicionais.
+
+## Probabilidade Total.
+
+## Probabilidade de Bayes.
+
+
 
  
 
