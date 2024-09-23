@@ -350,20 +350,13 @@ $P(F^C\;\cap C) = P(F^C)\;\cdot\;P(C/F^C) = 0,2\;\cdot\;0,7 = 0,14.$ Logo
 $P(C) = 0,32\; +\;0,14 = 0,46.$
 
 
-
-## Probabilidade Total.
-
+## Probabilidade de Bayes.
 
 **(Teorema da Probabilidade Total)** 
 
 Se _B_ é um evento contido numa união de eventos disjuntos $A_1, A_2, ..., A_n$  e  $P(A_1)>0$ , $P(A_2)>0$ ,..., $P(A_n)>0$ , então
 
 $P(B) = P(A_1)P(B/A_1) + P(A_2)P(B/A_2) + . . .+ P(A_n)P(B/A_n)$.
-
-### Exemplos e Aplicações.
-
-
-## Probabilidade de Bayes.
 
 
 **(Teorema de Bayes)** 
