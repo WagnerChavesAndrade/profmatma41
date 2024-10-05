@@ -354,11 +354,11 @@ display: none;
 <li><a href="#número-esperado-de-tentativas-variância-e-desvio-padrão." id="toc-número-esperado-de-tentativas-variância-e-desvio-padrão."><span class="toc-section-number">1.1.1</span> Número esperado de tentativas,
 variância e desvio padrão.</a></li>
 </ul></li>
-<li><a href="#distribuição-binomial-negativa" id="toc-distribuição-binomial-negativa"><span class="toc-section-number">1.2</span> Distribuição Binomial
-Negativa</a></li>
+<li><a href="#distribuição-de-pascal-ou-binomial-negativa" id="toc-distribuição-de-pascal-ou-binomial-negativa"><span class="toc-section-number">1.2</span> Distribuição de Pascal (<em>ou
+Binomial Negativa</em>)</a></li>
 <li><a href="#distribuição-hipergeométrica" id="toc-distribuição-hipergeométrica"><span class="toc-section-number">1.3</span> Distribuição
 Hipergeométrica</a></li>
-<li><a href="#distribuição-multnomial" id="toc-distribuição-multnomial"><span class="toc-section-number">1.4</span> Distribuição Multnomial</a></li>
+<li><a href="#distribuição-multinomial" id="toc-distribuição-multinomial"><span class="toc-section-number">1.4</span> Distribuição Multinomial</a></li>
 <li><a href="#distribuição-uniforme" id="toc-distribuição-uniforme"><span class="toc-section-number">1.5</span> Distribuição Uniforme</a></li>
 </ul></li>
 <li><a href="#variáveis-aleatórias-contínuas" id="toc-variáveis-aleatórias-contínuas"><span class="toc-section-number">2</span> Variáveis Aleatórias Contínuas</a>
@@ -446,9 +446,6 @@ sucesso. A fórmula é:</p>
 segunda ou terceira tentativa, ou seja,</p>
 <p><span class="math display">\[P(X \leqslant 3) = P(X=1) + P(X=2) +
 P(X=3)\]</span>.</p>
-<p><strong>c) Calcule o número esperado de tentativas de lançamento da
-nave espacial. Calcule também a variância e o desvio padrão do número de
-tentativas de lançamento</strong></p>
 <p>Para cada valor de <span class="math inline">\(X\)</span>:</p>
 <ul>
 <li><p><span class="math inline">\(P(X=1) = (0,10)^0\cdot 0,90 =
@@ -461,19 +458,117 @@ tentativas de lançamento</strong></p>
 <p>Somando essas probabilidades:</p>
 <p><span class="math display">\[P(X\leqslant 3) = 0,90 + 0,09 + 0,009 =
 0,999\]</span>.</p>
+<p><strong>c) Calcule o número esperado de tentativas de lançamento da
+nave espacial. Calcule também a variância e o desvio padrão do número de
+tentativas de lançamento</strong></p>
+<ul>
+<li><strong>Número esperado:</strong></li>
+</ul>
+<p>Para <span class="math inline">\(p = 0,90:\)</span></p>
+<p><span class="math display">\[ E(X) = \frac{1}{p} =
+\frac{1}{0,90}\approx 1,11.\]</span></p>
+<ul>
+<li><strong>Variância:</strong></li>
+</ul>
+<p>Para <span class="math inline">\(p = 0,90:\)</span></p>
+<p><span class="math display">\[ Var(X) = \frac{1-p}{p^2} =
+\frac{1-0,90}{0,90^2} = \frac{0,10}{0,81}\approx 0,1235.\]</span></p>
+<ul>
+<li><strong>Desvio padrão:</strong></li>
+</ul>
+<p><span class="math display">\[ \sigma = \sqrt{Var(X)} =
+\sqrt{0,1235}\approx 0,3514.\]</span> Portanto:</p>
+<ul>
+<li>O número esperado de tentativas é <strong>1,11</strong>,</li>
+<li>A variância é aproximadamente <strong>0,1235</strong>,</li>
+<li>O desvio padrão é aproximadamente <strong>0,3514</strong>.</li>
+</ul>
 </div>
 </div>
-<div id="distribuição-binomial-negativa" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Distribuição Binomial
-Negativa</h2>
+<div id="distribuição-de-pascal-ou-binomial-negativa" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Distribuição de
+Pascal (<em>ou Binomial Negativa</em>)</h2>
+<p>É o caso geral do modelo geométrico. A distribuição de Pascal calcula
+as probabilidades nas situações em que seja necessário <strong>certo
+número de repetições</strong> antes que ocorra um sucesso. O sucesso
+está na última prova.</p>
+<p>A probabilidade é calculada através da seguinte expressão:</p>
+<p><span class="math display">\[P(X) = C_{n-1}^{x-1}\cdot P^x\cdot
+q^{n-x}.\]</span></p>
+<p><strong>Exemplo 1</strong></p>
+<p>Dada uma máquina que produz 20% de peças defeituosas, qual a
+probabilidade de a 8ª peça fabricada ser a 5ª boa?</p>
+<p><em>Solução:</em></p>
+<p>A fórmula da distribuição binomial negativa para o <span class="math inline">\(𝑘-ésimo\)</span> fracasso ocorrendo na <span class="math inline">\(n-ésima\)</span> tentativa é:</p>
+<ul>
+<li><p><em>n</em> é o número total de tentativas, <span class="math inline">\(n = 8\)</span></p></li>
+<li><p><em>x</em> é o número de sucessos(peças boas), <span class="math inline">\(x = 5\)</span></p></li>
+<li><p><em>p</em> é a probabilidade de sucesso(ser boa)</p></li>
+</ul>
+<p><span class="math display">\[P(X=5) = C_{8-1}^{5-1} \cdot 0,8^5\cdot
+0,2^3\;=\;35\cdot 0,33\cdot0,08\;=\;9,18 \% \]</span></p>
+<p><strong>Exemplo 2</strong></p>
+<p>Uma máquina produz peças das quais 80% são consideradas perfeitas e
+20% defeituosas. Qual a probabilidade de a 8ª peça fabricada ser a 3ª
+defeituosa?</p>
+<p><em>Solução:</em></p>
+<p>A fórmula da distribuição binomial negativa para o <span class="math inline">\(𝑘-ésimo\)</span> fracasso ocorrendo na <span class="math inline">\(n-ésima\)</span> tentativa é:</p>
+<ul>
+<li><p><em>n</em> é o número total de tentativas, <span class="math inline">\(n = 8\)</span></p></li>
+<li><p><em>x</em> é o número de sucessos(peças defeituosas), <span class="math inline">\(x = 3\)</span></p></li>
+<li><p><em>p</em> é a probabilidade de sucesso(ser defeituosa)</p></li>
+</ul>
+<p><span class="math display">\[P(X=3) = C_{8-1}^{3-1} \cdot 0,2^3\cdot
+0,8^5\;=\;21\cdot 0,008\cdot0,05504\;=\;5,5 \% \]</span></p>
 </div>
 <div id="distribuição-hipergeométrica" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Distribuição
 Hipergeométrica</h2>
+<p>A distribuição hipergeométrica é uma distribuição discreta que modela
+o número de eventos em um tamanho amostral fixo quando você conhece o
+número total de itens da população de onde vem a amostra. Cada item da
+amostra tem dois resultados possíveis (um evento ou um não-evento). As
+amostras são sem substituição, portanto, cada item da amostra é
+diferente. Quando um item é escolhido da população, ele não pode ser
+escolhido novamente. Portanto, a chance de um determinado item ser
+selecionado aumenta em cada ensaio, supondo-se que ele ainda não tenha
+sido selecionado.</p>
+<p>Considere uma série de N objetos que contém:</p>
+<ul>
+<li><p>K objetos classificados como sucesso:</p></li>
+<li><p>N - K objetos classificados como fracasso.</p></li>
+<li><p>Uma amostra com <em>n</em> objetos é selecionada sem
+reposição.</p></li>
+<li><p>Temos a restrição de que <span class="math inline">\(K &lt;
+N\)</span> e <span class="math inline">\(n &lt; N\)</span>.</p></li>
+<li><p>Seja <span class="math inline">\(X\)</span> o número de sucessos
+da amostra.</p></li>
+<li><p><span class="math inline">\(X\)</span> tem <strong>distribuição
+hipergeométrica</strong> e</p></li>
+</ul>
+<p><span class="math display">\[ f(x) = \frac{{K\choose x}{N - K\choose
+n - x}}{N\choose n}\]</span></p>
+<p><em>Exemplo 1:</em></p>
+<ul>
+<li><p>Temos 300 peças de tubos;</p></li>
+<li><p>100 delas são fornecidas por um fornecedor local;</p></li>
+<li><p>200 são fornecidas por um fornecedor vizinho;</p></li>
+<li><p>Quatro peças são selecionadas ao acaso sem reposição;</p></li>
+</ul>
+<p>Qual a probabilidade de que todas venham do fornecedor local?</p>
+<p><em>Solução</em></p>
+<p>Seja <span class="math inline">\(X\)</span> o número de peças na
+amostra do fornecedor local.</p>
+<p><span class="math inline">\(X\)</span> tem distribuição
+hipergeométrica com <span class="math inline">\(n = 300\)</span> , <span class="math inline">\(K = 100\)</span> e <span class="math inline">\(n =
+4\)</span>.</p>
+<p>Temos que,</p>
+<p><span class="math display">\[ P(X=4) = \frac{{100\choose
+4}{200\choose 0}}{300\choose 4} = 0,0119\]</span></p>
 </div>
-<div id="distribuição-multnomial" class="section level2" number="1.4">
+<div id="distribuição-multinomial" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Distribuição
-Multnomial</h2>
+Multinomial</h2>
 </div>
 <div id="distribuição-uniforme" class="section level2" number="1.5">
 <h2><span class="header-section-number">1.5</span> Distribuição
