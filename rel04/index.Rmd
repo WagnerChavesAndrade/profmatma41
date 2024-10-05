@@ -1,0 +1,129 @@
+---
+title: "Relatório 04"
+author: "Wagner Andrade"
+date: "05/10/2024"
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
+  - \posttitle{\end{center}}
+toc-title: "Sumário"
+output:
+  
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: yes
+    number_sections: yes
+    includes:
+      in_header: logo.html
+  pdf_document:
+    
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+--- 
+
+# Variáveis Aleatórias Discretas
+## Distribuição Geométrica
+* Considere novamente uma sequência de ensaios de Bernoulli
+independentes.
+
+* Suponha agora que o experimento é repetido até que ocorra sucesso pela
+primeira vez.
+
+* A variável aleatória X é definida agora como o número de repetições
+necessárias para se obter o primeiro sucesso.
+
+*IMPORTANTE:* No modelo Binomial o número de repetições é predeterminado (fixo), ao passo que no modelo Geométrico o número de repetições é uma variável aleatória.
+
+**EXEMPLO 1:** 
+
+Um dado é lançado e sua face observada. Seja X o número de lançamentos até que saia a face 6. Obtenha a distribuição de probabilidade de X.
+
+Nestas condições, a variável X segue distribuição geométrica com parâmetro $p$ e
+tem função de probabilidade dada por:
+
+$$p(x) = P(X = x) = p(1 − p)^{x−1}
+,\; x = 1,2,...$$
+
+* $p = \frac{1}{6}$ é a probabilidade de se observar a face "6"(sucesso) em um único lançamento;
+* $x$ é o número de lançamentos até o primeiro sucesso;
+* $(1-p)^{x-1}$ é a probabilidade de não se observar a face "6"(fracasso).
+
+Substituindo $p = \frac{1}{6}$ na fórmula, temos:
+
+$$P(X=x) = (\frac{1}{6})\cdot(\frac{5}{6})^{x-1}$$
+
+### Número esperado de tentativas, variância e desvio padrão.
+
+Para a distribuição geométrica o número esperado $E(X)$, a variância $Var(X)$ e o desvio padrão $\sigma$ são dados por:
+
+* **Valor esperado(média):**
+
+$$ E(X) = \frac{1}{p}$$
+
+* **Variância:**
+
+$$ Var(X) = \frac{1-p}{p^2}$$
+
+* **Desvio padrão:**
+
+$$ \sigma = \sqrt{Var(X)}$$
+**Exemplo 2:**
+
+A probabilidade de que haja alguma falha no lançamento de uma nave espacial é 10%. Qual é a probabilidade de que para lançar a nave seja necessário:
+
+**a\) 2 tentativas?**
+
+Queremos a probabilidade de que o primeiro sucesso ocorra na segunda tentativa. Ou seja, a primeira tentativa falha e a segunda tentativa tem sucesso. A fórmula é:
+
+$$ P(X=2) = p\cdot (1-p)^1 = 0,90\cdot 0,10^1 = 0,09$$
+
+Portanto, a probabilidade de que sejam necessárias 2 tentativas é 0,09, ou 9%.
+Para $p = 0,90$
+
+
+**b\) no máximo 3 tentativas?**
+
+Aqui, queremos a probabilidade de que o sucesso ocorra na primeira, segunda ou terceira tentativa, ou seja, 
+
+$$P(X \leqslant 3) = P(X=1) + P(X=2) + P(X=3)$$.
+
+**c\) Calcule o número esperado de tentativas de lançamento da nave espacial. Calcule também a variância e o desvio padrão do número de tentativas de lançamento**
+
+Para cada valor de $X$:
+
+* $P(X=1) = (0,10)^0\cdot 0,90 = 0,90$.
+
+* $P(X=1) = (0,10)^1\cdot 0,90 = 0,09$.
+
+* $P(X=2) = (0,10)^2\cdot 0,90 = 0,009$.
+
+Somando essas probabilidades:
+
+$$P(X\leqslant 3) = 0,90 + 0,09 + 0,009 = 0,999$$.
+
+## Distribuição Binomial Negativa
+## Distribuição Hipergeométrica
+## Distribuição Multnomial
+## Distribuição Uniforme
+
+# Variáveis Aleatórias Contínuas
+## Distribuição Exponencial
+## Distribuição Uniforme
+## Distribuição Gama
+## Distribuição Qui-Quadrado
+## Distribuição fdpo 
+
+
+Descrever o objetivo do relatório!
+
+# Apresentação do relatório
+
+Aqui será o local para apresentar o material sobre o relatório.
+
