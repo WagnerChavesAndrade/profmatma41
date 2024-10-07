@@ -59,6 +59,16 @@ _Exemplos_
 
 ### Média e Variância.
 
+Suponha que X tenha suporte definido no conjunto de números inteiros consecutivos $a, a + 1, a + 2, . . . , b − 1, b, para\; a < b$. Dessa forma, o número de valores é $m = b − a + 1$,cada um com probabilidade $p = 1/m.$ 
+
+Dessa forma, tem-se que
+
+* A Média é
+
+$$\mu\;=\;E(X)\;=\;\sum_{x=a}^{b}\;x\cdot\;\Bigl(\frac{1}{b-a+1}\Bigl)\;=\;\frac{b+a}{2}$$
+* A Variância é
+
+$$\sigma^2\;=\;V(X)\;=\;\sum_{x=a}^{b}\;(x - \mu)^2\cdot\;\Bigl(\frac{1}{b-a+1}\Bigl)\;=\;\frac{(b - a + 1)^2}{12}$$
 
 ## Distribuição Geométrica
 
