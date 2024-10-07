@@ -206,7 +206,7 @@ _Exemplo 1:_
 
 Qual a probabilidade de que todas venham do fornecedor local?
 
-_Solução_
+_SOLUÇÃO_
 
 Seja $X$ o número de peças na amostra do fornecedor local.
 
@@ -216,8 +216,95 @@ Temos que,
 
 $$ P(X=4) = \frac{{100\choose 4}{200\choose 0}}{300\choose 4} = 0,0119$$
 
+_Exemplo 2_
+
+Suponha que desejamos encontrar a probabilidade de que um comitê de 10 pessoas escolhidas em um grupo de 35 professores e 25 alunos inclua 0ito professores?
+
+_SOLUÇÃO_
+
+$X$ tem distribuição hipergeométrica com:
+
+* Sucesso: sair professor;
+
+* N = 35 + 25 = 60;
+
+* n = 10;
+
+* M = 35;
+
+* x = 8.
+
+
+Temos que,
+
+$$ P(X=8) = \frac{{35\choose 8}{60-35\choose 10-8}}{60\choose 10} = \frac{{35\choose 8}{25\choose 2}}{60\choose 10} = 0,093651$$
+b) Calcule a probabilidade que o comitê tenha pelo menos um aluno?
+
+$X$ tem distribuição hipergeométrica com:
+
+* Sucesso: sair aluno;
+
+* N = 35 + 25 = 60;
+
+* n = 10;
+
+* M = 25;
+
+* x = pelo menos um aluno = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+Devemoa achar o valor de 
+
+$P(X\geq 1) = P(X=1) + P(X=2) + ...+ P(X=10)$.
+
+Sabemos que 
+
+$P(X\geq 1) = P(X=0) + P(X=1) + P(X=2) + ...+ P(X=10)\; = \; 1$
+
+Logo,
+
+$P(X\geq 1) = 1 - P(X=0)$.  Assim.
+
+$$ P(X=0) = \frac{{25\choose 0}{35\choose 10}}{60\choose 10} = \frac{{35\choose 8}{25\choose 2}}{60\choose 10} = 0,00243$$
+Logo,
+
+$$P(X\geq 1) = 1 - P(X=0)\;=\;1 - 0,00243\;=\;0,9976$$.  
+
+
 
 ## Distribuição Multinomial
+
+Distribuição de probabilidade muito usada como generalização da binomial.
+
+Suponha que um experimento aleatório consiste de uma série de n tentativas. Assuma que:
+
+* o resultado de cada tentativa é classificado dentro de k classes
+
+* a probabilidade de uma tentativa gerar um resultado na classe 1, na classe 2, ...., na classe k é constante  igual a P11, p2 .. pk, respectivamente.
+
+* as tentativas são independentes
+
+As variáveis X1, X2, .... Xp que denotam o número de tentativas que resultam na classe 1, na classe 2, ...., na classe k, respectivamente têm densidade MULTINOMIAL, com probabilidade conjunta
+
+$$ P(X_1=x_1,X_2=x_2,X_3=x_3,...,X_k=x_k) = \frac{n!}{x_1!x_2!...x_p!}p_1^{x_1}p_2^{x_2}...p_k^{x_k} $$
+
+Para $x_1 + x_2 + . . .+ x_k\;=\; n$ e $p_1 + p_2 + . . . + p_n\;=\; 1.$
+
+_Exemplo 1_
+
+Um receptor recebe 20 bits. Qual a probabilidade de que 12 sejam excelentes, 6 serem bons, 2 serem razoáveis e nenhum ser ruim? Assuma que a classificação de cada bit é independente e que a probabilidade de cada classificação é $0,6$; $0,3$; $0,08$; $0,02$, respectivamente.
+
+_SOLUÇÃO_
+
+$$ P(X_1=12,X_2=6,X_3=2,X_4=0) = \frac{20!}{12!6!2!0!}0,61^{12}0,3^{6}0,08^{2}0,02^0\;=\;0,0358. $$
+
+_Exemplo_2
+
+ Dadas as máquinas A, B, C e D, que produzem respectivamente 10%, 20%, 30% e 40% da produção total de certa oficina, determine a probabilidade de um lote de 2 dúzias de peças aleatoriamente escolhidas terem sido produzidas do seguinte modo: 4 pela máquina A, 5 pela B, 7 pela C e 8 pela D.
+
+_SOLUÇÃO_
+
+$$ P(A=4,B=5,C=7,D=8) = \frac{24!}{4!5!7!8!}0,10^{4}0,20^{5}0,30^{7}0,02^0\;=\;0,0049\;=\;0,49\%. $$
+
 ## Distribuição Uniforme
 
 # Variáveis Aleatórias Contínuas

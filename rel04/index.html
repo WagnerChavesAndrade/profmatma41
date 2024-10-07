@@ -556,7 +556,7 @@ n - x}}{N\choose n}\]</span></p>
 <li><p>Quatro peças são selecionadas ao acaso sem reposição;</p></li>
 </ul>
 <p>Qual a probabilidade de que todas venham do fornecedor local?</p>
-<p><em>Solução</em></p>
+<p><em>SOLUÇÃO</em></p>
 <p>Seja <span class="math inline">\(X\)</span> o número de peças na
 amostra do fornecedor local.</p>
 <p><span class="math inline">\(X\)</span> tem distribuição
@@ -565,10 +565,91 @@ hipergeométrica com <span class="math inline">\(n = 300\)</span> , <span class=
 <p>Temos que,</p>
 <p><span class="math display">\[ P(X=4) = \frac{{100\choose
 4}{200\choose 0}}{300\choose 4} = 0,0119\]</span></p>
+<p><em>Exemplo 2</em></p>
+<p>Suponha que desejamos encontrar a probabilidade de que um comitê de
+10 pessoas escolhidas em um grupo de 35 professores e 25 alunos inclua
+0ito professores?</p>
+<p><em>SOLUÇÃO</em></p>
+<p><span class="math inline">\(X\)</span> tem distribuição
+hipergeométrica com:</p>
+<ul>
+<li><p>Sucesso: sair professor;</p></li>
+<li><p>N = 35 + 25 = 60;</p></li>
+<li><p>n = 10;</p></li>
+<li><p>M = 35;</p></li>
+<li><p>x = 8.</p></li>
+</ul>
+<p>Temos que,</p>
+<p><span class="math display">\[ P(X=8) = \frac{{35\choose
+8}{60-35\choose 10-8}}{60\choose 10} = \frac{{35\choose 8}{25\choose
+2}}{60\choose 10} = 0,093651\]</span> b) Calcule a probabilidade que o
+comitê tenha pelo menos um aluno?</p>
+<p><span class="math inline">\(X\)</span> tem distribuição
+hipergeométrica com:</p>
+<ul>
+<li><p>Sucesso: sair aluno;</p></li>
+<li><p>N = 35 + 25 = 60;</p></li>
+<li><p>n = 10;</p></li>
+<li><p>M = 25;</p></li>
+<li><p>x = pelo menos um aluno = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.</p></li>
+</ul>
+<p>Devemoa achar o valor de</p>
+<p><span class="math inline">\(P(X\geq 1) = P(X=1) + P(X=2) + ...+
+P(X=10)\)</span>.</p>
+<p>Sabemos que</p>
+<p><span class="math inline">\(P(X\geq 1) = P(X=0) + P(X=1) + P(X=2) +
+...+ P(X=10)\; = \; 1\)</span></p>
+<p>Logo,</p>
+<p><span class="math inline">\(P(X\geq 1) = 1 - P(X=0)\)</span>.
+Assim.</p>
+<p><span class="math display">\[ P(X=0) = \frac{{25\choose 0}{35\choose
+10}}{60\choose 10} = \frac{{35\choose 8}{25\choose 2}}{60\choose 10} =
+0,00243\]</span> Logo,</p>
+<p><span class="math display">\[P(X\geq 1) = 1 - P(X=0)\;=\;1 -
+0,00243\;=\;0,9976\]</span>.</p>
 </div>
 <div id="distribuição-multinomial" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Distribuição
 Multinomial</h2>
+<p>Distribuição de probabilidade muito usada como generalização da
+binomial.</p>
+<p>Suponha que um experimento aleatório consiste de uma série de n
+tentativas. Assuma que:</p>
+<ul>
+<li><p>o resultado de cada tentativa é classificado dentro de k
+classes</p></li>
+<li><p>a probabilidade de uma tentativa gerar um resultado na classe 1,
+na classe 2, …., na classe k é constante igual a P11, p2 .. pk,
+respectivamente.</p></li>
+<li><p>as tentativas são independentes</p></li>
+</ul>
+<p>As variáveis X1, X2, …. Xp que denotam o número de tentativas que
+resultam na classe 1, na classe 2, …., na classe k, respectivamente têm
+densidade MULTINOMIAL, com probabilidade conjunta</p>
+<p><span class="math display">\[ P(X_1=x_1,X_2=x_2,X_3=x_3,...,X_k=x_k)
+= \frac{n!}{x_1!x_2!...x_p!}p_1^{x_1}p_2^{x_2}...p_k^{x_k} \]</span></p>
+<p>Para <span class="math inline">\(x_1 + x_2 + . . .+ x_k\;=\;
+n\)</span> e <span class="math inline">\(p_1 + p_2 + . . . + p_n\;=\;
+1.\)</span></p>
+<p><em>Exemplo 1</em></p>
+<p>Um receptor recebe 20 bits. Qual a probabilidade de que 12 sejam
+excelentes, 6 serem bons, 2 serem razoáveis e nenhum ser ruim? Assuma
+que a classificação de cada bit é independente e que a probabilidade de
+cada classificação é <span class="math inline">\(0,6\)</span>; <span class="math inline">\(0,3\)</span>; <span class="math inline">\(0,08\)</span>; <span class="math inline">\(0,02\)</span>, respectivamente.</p>
+<p><em>SOLUÇÃO</em></p>
+<p><span class="math display">\[ P(X_1=12,X_2=6,X_3=2,X_4=0) =
+\frac{20!}{12!6!2!0!}0,61^{12}0,3^{6}0,08^{2}0,02^0\;=\;0,0358.
+\]</span></p>
+<p>_Exemplo_2</p>
+<p>Dadas as máquinas A, B, C e D, que produzem respectivamente 10%, 20%,
+30% e 40% da produção total de certa oficina, determine a probabilidade
+de um lote de 2 dúzias de peças aleatoriamente escolhidas terem sido
+produzidas do seguinte modo: 4 pela máquina A, 5 pela B, 7 pela C e 8
+pela D.</p>
+<p><em>SOLUÇÃO</em></p>
+<p><span class="math display">\[ P(A=4,B=5,C=7,D=8) =
+\frac{24!}{4!5!7!8!}0,10^{4}0,20^{5}0,30^{7}0,02^0\;=\;0,0049\;=\;0,49\%.
+\]</span></p>
 </div>
 <div id="distribuição-uniforme" class="section level2" number="1.5">
 <h2><span class="header-section-number">1.5</span> Distribuição
