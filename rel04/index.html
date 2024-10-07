@@ -349,17 +349,20 @@ display: none;
 <ul>
 <li><a href="#variáveis-aleatórias-discretas" id="toc-variáveis-aleatórias-discretas"><span class="toc-section-number">1</span> Variáveis Aleatórias Discretas</a>
 <ul>
-<li><a href="#distribuição-geométrica" id="toc-distribuição-geométrica"><span class="toc-section-number">1.1</span> Distribuição Geométrica</a>
+<li><a href="#distribuição-uniforme" id="toc-distribuição-uniforme"><span class="toc-section-number">1.1</span> Distribuição Uniforme</a>
 <ul>
-<li><a href="#número-esperado-de-tentativas-variância-e-desvio-padrão." id="toc-número-esperado-de-tentativas-variância-e-desvio-padrão."><span class="toc-section-number">1.1.1</span> Número esperado de tentativas,
+<li><a href="#média-e-variância." id="toc-média-e-variância."><span class="toc-section-number">1.1.1</span> Média e Variância.</a></li>
+</ul></li>
+<li><a href="#distribuição-geométrica" id="toc-distribuição-geométrica"><span class="toc-section-number">1.2</span> Distribuição Geométrica</a>
+<ul>
+<li><a href="#número-esperado-de-tentativas-variância-e-desvio-padrão." id="toc-número-esperado-de-tentativas-variância-e-desvio-padrão."><span class="toc-section-number">1.2.1</span> Número esperado de tentativas,
 variância e desvio padrão.</a></li>
 </ul></li>
-<li><a href="#distribuição-de-pascal-ou-binomial-negativa" id="toc-distribuição-de-pascal-ou-binomial-negativa"><span class="toc-section-number">1.2</span> Distribuição de Pascal (<em>ou
+<li><a href="#distribuição-de-pascal-ou-binomial-negativa" id="toc-distribuição-de-pascal-ou-binomial-negativa"><span class="toc-section-number">1.3</span> Distribuição de Pascal (<em>ou
 Binomial Negativa</em>)</a></li>
-<li><a href="#distribuição-hipergeométrica" id="toc-distribuição-hipergeométrica"><span class="toc-section-number">1.3</span> Distribuição
+<li><a href="#distribuição-hipergeométrica" id="toc-distribuição-hipergeométrica"><span class="toc-section-number">1.4</span> Distribuição
 Hipergeométrica</a></li>
-<li><a href="#distribuição-multinomial" id="toc-distribuição-multinomial"><span class="toc-section-number">1.4</span> Distribuição Multinomial</a></li>
-<li><a href="#distribuição-uniforme" id="toc-distribuição-uniforme"><span class="toc-section-number">1.5</span> Distribuição Uniforme</a></li>
+<li><a href="#distribuição-multinomial" id="toc-distribuição-multinomial"><span class="toc-section-number">1.5</span> Distribuição Multinomial</a></li>
 </ul></li>
 <li><a href="#variáveis-aleatórias-contínuas" id="toc-variáveis-aleatórias-contínuas"><span class="toc-section-number">2</span> Variáveis Aleatórias Contínuas</a>
 <ul>
@@ -369,7 +372,6 @@ Hipergeométrica</a></li>
 <li><a href="#distribuição-qui-quadrado" id="toc-distribuição-qui-quadrado"><span class="toc-section-number">2.4</span> Distribuição Qui-Quadrado</a></li>
 <li><a href="#distribuição-fdpo" id="toc-distribuição-fdpo"><span class="toc-section-number">2.5</span> Distribuição fdpo</a></li>
 </ul></li>
-<li><a href="#apresentação-do-relatório" id="toc-apresentação-do-relatório"><span class="toc-section-number">3</span> Apresentação do relatório</a></li>
 </ul>
 </div>
 
@@ -377,8 +379,41 @@ Hipergeométrica</a></li>
 <div id="variáveis-aleatórias-discretas" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Variáveis Aleatórias
 Discretas</h1>
-<div id="distribuição-geométrica" class="section level2" number="1.1">
+<div id="distribuição-uniforme" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Distribuição
+Uniforme</h2>
+<p>É a variável aleatória discreta mais simples, pois apresenta um
+número finito de valores possíveis com <strong>igual
+probabilidade</strong>.</p>
+<p>Uma variável aleatória <span class="math inline">\(X\)</span> tem uma
+<strong>distribuição Uniforme</strong> Discreta se cada um dos
+<em>m</em> valores em seu suporte, isto é, <span class="math inline">\(x_1, x_2, . . . , x_m\)</span>, apresentar igual
+probabilidade, no caso</p>
+<p><span class="math display">\[p(x_i)\;=\;\frac{1}{m},\; i = 1, 2, ...,
+m .\]</span> Denotamos por <span class="math inline">\(X\thicksim\,UD(m)\)</span></p>
+<p><em>Exemplos</em></p>
+<ul>
+<li><p>O resultado de lançar um dado;</p></li>
+<li><p>O último dígito da placa de um carro;</p></li>
+<li><p>Um número de sorteio de Bingo;</p></li>
+<li><p>Um número de sorteio de Mega Sena;</p></li>
+<li><p>A posição da primeira lâmpada que queima em uma fita de luzes
+pisca-pisca.</p></li>
+<li><p>O último dígito de uma imagem de CAPTCHA de um site é igualmente
+provável de ser qualquer um entre 0 e 9. Sendo assim, se <em>X</em>
+representa o último dígito, então terá distribuição Uniforme Discreta
+com <span class="math inline">\(p(x) = \frac{1}{10}\)</span> para
+qualquer <span class="math inline">\(x\;\in\; \left\{0, 1, ...,
+9\right\}\)</span></p></li>
+</ul>
+<p><img src="data:image/jpeg;base64,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" /></p>
+<div id="média-e-variância." class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Média e
+Variância.</h3>
+</div>
+</div>
+<div id="distribuição-geométrica" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Distribuição
 Geométrica</h2>
 <ul>
 <li><p>Considere novamente uma sequência de ensaios de Bernoulli
@@ -413,8 +448,8 @@ de não se observar a face “6”(fracasso).</li>
 fórmula, temos:</p>
 <p><span class="math display">\[P(X=x) =
 (\frac{1}{6})\cdot(\frac{5}{6})^{x-1}\]</span></p>
-<div id="número-esperado-de-tentativas-variância-e-desvio-padrão." class="section level3" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Número esperado de
+<div id="número-esperado-de-tentativas-variância-e-desvio-padrão." class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Número esperado de
 tentativas, variância e desvio padrão.</h3>
 <p>Para a distribuição geométrica o número esperado <span class="math inline">\(E(X)\)</span>, a variância <span class="math inline">\(Var(X)\)</span> e o desvio padrão <span class="math inline">\(\sigma\)</span> são dados por:</p>
 <ul>
@@ -485,8 +520,8 @@ tentativas de lançamento</strong></p>
 </ul>
 </div>
 </div>
-<div id="distribuição-de-pascal-ou-binomial-negativa" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Distribuição de
+<div id="distribuição-de-pascal-ou-binomial-negativa" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Distribuição de
 Pascal (<em>ou Binomial Negativa</em>)</h2>
 <p>É o caso geral do modelo geométrico. A distribuição de Pascal calcula
 as probabilidades nas situações em que seja necessário <strong>certo
@@ -521,8 +556,8 @@ defeituosa?</p>
 <p><span class="math display">\[P(X=3) = C_{8-1}^{3-1} \cdot 0,2^3\cdot
 0,8^5\;=\;21\cdot 0,008\cdot0,05504\;=\;5,5 \% \]</span></p>
 </div>
-<div id="distribuição-hipergeométrica" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Distribuição
+<div id="distribuição-hipergeométrica" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Distribuição
 Hipergeométrica</h2>
 <p>A distribuição hipergeométrica é uma distribuição discreta que modela
 o número de eventos em um tamanho amostral fixo quando você conhece o
@@ -608,8 +643,8 @@ Assim.</p>
 <p><span class="math display">\[P(X\geq 1) = 1 - P(X=0)\;=\;1 -
 0,00243\;=\;0,9976\]</span>.</p>
 </div>
-<div id="distribuição-multinomial" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Distribuição
+<div id="distribuição-multinomial" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Distribuição
 Multinomial</h2>
 <p>Distribuição de probabilidade muito usada como generalização da
 binomial.</p>
@@ -638,9 +673,9 @@ que a classificação de cada bit é independente e que a probabilidade de
 cada classificação é <span class="math inline">\(0,6\)</span>; <span class="math inline">\(0,3\)</span>; <span class="math inline">\(0,08\)</span>; <span class="math inline">\(0,02\)</span>, respectivamente.</p>
 <p><em>SOLUÇÃO</em></p>
 <p><span class="math display">\[ P(X_1=12,X_2=6,X_3=2,X_4=0) =
-\frac{20!}{12!6!2!0!}0,61^{12}0,3^{6}0,08^{2}0,02^0\;=\;0,0358.
-\]</span></p>
-<p>_Exemplo_2</p>
+\frac{20!}{12!6!2!0!}\cdot (0,61)^{12}\cdot (0,3)^{6}\cdot
+(0,08)^{2}\cdot (0,02)^0\;=\;0,0358. \]</span></p>
+<p><em>Exemplo_2</em></p>
 <p>Dadas as máquinas A, B, C e D, que produzem respectivamente 10%, 20%,
 30% e 40% da produção total de certa oficina, determine a probabilidade
 de um lote de 2 dúzias de peças aleatoriamente escolhidas terem sido
@@ -648,12 +683,8 @@ produzidas do seguinte modo: 4 pela máquina A, 5 pela B, 7 pela C e 8
 pela D.</p>
 <p><em>SOLUÇÃO</em></p>
 <p><span class="math display">\[ P(A=4,B=5,C=7,D=8) =
-\frac{24!}{4!5!7!8!}0,10^{4}0,20^{5}0,30^{7}0,02^0\;=\;0,0049\;=\;0,49\%.
-\]</span></p>
-</div>
-<div id="distribuição-uniforme" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> Distribuição
-Uniforme</h2>
+\frac{24!}{4!5!7!8!}\cdot (0,10)^{4}\cdot (0,20)^{5}\cdot
+(0,30)^{7}\cdot (0,40)^8\;=\;0,0049\;=\;0,49\%. \]</span></p>
 </div>
 </div>
 <div id="variáveis-aleatórias-contínuas" class="section level1" number="2">
@@ -678,13 +709,7 @@ Qui-Quadrado</h2>
 <div id="distribuição-fdpo" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Distribuição
 fdpo</h2>
-<p>Descrever o objetivo do relatório!</p>
 </div>
-</div>
-<div id="apresentação-do-relatório" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Apresentação do
-relatório</h1>
-<p>Aqui será o local para apresentar o material sobre o relatório.</p>
 </div>
 
 
