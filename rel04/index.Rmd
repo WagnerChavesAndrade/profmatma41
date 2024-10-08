@@ -69,6 +69,9 @@ $$\mu\;=\;E(X)\;=\;\sum_{x=a}^{b}\;x\cdot\;\Bigl(\frac{1}{b-a+1}\Bigl)\;=\;\frac
 * A Variância é
 
 $$\sigma^2\;=\;V(X)\;=\;\sum_{x=a}^{b}\;(x - \mu)^2\cdot\;\Bigl(\frac{1}{b-a+1}\Bigl)\;=\;\frac{(b - a + 1)^2}{12}$$
+GRÁFICOS DA DISTRIBUIÇÃO
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_27.jpg)
 
 ## Distribuição Geométrica
 
@@ -349,7 +352,24 @@ $$ P(A=4,B=5,C=7,D=8) = \frac{24!}{4!5!7!8!}\cdot (0,10)^{4}\cdot (0,20)^{5}\cdo
 
 
 # Variáveis Aleatórias Contínuas
+
+
 ## Distribuição Exponencial
+
+Diz-se que uma variável aleatória contínua X tem distribuição exponencial com parâmetro λ se sua função densidade de probabilidade é dada por
+
+ $$
+    f(x) = \left\{\begin{array}{cccc}
+    \lambda\,e^{-\lambda\,x}\;\;,x > 0\\
+    0\;,\; x \;\leq\;0\\
+        \end{array}\right.
+    $$
+
+Como essa função depende apenas do valor de λ, esse é o parâmetro da
+densidade exponencial.
+
+Usaremos a seguinte notação para indicar que uma variável aleatória tem distribuição exponencial com parâmetro λ: X ∼ exp(λ). Na Figura 2.5 temos o gráfico da densidade exponencial para λ = 2.
+
 ## Distribuição Uniforme
 ## Distribuição Gama
 ## Distribuição Qui-Quadrado
