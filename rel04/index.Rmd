@@ -237,7 +237,7 @@ Considere uma série de N objetos que contém:
 
 * $X$ tem **distribuição hipergeométrica** e
 
-$$ f(x) = \frac{{K\choose x}{N - K\choose n - x}}{N\choose n}$$
+
 
 _Exemplo 1:_
 
