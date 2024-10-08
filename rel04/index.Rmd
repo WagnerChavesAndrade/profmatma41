@@ -259,7 +259,7 @@ $X$ tem distribuição hipergeométrica com $n = 300$ , $K = 100$ e $n = 4$.
 
 Temos que,
 
-$$ P(X=4) = \frac{{100\choose 4}{200\choose 0}}{300\choose 4} = 0,0119$$
+
 
 _Exemplo 2_
 
