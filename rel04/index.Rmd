@@ -282,7 +282,7 @@ $X$ tem distribuição hipergeométrica com:
 
 Temos que,
 
-$$ P(X=8) = \frac{{35\choose 8}{60-35\choose 10-8}}{60\choose 10} = \frac{{35\choose 8}{25\choose 2}}{60\choose 10} = 0,093651$$
+
 b) Calcule a probabilidade que o comitê tenha pelo menos um aluno?
 
 $X$ tem distribuição hipergeométrica com:
@@ -309,7 +309,7 @@ Logo,
 
 $P(X\geq 1) = 1 - P(X=0)$.  Assim.
 
-$$ P(X=0) = \frac{{25\choose 0}{35\choose 10}}{60\choose 10} = \frac{{35\choose 8}{25\choose 2}}{60\choose 10} = 0,00243$$
+
 Logo,
 
 $$P(X\geq 1) = 1 - P(X=0)\;=\;1 - 0,00243\;=\;0,9976$$.  
