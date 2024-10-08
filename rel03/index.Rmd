@@ -1,5 +1,5 @@
 ---
-title: "Relatório 03 - Distribuição de Probabilidade"
+title: "Relatório 031 - Distribuição de Probabilidade"
 author: "Wagner Andrade"
 date: "27/09/2024"
 header-includes:
