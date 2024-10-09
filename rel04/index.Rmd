@@ -420,3 +420,32 @@ A distribuição qui-quadrado pode ser simulada a partir da distribuição norma
 
 ## Distribuição F
 
+A distribuição F é uma distribuição de amostragem contínua da razão de duas variáveis aleatórias independentes com distribuição qui-quadrado, cada uma dividida por seus graus de liberdade. O distribuição F é assimétrica à direita e descrito pelos graus de liberdade de seu numerador (ν1) e denominador (ν2). Os gráficos a seguir mostram o efeito de diferentes valores de graus de liberdade
+na forma da distribuição.
+
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_29.jpg)
+
+
+Utilize a distribuição F, quando uma estatística de teste é a razão entre duas variáveis que tenham, cada uma delas, uma distribuição do qui-quadrado. Por exemplo, use a distribuição F na análise de variância e em testes de hipóteses para determinar se duas variâncias de população são iguais.
+
+_Exemplo_
+
+Calcular as probabilidades para uma distribuição F com graus de liberdade do denominador infinitos
+Suponha que $X$ segue uma distribuição F com 5 graus de liberdade do numerador e graus de liberdade do denominador infinitos, e você quer que a probabilidade de que $X$ seja menor ou igual a 2. Você pode encontrar a probabilidade de que Y é menor ou igual a 2, onde Y segue uma distribuição F com 5 numeradores e 99999 denominadores nos graus de liberdade e Y aproxima X.
+
+1. Selecione Calc > Distribuições de probabilidades > F.
+2. Em Graus de liberdade do numerador, insira 5.
+3. Em Graus de liberdade do denominador, insira 99999.
+4. Escolhe Constante de entrada e insira 2. Clique em OK.
+
+O FDA para 2 é 0,924755. Este valor dá a área sob a curva até 2.
+
+
+
+
+
+
+
+
+
