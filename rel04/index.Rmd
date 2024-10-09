@@ -373,6 +373,50 @@ Usaremos a seguinte notação para indicar que uma variável aleatória tem dist
 ## Distribuição Uniforme
 ## Distribuição Gama
 ## Distribuição Qui-Quadrado
-## Distribuição fdpo 
 
+A distribuição $X^2$ ou qui-quadrado é uma das distribuições mais utilizadas em estatística inferencial, principalmente para realizar testes de $X^2$. Este teste serve para avaliar quantitativamente a relação entre o resultado de um experimento e a distribuição esperada para o fenômeno. Isto é, ele nos diz com quanta certeza os valores observados podem ser aceitos como regidos pela teoria em questão. Muitos outros testes de hipótese usam, também, a distribuição $X^2$.
+
+### Teste $X^2$
+
+Dado um experimento onde foram realizadas $N$ medidas de uma variável aleatória $X$. Em cada medida, a variável $X$ assume os valores $x_1\;,x_2\;, . . ,\;x_k\;,. . ., x_N$. Gostaríamos de testar se a distribuição experimental dos valores $x_1\;,x_2\;, . . ,\;x_k\;,. . ., x_N$ é consistente com a distribuição esperada para o fenômeno, $f(X)$. Em outras palavras, temos que avaliar como esperaríamos que as $N$ medidas estivessem distribuídas e então comparar com a distribuição observada. Primeiramente, em geral $x$ é uma variável contínua, de forma que não podemos nos referir ao valor esperado de medidas com um único valor de $x[2]$ (se $x$ for contínuo, a probabilidade de $X$ assumir um exato valor é zero). Logo, precisamos definir intervalos $a ≤ x ≤ b$ e calcular o número esperado de medidas que devem estar dentro de cada intervalo $j$, em que $j = 1, 2, …, n$ e $n$ é o número de intervalos definidos. O número de medidas esperadas para o intervalo $j$, $E_j$, será, então,
+
+$$E_j\;=\;NPr_j$$
+
+onde $Pr_j$ é a probabilidade de $X$ assumir um valor dentro do intervalo $j$. Essa probabilidade obviamente depende da distribuição $f(X)$ e é normalizada:
+
+$$\sum_{j}\;Pr_j\;=\;1 $$
+É natural analisar a diferença entre o número de amostras observadas dentro de cada intervalo, $O_j$, e o número esperado:
+
+$$\frac{O_j\;-\;E_j}{\sigma_j}$$
+
+seja da ordem de unidade, se nossa hipótese for verdadeira. Definimos, portanto, a variável $X^2_k$, com $k$ graus de liberdade estatísticos, como sendo
+
+$$X^2_k\;\equiv\;\sum_{j=1}^{n}\;\frac{(O_j\;-\;E_j\;)^2}{E_j}$$
+indicando o quanto as distribuições experimental e teórica são parecidas. Se $X^2\;\leq n$, há uma boa concordância entre as distribuições, e se $X^2\;\geq n$ é bem provável que a hipótese para $f(X)$ seja falsa. Os graus de liberdade k são definidos como a diferença entre o número de medidas realizadas e o número de restrições feitas aos valores das medidas.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/Chi-square_pdf.svg.png)
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_28.jpg)
+
+### Distribuição $X^2$.
+
+A probabilidade da distribuição qui quadrado não é simétrica como a da distribuição normal. Dessa forma, para aumentar seu estado de simetria, é necessário aumentar o seu grau de liberdade, portanto a relação entre simetria e grau de liberdade é diretamente proporcional.
+
+A variável $X^2_k$, por si só, apresenta uma função densidade de probabilidade.Esta função apresenta qual a probabilidade de a variável $X^2_k$ assumir um valor entre $X^2_k$ e $X^2_k + dX^2_k$, e é dada por:
+
+$$f(X^2_k)\;=\;\frac{1}{2^{k/2}\Gamma (k/2)}(X^2_k)^{k/2-1}e^{X^2_k/2}.$$
+Exemplos desta função para diversos k estão plotados na figura abaixo.
+
+
+![](C:/Users/Teste/Pictures/IQ_-_distribuição_assimétrica.gif)
+
+Em posse desta expressão, pode-se calcular a probabilidade de, num teste de $X^2$, obter-se um valor igual ou maior ao valor encontrado, $(X^2)'$, calculando a integral
+
+$$\int_{(X^2)'}^{\infty}f(X^2)dX^2$$
+Desta forma, encontramos um modo quantitativo para determinar a concordância entre distribuição experimental e teórica. Em geral, para evitar o cálculo desta integral, se recorre a tabelas que apresentam os valores das probabilidades para cada intervalo de confiança e para cada grau de liberdade.
+
+É interessante analisar que a média da distribuição $X^2$ é $k$. Isto é se repetirmos o teste de $X^2$ muitas vezes (para várias medidas coletadas diferentes), esperamos que a média dos valores de $X^2$ encontrados tenda para o número de graus de liberdade estatísticos.
+
+A distribuição qui-quadrado pode ser simulada a partir da distribuição normal.
+
+## Distribuição F
 
