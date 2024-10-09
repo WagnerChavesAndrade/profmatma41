@@ -371,7 +371,49 @@ densidade exponencial.
 Usaremos a seguinte notação para indicar que uma variável aleatória tem distribuição exponencial com parâmetro λ: X ∼ exp(λ). Na Figura 2.5 temos o gráfico da densidade exponencial para λ = 2.
 
 ## Distribuição Uniforme
+
+Em estatística e probabilidade, a distribuição uniforme é a distribuição de probabilidades contínua mais simples de conceituar: a probabilidade de se gerar qualquer ponto em um intervalo contido no espaço amostral é proporcional ao tamanho do intervalo, visto que na distribuição uniforme a $f(x)$ é igual para qualquer valor de x no intervalo considerado. Por exemplo, se considerarmos um intervalo em x de zero à dez positivo $(xЄ[0,10] )$, e assumirmos que temos uma distribuição uniforme nesse intervalo, a probabilidade de f(x) no intervalo  $2< x <5$ é igual a probabilidade de f(x) no intervalo  5<x<8 pois sabemos que a distribuição é uniforme nesses intervalos e possuímos os intervalos com o mesmo tamanho.
+
+Outra maneira de se dizer "distribuição uniforme" seria "um número finito de resultados com chances iguais de acontecer".
+
+Ela é usada quando assumimos intervalos iguais da variável que a mesma probabilidade .
+
+Um simples exemplo de distribuição uniforme é lançar um dado não viciado. Os possíveis valores são 1,2,3,4,5,6, e a cada turno que o dado é jogado a probabilidade de cada valor é 1/6. Se dois dados são lançados e seus valores adicionados, a distribuição resultante não é mais uniforme pois as somas não são uma variável equiprovável.
+
+A distribuição discreta uniforme em si não possui parâmetros. No entanto, é conveniente representar seus possíveis resultados com um intervalo fechado [a,b], sendo 'a' e 'b' considerados os principais parâmetros da distribuição. Com isso a função acumulada dessa distribuição é representada como:
+
+Seja [a,b] o espaço amostral. Então temos que a função densidade de probabilidade é:
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_32.jpg)
+Esta distribuição tem valor médio ou esperança matemática de X, dada por 
+
+$$E(X)\;=\;\frac{a + b}{2}$$ e variância $$Var(X)\;=\;\frac{(a + b)^2}{12}$$
+
 ## Distribuição Gama
+
+A distribuição normal é uma das distribuições de probabilidade mais utilizadas para modelar fenômenos naturais, mas existem outras. A distribuição gama é uma família de distribuições contínuas de probabilidade de dois parâmetros. É usada para modelar valores de dados positivos que são assimétricos à direita e maiores que zero. É muito utilizada em Meteorologia, para descrever distribuição de precipitação, e em engenharia, para obtenção do tempo de retorno de um equipamento com falha.
+
+Enquanto que uma distribuição normal é caracterizada por sua média e desvio padrão, uma distribuição gama usa outros parâmetros. A parametrização usando alpha e beta é mais comum em estatística bayesiana, enquanto que usando $k$ e $\theta$ é mais comum em econometria. Considera-se $k = \alpha$ e $\beta = 1/\alpha$, este conhecido como parâmetro de escala inversa ou taxa (“rate”). Sua função densidade de probabilidade pode ser escrita como:
+
+$$f(x;\alpha , \beta)\;=\;\frac{\beta^{\alpha}x^{\alpha-1}e^{-\beta x}}{\Gamma (\alpha)}$$
+
+com a função gama no denominador descrita como:
+ 
+$$\Gamma (\alpha)\;=\;(\alpha - 1)!$$
+
+A função gama é uma extensão analítica da função fatorial para o conjunto dos números reais e complexos, sendo uma solução para o seguinte problema de interpolação: encontrar uma curva suave que conecte os pontos $(x, y)$ dados por $y = (x − 1)!$ em que x é um inteiro positivo.
+
+O parâmetro de forma (k) indica o formato geral da curva. Quanto maior o valor de $k$, mais a distribuição tende a se aproximar de uma gaussiana. No gráfico a seguir, isso pode ser notado pelas curvas preta, vermelha, verde e azul (respectivamente), que apresentam somente o parâmetro de forma variando de modo crescente. Se $k$ é um inteiro positivo, então a distribuição representa uma distribuição Erlang; para $k = 1$, a distribuição gama será simplificada para a distribuição exponencial.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_30.jpg)
+O parâmetros de escala $(θ)$ indica o escalonamento da curva, ou seja, o quanto ela pode “esticar” ou “encolher” para cima (eixo y), dependendo das magnitudes gerais dos valores dos dados representados. Note que as curvas preta, vermelha, verde e azul (respectivamente) ficam mais “baixas” quanto maior o parâmetro de escala.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_31.jpg)
+
+Muitas distribuições comumente usadas para modelos paramétricos na análise de sobrevivência (como a distribuição Exponencial, a distribuição Weibull e a gama Gamma) são casos especiais da gama generalizada. A distribuição de Pearson do tipo III é uma distribuição gama generalizada de três parâmetros, que por sua vez é uma generalização da distribuição gama de dois parâmetros.
+
+A distribuição log-normal é um caso especial da distribuição log-Pearson tipo III quando o coeficiente de assimetria/ distorção “skew” (Cs) dos dados logarítmicos é igual a 0. Quando o skew é positivo significa que a distorção é para a esquerda e quando negativo a distorção é para a direita. Essa distribuição e a de Gumbel são muito usadas para inundações máximas anuais.
+
 ## Distribuição Qui-Quadrado
 
 A distribuição $X^2$ ou qui-quadrado é uma das distribuições mais utilizadas em estatística inferencial, principalmente para realizar testes de $X^2$. Este teste serve para avaliar quantitativamente a relação entre o resultado de um experimento e a distribuição esperada para o fenômeno. Isto é, ele nos diz com quanta certeza os valores observados podem ser aceitos como regidos pela teoria em questão. Muitos outros testes de hipótese usam, também, a distribuição $X^2$.
