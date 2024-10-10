@@ -376,6 +376,7 @@ Usaremos a seguinte notação para indicar que uma variável aleatória tem dist
 
 $$E(X)\;=\;\frac{1}{\lambda}$$
 $$Var(X)\;=\;\frac{1}{\lambda^2}$$
+
 ## Distribuição Uniforme
 
 Em estatística e probabilidade, a distribuição uniforme é a distribuição de probabilidades contínua mais simples de conceituar: a probabilidade de se gerar qualquer ponto em um intervalo contido no espaço amostral é proporcional ao tamanho do intervalo, visto que na distribuição uniforme a $f(x)$ é igual para qualquer valor de x no intervalo considerado. Por exemplo, se considerarmos um intervalo em x de zero à dez positivo $(xЄ[0,10] )$, e assumirmos que temos uma distribuição uniforme nesse intervalo, a probabilidade de f(x) no intervalo  $2< x <5$ é igual a probabilidade de f(x) no intervalo  5<x<8 pois sabemos que a distribuição é uniforme nesses intervalos e possuímos os intervalos com o mesmo tamanho.
