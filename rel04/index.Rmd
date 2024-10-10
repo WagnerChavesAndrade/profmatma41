@@ -368,8 +368,14 @@ Diz-se que uma variável aleatória contínua X tem distribuição exponencial c
 Como essa função depende apenas do valor de λ, esse é o parâmetro da
 densidade exponencial.
 
-Usaremos a seguinte notação para indicar que uma variável aleatória tem distribuição exponencial com parâmetro λ: X ∼ exp(λ). Na Figura 2.5 temos o gráfico da densidade exponencial para λ = 2.
+Usaremos a seguinte notação para indicar que uma variável aleatória tem distribuição exponencial com parâmetro λ: X ∼ exp(λ). O gráfico da densidade exponencial para λ = 5.
 
+![](C:/relatorios/profmatma41/imagens/TeXAux/exponencial-Rstudio-1-1.png)
+
+### Valor Esperado e Variância
+
+$$E(X)\;=\;\frac{1}{\lambda}$$
+$$Var(X)\;=\;\frac{1}{\lambda^2}$$
 ## Distribuição Uniforme
 
 Em estatística e probabilidade, a distribuição uniforme é a distribuição de probabilidades contínua mais simples de conceituar: a probabilidade de se gerar qualquer ponto em um intervalo contido no espaço amostral é proporcional ao tamanho do intervalo, visto que na distribuição uniforme a $f(x)$ é igual para qualquer valor de x no intervalo considerado. Por exemplo, se considerarmos um intervalo em x de zero à dez positivo $(xЄ[0,10] )$, e assumirmos que temos uma distribuição uniforme nesse intervalo, a probabilidade de f(x) no intervalo  $2< x <5$ é igual a probabilidade de f(x) no intervalo  5<x<8 pois sabemos que a distribuição é uniforme nesses intervalos e possuímos os intervalos com o mesmo tamanho.
@@ -406,6 +412,7 @@ A função gama é uma extensão analítica da função fatorial para o conjunto
 O parâmetro de forma (k) indica o formato geral da curva. Quanto maior o valor de $k$, mais a distribuição tende a se aproximar de uma gaussiana. No gráfico a seguir, isso pode ser notado pelas curvas preta, vermelha, verde e azul (respectivamente), que apresentam somente o parâmetro de forma variando de modo crescente. Se $k$ é um inteiro positivo, então a distribuição representa uma distribuição Erlang; para $k = 1$, a distribuição gama será simplificada para a distribuição exponencial.
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_30.jpg)
+
 O parâmetros de escala $(θ)$ indica o escalonamento da curva, ou seja, o quanto ela pode “esticar” ou “encolher” para cima (eixo y), dependendo das magnitudes gerais dos valores dos dados representados. Note que as curvas preta, vermelha, verde e azul (respectivamente) ficam mais “baixas” quanto maior o parâmetro de escala.
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_31.jpg)
