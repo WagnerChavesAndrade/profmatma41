@@ -28,11 +28,26 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
 
-# Objetivo
+# Teorema do Limite Central
+## Introdução.
 
-Descrever o objetivo do relatório!
+O teorema central do limite é um teorema fundamental de probabilidade e estatísticas. O teorema descreve a distribuição da média de uma amostra aleatória de uma população com variância finita. Quando o tamanho amostral é suficientemente grande, a distribuição da média é uma distribuição aproximadamente normal. O teorema aplica-se independentemente da forma da distribuição da população. Muitos procedimentos estatísticos comuns requerem que os dados sejam aproximadamente normais. O teorema central do limite permite a aplicação destes procedimentos úteis a populações que são fortemente não-normais. Quão grande o tamanho amostral deve ser depende da forma da distribuição original. Se a distribuição da população for simétrica, um tamanho amostral de 5 poderia render uma boa aproximação. Se a distribuição da população for fortemente assimétrica, será necessária uma amostra maior. Por exemplo, a distribuição da média pode ser aproximadamente normal, se o tamanho amostral for maior do que 50. Os gráficos a seguir mostram exemplos de como a distribuição afeta o tamanho amostral de que você precisa.
 
-# Apresentação do relatório
 
-Aqui será o local para apresentar o material sobre o relatório.
+**Amostras de uma população uniforme**
 
+Uma população que segue uma distribuição uniforme é simétrica, mas fortemente não-normal, como mostra o primeiro histograma. Contudo, a distribuição de médias amostrais de 1000 amostras de tamanho 5 desta população é aproximadamente normal devido ao teorema central do limite, como mostra o segundo histograma. Este histograma de médias amostrais inclui uma curva normal sobreposta para ilustrar sua normalidade.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_33.jpg)
+
+**Amostras de uma população exponencial**
+
+Uma população que segue uma distribuição exponencial é assimétrica e não-normal, como mostra o primeiro histograma. Contudo, a distribuição de médias amostrais de 1000 amostras de tamanho 50 desta população é aproximadamente normal devido ao teorema central do limite, como mostra o segundo histograma. Este histograma de médias amostrais inclui uma curva normal sobreposta para ilustrar sua normalidade.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_34.jpg)
+
+## Enunciado do Teorema do Limite Central
+
+Seja $X_1\;,X_2\, ,...,\,X_n$ uma sequência de variáveis aleatórias independentes e identicamente distribuídas com média $\mu$ e variância finita $\sigma^2$. Seja $S_n\;=\;X_1 + X_2 + ... + X_n$ a soma das _n_ variáveis aleatórias. Então conforme $n\longrightarrow \infty$, a soma normalizada $Z_n$ (ou seja, a média padronizada) converge em distribuição para uma distribuição normal padrão $N(0,1)$:
+
+$$Z_n\;=\;\frac{S_n-n\mu}{\sigma \sqrt{n}}\longrightarrow^{d}\;N(0,1)\; ,n\longrightarrow \infty.$$
