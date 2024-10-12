@@ -48,6 +48,18 @@ Uma população que segue uma distribuição exponencial é assimétrica e não-
 
 ## Enunciado do Teorema do Limite Central
 
-Seja $X_1\;,X_2\, ,...,\,X_n$ uma sequência de variáveis aleatórias independentes e identicamente distribuídas com média $\mu$ e variância finita $\sigma^2$. Seja $S_n\;=\;X_1 + X_2 + ... + X_n$ a soma das _n_ variáveis aleatórias. Então conforme $n\longrightarrow \infty$, a soma normalizada $Z_n$ (ou seja, a média padronizada) converge em distribuição para uma distribuição normal padrão $N(0,1)$:
+Seja $(X_1\;,X_2\, ,...,\,X_n)$ uma sequência de variáveis aleatórias independentes e identicamente distribuídas com média $\mu$ e variância finita $\sigma^2$. Seja $\;X_1 + X_2 + ... + X_n$ uma amostra da população $X$ com média $\mu$ e variância $\sigma^2$ finita. Então: 
 
-$$Z_n\;=\;\frac{S_n-n\mu}{\sigma \sqrt{n}}\longrightarrow^{d}\;N(0,1)\; ,n\longrightarrow \infty.$$
+$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\; ,n\longrightarrow \infty.$$
+Onde:  
+
+$\bar X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}$(média amostra);
+
+$\mu\:$ é a média populacional;
+
+$\sigma$ é o desvio padrão da população;
+
+$n$ é o tamanho da amostra.
+
+
+
