@@ -350,7 +350,10 @@ display: none;
 <ul>
 <li><a href="#introdução." id="toc-introdução."><span class="toc-section-number">1.1</span> Introdução.</a></li>
 <li><a href="#enunciado-do-teorema-do-limite-central" id="toc-enunciado-do-teorema-do-limite-central"><span class="toc-section-number">1.2</span> Enunciado do Teorema do Limite
-Central</a></li>
+Central</a>
+<ul>
+<li><a href="#função-característica." id="toc-função-característica."><span class="toc-section-number">1.2.1</span> Função característica.</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
@@ -413,8 +416,27 @@ X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}.\)</span> (média amostral)</p>
 <p><span class="math inline">\(\sigma\)</span> é o desvio padrão da
 população;</p>
 <p><span class="math inline">\(n\)</span> é o tamanho da amostra.</p>
+<div id="função-característica." class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Função
+característica.</h3>
+<p><span class="math display">\[Z_n\;=\;\frac{\bar
+X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\;
+,n\longrightarrow \infty.\]</span></p>
 <p><span class="math inline">\(\bar
-X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}\)</span></p>
+X\;=\;\frac{1}{n}\sum_{i=1}^{n}\;X_i\)</span>, onde <span class="math inline">\(X_i\)</span> tem a mesma distribuição que a
+população, ou seja, é independente e identicamente distribuída, todos
+tem a mesma distribuição. E essa distribuição tem a mesma média e
+variância da população:</p>
+<p><span class="math display">\[X_i\;\sim (\mu , \sigma^2)\]</span></p>
+<p>Podemos verificar que <span class="math inline">\(E(\bar
+X)\;=\;E\left[\frac{1}{n}\sum_{i =1}^n\;X_i  \right]\)</span>. Como a
+Esperança é uma função linear, temos, <span class="math inline">\(E(\bar
+X)\;=\;\frac{1}{n}E\left[\sum_{i =1}^n\;X_i  \right]\)</span>. Temos,
+também, que a Esperança da soma é igual a soma da Esperança. Logo,</p>
+<p><span class="math inline">\(E(\bar X)\;=\;\frac{1}{n}\sum_{i
+=1}^n\:E(X_i)\;=\;\;\frac{1}{n}\sum_{i
+=1}^n\;\mu\;=\;\frac{n\mu}{n}\;=\;\mu\)</span>.</p>
+</div>
 </div>
 </div>
 

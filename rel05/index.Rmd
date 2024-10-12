@@ -61,5 +61,22 @@ $\sigma$ é o desvio padrão da população;
 
 $n$ é o tamanho da amostra.
 
-$\bar X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}$
+### Função característica.
+
+
+$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\; ,n\longrightarrow \infty.$$
+
+$\bar X\;=\;\frac{1}{n}\sum_{i=1}^{n}\;X_i$, onde $X_i$ tem a mesma distribuição que a população, ou seja, é independente e identicamente distribuída, todos tem a mesma distribuição. E essa distribuição tem a mesma média e variância da população:
+
+$$X_i\;\sim (\mu , \sigma^2)$$
+
+Podemos verificar que  $E(\bar X)\;=\;E\left[\frac{1}{n}\sum_{i =1}^n\;X_i  \right]$. Como a Esperança é uma função linear, temos, $E(\bar X)\;=\;\frac{1}{n}E\left[\sum_{i =1}^n\;X_i  \right]$. Temos, também, que a Esperança da soma é igual a soma da Esperança. Logo,
+
+$E(\bar X)\;=\;\frac{1}{n}\sum_{i =1}^n\:E(X_i)\;=\;\;\frac{1}{n}\sum_{i =1}^n\;\mu\;=\;\frac{n\mu}{n}\;=\;\mu$.
+
+
+
+
+
+
 
