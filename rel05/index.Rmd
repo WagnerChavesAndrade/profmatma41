@@ -53,7 +53,7 @@ Seja $(X_1\;,X_2\, ,...,\,X_n)$ uma sequência de variáveis aleatórias indepen
 $$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\; ,n\longrightarrow \infty.$$
 Onde:  
 
-$\bar X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}.$
+$\bar X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}.$ (média amostral)
 
 $\mu$ é a média populacional;
 
