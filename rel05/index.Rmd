@@ -133,9 +133,8 @@ $M_(0)\;=\;\int_{-\infty}^{+\infty}\;e^{0\cdot x}\;f_{X}(x)dx\;=\;\int_{-\infty}
 
 Derivando em relação a $t$, temos
 
-$d\frac{M_X (t)}{d_t}\left|_{t=0}\right.\;=\;\int_{-\infty}^{+\infty}\;xe^{tx}f(x)dx\left|_{t=0}\right.=\;E(X)\;\longrightarrow\;$
+$d\frac{M_X (t)}{d_t}\left|_{t=0}\right.\;=\;\int_{-\infty}^{+\infty}\;xe^{tx}f(x)dx\left|_{t=0}\right.=\;E(X)\;\longrightarrow\;\frac{d^n}{d\,t^n}M_{X}(t)\left|_{t=0}\right.\;=\;E[X^n]$
 
-$\frac{d^n}{d\,t^n}M_{X}(t)\left|_{t=0}\right.\;=\;E[X^n]$
 
 Note que, a partir da função característica nós podemos deduzir a função geratriz de momentos e, dessa função geratriz nós podemos calcular todos os momentos da distribuição de probabilidade e, assim, é possível descrever essa distribuição.
 
