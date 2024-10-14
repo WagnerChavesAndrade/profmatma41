@@ -50,7 +50,7 @@ Uma população que segue uma distribuição exponencial é assimétrica e não-
 
 Seja $(X_1\;,X_2\, ,...,\,X_n)$ uma sequência de variáveis aleatórias independentes e identicamente distribuídas com média $\mu$ e variância finita $\sigma^2$. Seja $\;X_1 + X_2 + ... + X_n$ uma amostra da população $X$ com média $\mu$ e variância $\sigma^2$ finita. Então: 
 
-$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\; ,n\longrightarrow \infty.$$
+$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\; ,n\longrightarrow \infty.$$
 Onde:  
 
 $\bar X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}.$ (média amostral)
@@ -61,7 +61,7 @@ $\sigma$ é o desvio padrão da população;
 
 $n$ é o tamanho da amostra.
 
-### Função característica.
+### Conceitos preliminares.
 
 
 $$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\; ,n\longrightarrow \infty.$$
@@ -86,11 +86,59 @@ $Var(Z_n)\;=\;Var\left[\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}\right]\;=\;\fr
 
 Concluímos, portanto, que $\;Z_n$ é distribuída com média zero e variância 1. 
 
-$$Z_n\;=\;\longrightarrow\;N(0,1)\; $$
+$$Z_n\;=\;\longrightarrow\;\mathcal{N}(0,1)(0,1)\; $$
+Vamos, agora, encontrar o formato de $Z_n$. Vamos definir uma nova variável, $Y_i$, da seguinte forma:
 
-$\mathcal{N}$
+$Y_i\;=\;\frac{X_i-\mu}{\sigma}$. Com isso, podemos escrever $Z_n$ da seguinte forma:
+
+$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}\;\cdot \frac{n}{n}\;=\;\frac{n\bar {X}-n\,\mu}{\sigma\;\sqrt{n}}\;=\;\frac{n\;\sum_{i=1}^{n}\;\frac{X_i}{n}\;-\;n\,\mu}{\sigma\;\sqrt{n}}\;=\;\frac{\sum_{i=1}^{n}\;(X_i\;-\;\mu)}{\sigma\,\sqrt{n}}\;=\;\sum_{i=1}^{n}\;\frac{Y_i}{\sqrt{n}}$.
+
+Isto quer dizer que a nova variável $Y_i$ tem a mesma variância que $Z_n$.
+
+### Função Característica.
+
+Para uma variável aleatória $X$, sua função característica $\phi_{X}(t)$ é definida como
+
+$$\phi_{X}(t)\;=\;E[e^{itX}]$$
+
+* $E[.]$ denota o valor esperado;
+
+* $e^{etX}$ é a função exponencial complexa, com _i_ sendo a unidade imginária ($i = \sqrt{-1}$);
+
+* $t$ é um número real.
+
+A função característica é calculada como o valor esperado da função $e^{itX}$, ou seja, a integral da função exponencial complexa multiplicada pela densidade de probabilidade da variável aleatória $X$,
+se ela for contínua:
+
+$$\phi_{X}(t)\;=\;\int_{-\infty}^{+\infty}\;e^{itX}\;f_{X}(x)dx\;=\;M_{X}(t)\;$$( Funão geratriz de momentos)
+
+Aqui, $f_{X}\;(x)$ é a função densidade de probabilidade.
+
+**Propriedades principais:**
+
+**Unicidade:** A função característica determina unicamente a distribuição de uma variável aleatória.
+
+**Existência:** Ela sempre existe, independentemente da existência de momentos.
+
+**Valor zero:** $\phi_X(0)=1$.
+
+**Relação com momentos:** Se os momentos de $X$ existem, eles podem ser derivados a partir da função característica.
+
+**Momento de uma variável de ordem $n$.**
+
+O momento de ordem $n$ de uma variável aleatória $X$, denotado como $E[X^n]$, é o valor esperado da _n_-ésima potência de $X$. Ele fornece informações sobre a distribuição da variável aleatória, como sua dispersão e forma. Os momentos são usados para descrever as características principais de uma distribuição, como sua média, variância, e outros aspectos.
+
+$M_(0)\;=\;\int_{-\infty}^{+\infty}\;e^{0\cdot x}\;f_{X}(x)dx\;=\;\int_{-\infty}^{+\infty}\;f_{X}(x)\;=\;1.$
 
 
+Derivando em relação a $t$, temos
 
+$d\frac{M_X (t)}{d_t}\left|_{t=0}\right.\;=\;\int_{-\infty}^{+\infty}\;xe^{tx}f(x)dx\left|_{t=0}\right.=\;E(X)\;\longrightarrow\;$
+
+$\frac{d^n}{d\,t^n}M_{X}(t)\left|_{t=0}\right.\;=\;E[X^n]$
+
+Note que, a partir da função característica nós podemos deduzir a função geratriz de momentos e, dessa função geratriz nós podemos calcular todos os momentos da distribuição de probabilidade e, assim, é possível descrever essa distribuição.
+
+Além disso,
 
 

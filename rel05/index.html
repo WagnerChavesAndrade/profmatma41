@@ -352,7 +352,8 @@ display: none;
 <li><a href="#enunciado-do-teorema-do-limite-central" id="toc-enunciado-do-teorema-do-limite-central"><span class="toc-section-number">1.2</span> Enunciado do Teorema do Limite
 Central</a>
 <ul>
-<li><a href="#função-característica." id="toc-função-característica."><span class="toc-section-number">1.2.1</span> Função característica.</a></li>
+<li><a href="#conceitos-preliminares." id="toc-conceitos-preliminares."><span class="toc-section-number">1.2.1</span> Conceitos preliminares.</a></li>
+<li><a href="#função-característica." id="toc-função-característica."><span class="toc-section-number">1.2.2</span> Função Característica.</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -408,7 +409,7 @@ variância finita <span class="math inline">\(\sigma^2\)</span>. Seja
 <span class="math inline">\(\;X_1 + X_2 + ... + X_n\)</span> uma amostra
 da população <span class="math inline">\(X\)</span> com média <span class="math inline">\(\mu\)</span> e variância <span class="math inline">\(\sigma^2\)</span> finita. Então:</p>
 <p><span class="math display">\[Z_n\;=\;\frac{\bar
-X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\;
+X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\;
 ,n\longrightarrow \infty.\]</span> Onde:</p>
 <p><span class="math inline">\(\bar
 X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}.\)</span> (média amostral)</p>
@@ -416,9 +417,9 @@ X\;=\;\sum_{i=1}^{n}\;\frac{X_i}{n}.\)</span> (média amostral)</p>
 <p><span class="math inline">\(\sigma\)</span> é o desvio padrão da
 população;</p>
 <p><span class="math inline">\(n\)</span> é o tamanho da amostra.</p>
-<div id="função-característica." class="section level3" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> Função
-característica.</h3>
+<div id="conceitos-preliminares." class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Conceitos
+preliminares.</h3>
 <p><span class="math display">\[Z_n\;=\;\frac{\bar
 X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\;
 ,n\longrightarrow \infty.\]</span></p>
@@ -449,9 +450,68 @@ X-\mu}{\frac{\sigma}{\sqrt{n}}}\right]\;=\;\frac{Var(\bar
 X)}{\frac{\sigma^2}{n}}\;=\;\frac{\frac{\sigma^2}{n}}{\frac{\sigma^2}{n}}\;=\;1\)</span>.</p>
 <p>Concluímos, portanto, que <span class="math inline">\(\;Z_n\)</span>
 é distribuída com média zero e variância 1.</p>
-<p><span class="math display">\[Z_n\;=\;\longrightarrow\;N(0,1)\;
-\]</span></p>
-<p><span class="math inline">\(\mathcal{N}\)</span></p>
+<p><span class="math display">\[Z_n\;=\;\longrightarrow\;\mathcal{N}(0,1)(0,1)\;
+\]</span> Vamos, agora, encontrar o formato de <span class="math inline">\(Z_n\)</span>. Vamos definir uma nova variável,
+<span class="math inline">\(Y_i\)</span>, da seguinte forma:</p>
+<p><span class="math inline">\(Y_i\;=\;\frac{X_i-\mu}{\sigma}\)</span>.
+Com isso, podemos escrever <span class="math inline">\(Z_n\)</span> da
+seguinte forma:</p>
+<p><span class="math inline">\(Z_n\;=\;\frac{\bar
+X-\mu}{\frac{\sigma}{\sqrt{n}}}\;\cdot \frac{n}{n}\;=\;\frac{n\bar
+{X}-n\,\mu}{\sigma\;\sqrt{n}}\;=\;\frac{n\;\sum_{i=1}^{n}\;\frac{X_i}{n}\;-\;n\,\mu}{\sigma\;\sqrt{n}}\;=\;\frac{\sum_{i=1}^{n}\;(X_i\;-\;\mu)}{\sigma\,\sqrt{n}}\;=\;\sum_{i=1}^{n}\;\frac{Y_i}{\sqrt{n}}\)</span>.</p>
+<p>Isto quer dizer que a nova variável <span class="math inline">\(Y_i\)</span> tem a mesma variância que <span class="math inline">\(Z_n\)</span>.</p>
+</div>
+<div id="função-característica." class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Função
+Característica.</h3>
+<p>Para uma variável aleatória <span class="math inline">\(X\)</span>,
+sua função característica <span class="math inline">\(\phi_{X}(t)\)</span> é definida como</p>
+<p><span class="math display">\[\phi_{X}(t)\;=\;E[e^{itX}]\]</span></p>
+<ul>
+<li><p><span class="math inline">\(E[.]\)</span> denota o valor
+esperado;</p></li>
+<li><p><span class="math inline">\(e^{etX}\)</span> é a função
+exponencial complexa, com <em>i</em> sendo a unidade imginária (<span class="math inline">\(i = \sqrt{-1}\)</span>);</p></li>
+<li><p><span class="math inline">\(t\)</span> é um número real.</p></li>
+</ul>
+<p>A função característica é calculada como o valor esperado da função
+<span class="math inline">\(e^{itX}\)</span>, ou seja, a integral da
+função exponencial complexa multiplicada pela densidade de probabilidade
+da variável aleatória <span class="math inline">\(X\)</span>, se ela for
+contínua:</p>
+<p><span class="math display">\[\phi_{X}(t)\;=\;\int_{-\infty}^{+\infty}\;e^{itX}\;f_{X}(x)dx\;=\;M_{X}(t)\;\]</span>(
+Funão geratriz de momentos)</p>
+<p>Aqui, <span class="math inline">\(f_{X}\;(x)\)</span> é a função
+densidade de probabilidade.</p>
+<p><strong>Propriedades principais:</strong></p>
+<p><strong>Unicidade:</strong> A função característica determina
+unicamente a distribuição de uma variável aleatória.</p>
+<p><strong>Existência:</strong> Ela sempre existe, independentemente da
+existência de momentos.</p>
+<p><strong>Valor zero:</strong> <span class="math inline">\(\phi_X(0)=1\)</span>.</p>
+<p><strong>Relação com momentos:</strong> Se os momentos de <span class="math inline">\(X\)</span> existem, eles podem ser derivados a
+partir da função característica.</p>
+<p><strong>Momento de uma variável de ordem <span class="math inline">\(n\)</span>.</strong></p>
+<p>O momento de ordem <span class="math inline">\(n\)</span> de uma
+variável aleatória <span class="math inline">\(X\)</span>, denotado como
+<span class="math inline">\(E[X^n]\)</span>, é o valor esperado da
+<em>n</em>-ésima potência de <span class="math inline">\(X\)</span>. Ele
+fornece informações sobre a distribuição da variável aleatória, como sua
+dispersão e forma. Os momentos são usados para descrever as
+características principais de uma distribuição, como sua média,
+variância, e outros aspectos.</p>
+<p><span class="math inline">\(M_(0)\;=\;\int_{-\infty}^{+\infty}\;e^{0\cdot
+x}\;f_{X}(x)dx\;=\;\int_{-\infty}^{+\infty}\;f_{X}(x)\;=\;1.\)</span></p>
+<p>Derivando em relação a <span class="math inline">\(t\)</span>,
+temos</p>
+<p><span class="math inline">\(d\frac{M_X
+(t)}{d_t}\left|_{t=0}\right.\;=\;\int_{-\infty}^{+\infty}\;xe^{tx}f(x)dx\left|_{t=0}\right.=\;E(X)\;\longrightarrow\;\)</span></p>
+<p><span class="math inline">\(\frac{d^n}{d\,t^n}M_{X}(t)\left|_{t=0}\right.\;=\;E[X^n]\)</span></p>
+<p>Note que, a partir da função característica nós podemos deduzir a
+função geratriz de momentos e, dessa função geratriz nós podemos
+calcular todos os momentos da distribuição de probabilidade e, assim, é
+possível descrever essa distribuição.</p>
+<p>Além disso,</p>
 </div>
 </div>
 </div>
