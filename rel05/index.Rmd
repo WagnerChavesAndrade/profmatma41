@@ -64,7 +64,7 @@ $n$ é o tamanho da amostra.
 ### Função característica.
 
 
-$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\; ,n\longrightarrow \infty.$$
+$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\; ,n\longrightarrow \infty.$$
 
 $\bar X\;=\;\frac{1}{n}\sum_{i=1}^{n}\;X_i$, onde $X_i$ tem a mesma distribuição que a população, ou seja, é independente e identicamente distribuída, todos tem a mesma distribuição. E essa distribuição tem a mesma média e variância da população:
 
@@ -72,9 +72,23 @@ $$X_i\;\sim (\mu , \sigma^2)$$
 
 Podemos verificar que  $E(\bar X)\;=\;E\left[\frac{1}{n}\sum_{i =1}^n\;X_i  \right]$. Como a Esperança é uma função linear, temos, $E(\bar X)\;=\;\frac{1}{n}E\left[\sum_{i =1}^n\;X_i  \right]$. Temos, também, que a Esperança da soma é igual a soma da Esperança. Logo,
 
-$E(\bar X)\;=\;\frac{1}{n}\sum_{i =1}^n\:E(X_i)\;=\;\;\frac{1}{n}\sum_{i =1}^n\;\mu\;=\;\frac{n\mu}{n}\;=\;\mu$.
+$E(\bar X)\;=\;\frac{1}{n}\sum_{i =1}^n\:E(X_i)\;=\;\;\frac{1}{n}\sum_{i =1}^n\;\mu_i\;=\;\frac{n\mu}{n}\;=\;\mu$.
 
+$Var(\bar X)\;=\;Var\left[\frac{1}{n}\sum_{i =1}^n\;X_i  \right]\;=\;\frac{1}{n^{2}}\sum_{i=1}^n\;Var(X_i)\;=\;\frac{n\sigma^2}{n^2\;}\;=\;\frac{\sigma^2}{n}$
 
+Cálculo da Esperança de $Z_n$
+
+$E(Z_n)\;=\;E\left[\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}} \right]\;=\;\frac{E(\bar X)-\mu}{\frac{\sigma}{\sqrt{n}}}\;=\;\frac{\mu-\mu}{\frac{\sigma}{\sqrt{n}}}\;=\;0$
+
+Cálculo da Variância de $Z_n$
+
+$Var(Z_n)\;=\;Var\left[\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}\right]\;=\;\frac{Var(\bar X)}{\frac{\sigma^2}{n}}\;=\;\frac{\frac{\sigma^2}{n}}{\frac{\sigma^2}{n}}\;=\;1$.
+
+Concluímos, portanto, que $\;Z_n$ é distribuída com média zero e variância 1. 
+
+$$Z_n\;=\;\longrightarrow\;N(0,1)\; $$
+
+$\mathcal{N}$
 
 
 

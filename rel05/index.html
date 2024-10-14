@@ -420,7 +420,7 @@ população;</p>
 <h3><span class="header-section-number">1.2.1</span> Função
 característica.</h3>
 <p><span class="math display">\[Z_n\;=\;\frac{\bar
-X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;N(0,1)\;
+X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\;
 ,n\longrightarrow \infty.\]</span></p>
 <p><span class="math inline">\(\bar
 X\;=\;\frac{1}{n}\sum_{i=1}^{n}\;X_i\)</span>, onde <span class="math inline">\(X_i\)</span> tem a mesma distribuição que a
@@ -435,7 +435,23 @@ X)\;=\;\frac{1}{n}E\left[\sum_{i =1}^n\;X_i  \right]\)</span>. Temos,
 também, que a Esperança da soma é igual a soma da Esperança. Logo,</p>
 <p><span class="math inline">\(E(\bar X)\;=\;\frac{1}{n}\sum_{i
 =1}^n\:E(X_i)\;=\;\;\frac{1}{n}\sum_{i
-=1}^n\;\mu\;=\;\frac{n\mu}{n}\;=\;\mu\)</span>.</p>
+=1}^n\;\mu_i\;=\;\frac{n\mu}{n}\;=\;\mu\)</span>.</p>
+<p><span class="math inline">\(Var(\bar
+X)\;=\;Var\left[\frac{1}{n}\sum_{i
+=1}^n\;X_i  \right]\;=\;\frac{1}{n^{2}}\sum_{i=1}^n\;Var(X_i)\;=\;\frac{n\sigma^2}{n^2\;}\;=\;\frac{\sigma^2}{n}\)</span></p>
+<p>Cálculo da Esperança de <span class="math inline">\(Z_n\)</span></p>
+<p><span class="math inline">\(E(Z_n)\;=\;E\left[\frac{\bar
+X-\mu}{\frac{\sigma}{\sqrt{n}}} \right]\;=\;\frac{E(\bar
+X)-\mu}{\frac{\sigma}{\sqrt{n}}}\;=\;\frac{\mu-\mu}{\frac{\sigma}{\sqrt{n}}}\;=\;0\)</span></p>
+<p>Cálculo da Variância de <span class="math inline">\(Z_n\)</span></p>
+<p><span class="math inline">\(Var(Z_n)\;=\;Var\left[\frac{\bar
+X-\mu}{\frac{\sigma}{\sqrt{n}}}\right]\;=\;\frac{Var(\bar
+X)}{\frac{\sigma^2}{n}}\;=\;\frac{\frac{\sigma^2}{n}}{\frac{\sigma^2}{n}}\;=\;1\)</span>.</p>
+<p>Concluímos, portanto, que <span class="math inline">\(\;Z_n\)</span>
+é distribuída com média zero e variância 1.</p>
+<p><span class="math display">\[Z_n\;=\;\longrightarrow\;N(0,1)\;
+\]</span></p>
+<p><span class="math inline">\(\mathcal{N}\)</span></p>
 </div>
 </div>
 </div>
