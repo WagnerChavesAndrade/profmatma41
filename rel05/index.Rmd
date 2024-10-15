@@ -140,4 +140,57 @@ Note que, a partir da função característica nós podemos deduzir a função g
 
 Além disso,
 
+$\phi_{a_1X_1+a_2X_2+...+a_nX_n}(t)\;=\;\int\int...\int\;e^{it(a_1+X_1+. . .+a_nX_n)}f(x_1,x_2, . . x_n)dx_1dx_2...dx_n$
+
+Se $X_1, X_2, X_3, ...X_n$ forem independentes, temos que
+
+$\phi_{a_1X_1+a_2X_2+...+a_nX_n}(t)\;=\;\int\int...\int\;e^{ita_1X_1}f_{X_1}(x_1)\;e^{ita_2X_2}f_{X_2}(x_2)dx_1 . . .dx_n$
+
+$\phi_{a_1X_1+a_2X_2+...+a_nX_n}(t)\;=\;\phi_{X_1}(a_1t)\;\phi_{X_2}(a_1t) . . .\phi_{X_n}(a_nt)\;=\;\prod_{i=1}^{n}\;\phi_{X_i}(a_it)$
+
+### Série de Taylor.
+
+Logo,
+
+$\phi_{Z_n}(t)\;=\;\phi_{\sum_{i=1}^n}\;(t)\;=\;\phi_{Y_1}(\frac{t}{\sqrt n})\phi_{Y_2}(\frac{t}{\sqrt n})\;...\;\phi_{Y_n}(\frac{t}{\sqrt n})\;=\;\prod_{i=1}^{n}\phi_{Y_n}(\frac{t}{\sqrt n})\;=\;\left[\phi_{Y_t }\frac{t}{\sqrt n}\right]^n\;\;(1)$
+
+Mas,
+
+$\phi_Y \left(\frac{t}{\sqrt n}\right)\;=\;\int_{-\infty}^{+\infty}e^{i\frac{t}{\sqrt n}Y}f_{Y}(y)d_y$
+
+Expandindo o termo $e^{i\frac{t}{\sqrt n}y}$ em uma série de Taylor, obtemos,
+
+Série de Taylor: $e^x\;=\;\sum_{n=0}^{\infty}\frac{(x)^n}{n!}$
+
+$e^{i\frac{t y}{\sqrt n}}\;=\;1\;+\;\frac{ity}{\sqrt n}\;+\;\left(\frac{ity}{\sqrt n}\right)^2\cdot \frac{1}{2!}\;+\;o(t)^2\;=\;1\;+\;\frac{ity}{\sqrt n}\;+\;\frac{ty^2}{2n}\;+\;o(t)^2$
+
+$\phi_y(\frac{t}{\sqrt n})\;=\;\int_{-\infty}^{\infty}f_Y(y)d_y\;+\;\frac{it}{\sqrt n}\int_{-\infty}^{\infty}yf_{Y}(y)d_y\;-\;\frac{t^2}{2n}\int_{-\infty}^{\infty}y^2f_{Y}(y)d_y\;+\;o(t^2)$
+
+A variável $Y_i$ foi definida como:
+
+$Y_i\;=\;\frac{X_i-\mu}{\sigma}\;\sim\;(0,1)$
+
+$\phi_y(\frac{t}{\sqrt n})\;= 1\;+\;E(Y)\;+\;E(Y^2)\;+\;. . .$
+
+$\phi_y(\frac{t}{\sqrt n})\;= 1\;-\;\frac{t^2}{2n}\;+\;o(t^2)$
+
+Voltando a equação (1), temos:
+
+$\phi{_Z}_{n}(t)\;=\;\left[1\;-\;\frac{t^2}{2n}\;+\;0(t^2)\right]^n$
+
+Quando o tamanho da amostra tende ao infinito, temos:
+
+$\lim_{n\to\infty}\;\phi_{Z_n}(t)\;=\;\lim_{n\to\infty}\;\left[ 1\;-\;\frac{t^2}{2n}\;+\;o(t^2)\right]^n$
+
+Lembrando que, $\lim_{n\to\infty}\;=\;\left(1\;+\;\frac{x}{n}\right)^n\;=\;e^x$, segue que
+
+
+$\lim_{n\to\infty}\;\phi_{Z_n}(t)\;=\;\lim_{n\to\infty}\;\left[ 1\;-\;\frac{t^2}{2n}\;+\;o(t^2)\right]^n\;=\;e^{-\frac{t^2}{2}}$
+
+Ou seja,
+
+$\lim_{n\to\infty}\;\phi_{Z_n}(t)\;=\;e^{-\frac{t^2}{2}}$
+
+
+
 
