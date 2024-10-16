@@ -191,6 +191,38 @@ Ou seja,
 
 $\lim_{n\to\infty}\;\phi_{Z_n}(t)\;=\;e^{-\frac{t^2}{2}}$
 
+Falta agora mostrar que $\phi_{Z_n}(t)$ é a função característica da distribuição normal.
+
+Lembrando que a distribuição normal é: $X\;\sim \mathcal{N}(\mu , \sigma^2)$, então a função densidade de probabilidade de x é:
+
+$f(x)\;=\;\frac{1}{\sqrt{2\pi}\sigma}\cdot\;exp\left[-\frac{1}{2}\;(\frac{X-\mu}{\sigma})^2\right]$.
+
+Se $Z\;\sim\mathcal{N}(\mu , \sigma^2)$, então $f(Z)\;=\;\frac{1}{\sqrt{2\pi}}\cdot e^{-\frac{z^2}{2}}$.
+
+A função característica para $Z$, será:
+
+$\phi_{Z}(t)\;=\;\int_{-\infty}^\infty E(e^{i\,t\,z})\cdot \frac{1}{2\,\pi}\,e^{\frac{-z^2}{2}}dz$.
+
+Multiplicando e dividindo essa integral por $e^{\frac{t^2}{2}}$, temos:
+
+$\phi_{Z}(t)\;=\;\int_{-\infty}^\infty E(e^{i\,t\,z})\cdot \frac{1}{2\,\pi}\,e^{\frac{-z^2}{2}}dz\;\cdot [e^{\frac{-t^2}{2}}\cdot e^{\frac{-t^2}{2}}]$.
+
+$f_{Z}(t)\;=\;\frac{1}{\sqrt{2\,\pi}}\int_{-\infty}^\infty e^{\frac{-t^2}{2}}\cdot e^{\frac{t^2}{2}}\cdot e^{\frac{itz}{2}}\cdot e^{\frac{-z^2}{2}}dz\;=\;\frac{e^{\frac{-t^2}{2}}}{\sqrt {2\,\pi}}\cdot \int_{-\infty}^{\infty}e^{\frac{-(z-it)^2}{2}}dz $
+
+$f_{Z}(t)\;= \frac{e^{\frac{-t^2}{2}}}{\sqrt {2\,\pi}}\cdot \int_{-\infty}^{\infty}e^{\frac{-(z-it)^2}{2}}dz $.
+
+A resolução dessa integral envolve a resolução de integrais de variáveis complexas. O resultado dessa integral é
+
+$\phi_Z(t)\;=\;e^{\frac{-t^2}{2}}$.
+
+Portanto,
+
+$$Z_n\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\; ,n\longrightarrow \infty.$$
+
+Ou seja, quando _n_ tender para o infinito, a distribuição da média amostral ela vai tender a uma distribuição normal, onde a esperança dessa média amostral é igual à média populacional.
+
+$$c.q.d$$
+
 
 
 

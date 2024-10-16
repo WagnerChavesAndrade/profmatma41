@@ -561,6 +561,36 @@ segue que</p>
 1\;-\;\frac{t^2}{2n}\;+\;o(t^2)\right]^n\;=\;e^{-\frac{t^2}{2}}\)</span></p>
 <p>Ou seja,</p>
 <p><span class="math inline">\(\lim_{n\to\infty}\;\phi_{Z_n}(t)\;=\;e^{-\frac{t^2}{2}}\)</span></p>
+<p>Falta agora mostrar que <span class="math inline">\(\phi_{Z_n}(t)\)</span> é a função característica
+da distribuição normal.</p>
+<p>Lembrando que a distribuição normal é: <span class="math inline">\(X\;\sim \mathcal{N}(\mu , \sigma^2)\)</span>,
+então a função densidade de probabilidade de x é:</p>
+<p><span class="math inline">\(f(x)\;=\;\frac{1}{\sqrt{2\pi}\sigma}\cdot\;exp\left[-\frac{1}{2}\;(\frac{X-\mu}{\sigma})^2\right]\)</span>.</p>
+<p>Se <span class="math inline">\(Z\;\sim\mathcal{N}(\mu ,
+\sigma^2)\)</span>, então <span class="math inline">\(f(Z)\;=\;\frac{1}{\sqrt{2\pi}}\cdot
+e^{-\frac{z^2}{2}}\)</span>.</p>
+<p>A função característica para <span class="math inline">\(Z\)</span>,
+será:</p>
+<p><span class="math inline">\(\phi_{Z}(t)\;=\;\int_{-\infty}^\infty
+E(e^{i\,t\,z})\cdot \frac{1}{2\,\pi}\,e^{\frac{-z^2}{2}}dz\)</span>.</p>
+<p>Multiplicando e dividindo essa integral por <span class="math inline">\(e^{\frac{t^2}{2}}\)</span>, temos:</p>
+<p><span class="math inline">\(\phi_{Z}(t)\;=\;\int_{-\infty}^\infty
+E(e^{i\,t\,z})\cdot \frac{1}{2\,\pi}\,e^{\frac{-z^2}{2}}dz\;\cdot
+[e^{\frac{-t^2}{2}}\cdot e^{\frac{-t^2}{2}}]\)</span>.</p>
+<p>$f_{Z}(t);=;<em>{-}<sup>e</sup>{}e<sup>{}e</sup>{}e^{}dz;=;</em>{-}<sup>{}e</sup>{}dz
+$</p>
+<p>$f_{Z}(t);= _{-}<sup>{}e</sup>{}dz $.</p>
+<p>A resolução dessa integral envolve a resolução de integrais de
+variáveis complexas. O resultado dessa integral é</p>
+<p><span class="math inline">\(\phi_Z(t)\;=\;e^{\frac{-t^2}{2}}\)</span>.</p>
+<p>Portanto,</p>
+<p><span class="math display">\[Z_n\;=\;\frac{\bar
+X-\mu}{\frac{\sigma}{\sqrt n}}\longrightarrow\;\mathcal{N}(0,1)\;
+,n\longrightarrow \infty.\]</span></p>
+<p>Ou seja, quando <em>n</em> tender para o infinito, a distribuição da
+média amostral ela vai tender a uma distribuição normal, onde a
+esperança dessa média amostral é igual à média populacional.</p>
+<p><span class="math display">\[c.q.d\]</span></p>
 </div>
 </div>
 </div>
