@@ -223,6 +223,9 @@ Ou seja, quando _n_ tender para o infinito, a distribuição da média amostral 
 
 $$c.q.d$$
 
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_35.jpg)
+
+
 
 
 
