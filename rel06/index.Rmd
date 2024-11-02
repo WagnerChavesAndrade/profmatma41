@@ -94,7 +94,52 @@ O estimador $\hat{p}\;=\;\frac{X}{n}$ no dá uma estimativa para a proporção $
 
 
 ## Métodos para obtenção de Estimadores Pontuais.
-### Método dos Momentos
+
+A estimativa pontual é uma técnica estatística usada para obter um valor específico como uma aproximação de um parâmetro desconhecido da população, como média, variância, proporção, entre outros. Há vários métodos clássicos para encontrar estimadores pontuais de parâmetros, e os mais comuns incluem:
+
+### Método dos Momentos.
+
+Esse método utiliza os momentos da amostra para construir um estimador para o parâmetro da população. Ele se baseia na igualdade entre os momentos da amostra e os momentos teóricos da distribuição.
+
+** Definição: Momentos Amostrais**
+
+Seja uma amostra aleatória $X_1, X_2, . . . , X_n$ com $fdp$ ou $fp f_X(x; θ)$, com $θ = [θ_1, θ_2, . . . , θ_k]'∈ Θ$ em que $Θ$ é o espaço paramétrico. O k-ésimo momento amostral, denotado por $M_k$, é definido por
+
+$$M_k\;=\;\frac{1}{n}\sum _{i=1}^n\;X_{i}^k ,$$
+
+e o k_ésimo momento amostral em torno da média amostral $\bar{X}$, denotado por $M_{k}'$ é definino por
+
+$$M'_k\;=\;\frac{1}{n}\sum _{i=1}^n\;(X-\bar{X)}^k.$$
+
+**Definição: Momentos Populacionais**
+
+Seja uma amostra aleatória $X_1, X_2, . . . , X_n$ com $fdp$ ou $fp f_X (x; θ)$, com $θ = [θ_1, θ_2, . . . , θ_k] ∈ Θ$ em que $Θ$ é o espaço paramétrico. O k-ésimo momento populacional, denotado por $µ_k$ , é
+definido por
+
+$$\mu_k\;=\;E[X^k],$$
+
+e o k_ésimo momento populacional em torno da média populacional $\mu\;=\;E[X]$, denotado por $\mu'_k,$ é definido por
+
+$$\mu'_k\;=\;E[(X-\mu)^k].$$
+
+Geralmente $µ_k$ ou $µ$ é uma função conhecida e função dos k parâmetros $θ_1, θ_2, . . . , θ_k$
+. Portanto,
+poderíamos reescrever $µ_k = µ_k(θ_1, θ_2, . . . , θ_k)$ e $µ'_k = µ_k(θ_1, θ_2, . . . , θ_k).$
+
+
+O método consiste em igualam-se os momentos amostrais aos momentos teóricos e resolvem-se as equações para obter os estimadores, isto é,
+
+$$M_j = µ_j(\hat{θ_1},\hat{θ_2}, . . . ,\hat{θ_k}
+),\; para \;j = 1, 2, . . . , k,$$ ou
+
+
+$$M'_j = µ'_j(\hat{θ_1},\hat{θ_2}, . . .,\hat{θ_k}),\; para\; j = 1, 2, . . . , k, $$
+
+e obter a solução para as k equações. Diremos que $\hat{θ_1},\hat{θ_2}, . . .,\hat{θ_k}$ são os estimadores (EMM) de $θ_1, θ_2, . . . , θ_k$ pelo método dos momentos.
+
+
+
+
 ### Método da Máxima Verrossimilhança
 ### Método dos Mínimos Quadrados
 
