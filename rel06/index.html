@@ -347,20 +347,123 @@ display: none;
 <div id="TOC">
 <h2 id="toc-title">Sumário</h2>
 <ul>
-<li><a href="#objetivo" id="toc-objetivo"><span class="toc-section-number">1</span> Objetivo</a></li>
-<li><a href="#apresentação-do-relatório" id="toc-apresentação-do-relatório"><span class="toc-section-number">2</span> Apresentação do relatório</a></li>
+<li><a href="#introdução" id="toc-introdução"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#estimação-pontual." id="toc-estimação-pontual."><span class="toc-section-number">2</span> Estimação Pontual.</a>
+<ul>
+<li><a href="#métodos-para-obtenção-de-estimadores-pontuais." id="toc-métodos-para-obtenção-de-estimadores-pontuais."><span class="toc-section-number">2.1</span> Métodos para obtenção de
+Estimadores Pontuais.</a>
+<ul>
+<li><a href="#método-dos-momentos" id="toc-método-dos-momentos"><span class="toc-section-number">2.1.1</span> Método dos Momentos</a></li>
+<li><a href="#método-da-máxima-verrossimilhança" id="toc-método-da-máxima-verrossimilhança"><span class="toc-section-number">2.1.2</span> Método da Máxima
+Verrossimilhança</a></li>
+<li><a href="#método-dos-mínimos-quadrados" id="toc-método-dos-mínimos-quadrados"><span class="toc-section-number">2.1.3</span> Método dos Mínimos
+Quadrados</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 
 <hr />
-<div id="objetivo" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Objetivo</h1>
-<p>Descrever o objetivo do relatório!</p>
+<div id="introdução" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>Uma das realidades da amostragem aleatória é que, quando se extraem
+repetidas amostras da mesma população, há tendência da estatística
+amostral variar de uma amostra para outra, e também em realação ao
+verdadeiro valor do parâmetro, simplesmente em razão de fatores casuais
+relacionados com amostragem.</p>
+<p>Essa tendência é conhecida como variabilidade amostal. Assim quando
+fazemos inferências sobre uma população devemos considerar a
+variabilidade amostral.</p>
+<p>Sempre que faz uma estimação de uma variável aleatória, existe uma
+probabilidade de se errar essa estimação quando comparamos o valor
+estimado com o valor que realmente foi observado.</p>
+<p>O uso da amostra nos permite inferir os parâmetros da população a
+partir dos parâmetros da amostra através das chamadas Estimação Pontual
+e Estimação Intervalar.</p>
 </div>
-<div id="apresentação-do-relatório" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Apresentação do
-relatório</h1>
-<p>Aqui será o local para apresentar o material sobre o relatório.</p>
+<div id="estimação-pontual." class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Estimação Pontual.</h1>
+<p>A necessidade de encontrarmos estimadores para determinados
+parâmetros se deve a diversas aplicações. Por exemplo, os estimadores
+apresentados até agora, nos informam um ponto amostral (estimador) que
+representará um ponto populacional (parâmetro). A este, denominamos de
+estimador pontual.</p>
+<p><strong>Definição:</strong></p>
+<p>Qualquer estatística cujos valores são usados para estimar τ(θ), em
+que τ(.) é alguma função do parâmetro θ, é definida ser um estimador
+pontual de τ(θ).</p>
+<p>Um estimador é sempre uma estatística que é uma função de uma amostra
+aleatória e que portanto, também é uma variável aleatória. Porém, uma
+estatística nem sempre é um estimador para um parâmetro de interesse.
+Usaremos como notação <span class="math inline">\(\hat{θ}\)</span> para
+representar um estimador de θ, ou mais geral, <span class="math inline">\((\hat{θ}_1,\hat{θ}_2, . . . ,\hat{θ}_k)\)</span> é
+um vetor de estimadores de <span class="math inline">\((θ_1, θ_2, . . .
+, θ_k)\)</span>. Diremos também que o valor do estimador é chamado de
+estimativa pontual.</p>
+<p><strong>Exemplo 1:</strong></p>
+<p>Considere o tempo de vida útil de uma certa bateria automotiva de uma
+determinada marca, do qual retirou-se uma amostra de três baterias,
+cujos valores foram: <span class="math inline">\(X_1 = 1\)</span> ano,
+<span class="math inline">\(X_2 = 1\)</span>, 6 anos e <span class="math inline">\(X_3 = 1\)</span>, 4 anos. Então, em busca de saber
+a média (µ) do tempo de vida útil da bateria dessa marca, é intuitivo
+pensar na média amostral <span class="math inline">\(\bar{X} = 1,
+33\)</span> anos como um valor plausível para representar o parâmetro µ
+desconhecido, com base nas informações disponíveis na amostra. Assim, o
+estimador para µ é <span class="math inline">\(\bar{X} = 1, 33\)</span>
+anos é sua estimativa.</p>
+<p><strong>Exemplo 2:</strong></p>
+<p>Suponhamos que uma fábrica de lâmpadas produza um certo tipo de
+lâmpada, e queremos estimar a proporção <span class="math inline">\(p\)</span> de lâmpadas defeituosas.Vamos realizar
+um teste onde retiramos uma amostra de <span class="math inline">\(e\)</span> lâmpadas da produção e contamos o
+número de lâmpadas defeituosas.</p>
+<p>Denotemos:</p>
+<ul>
+<li><p><span class="math inline">\(X\)</span> como o número de lâmpadas
+defeituosas na amostra de tamanho <span class="math inline">\(n\)</span>.</p></li>
+<li><p><span class="math inline">\(X\)</span> segue uma distribuição
+binomial: <span class="math inline">\(X\sim (n,p)\)</span>, onde <span class="math inline">\(p\)</span> é a proporção real de lâmpadas
+defeituosas que queremos estimar.</p></li>
+</ul>
+<p>Um estimador comum para a proporção <span class="math inline">\(p\)</span> é uma <strong>proporção amostral de
+defeitos</strong>. Chamaremos este estimador de <span class="math inline">\(\hat{p}\)</span>, onde</p>
+<p><span class="math display">\[\hat{p}\;=\;\frac{X}{n}\]</span></p>
+<p><strong>Propriedades do estimador:</strong></p>
+<ul>
+<li><strong>Esperança:</strong> A esperança de <span class="math inline">\(\hat{p}\)</span> é igual a <span class="math inline">\(np\)</span>, ou seja, <span class="math inline">\(\hat{p}\)</span> é um estimador não viciado de
+<span class="math inline">\(p\)</span>.</li>
+</ul>
+<p><span class="math display">\[E(\hat{p})\;=\;E\,\left(\frac{X}{n}\right)\;=\;\frac{E
+(X)}{n}\;=\;\frac{np}{n}\;=\;p.\]</span></p>
+<ul>
+<li><strong>Variância:</strong> A variância de <span class="math inline">\(\hat{p}\)</span> é dado por:</li>
+</ul>
+<p><span class="math display">\[Var(\hat{p})\;=\;\frac{Var(X)}{n^2}\;=\;\frac{np(1-p)}{n^2}\;=\;\frac{p(1-p)}{n}.\]</span></p>
+<p>A variação diminui conforme <span class="math inline">\(n\)</span>
+aumenta, o que significa que o estimador se torna mais preciso com uma
+amostra maior.</p>
+<p><strong>Interpretação:</strong></p>
+<p>O estimador <span class="math inline">\(\hat{p}\;=\;\frac{X}{n}\)</span> no dá uma
+estimativa para a proporção <span class="math inline">\(p\)</span> de
+lâmpadas defeituosas na população. Com uma amostra grande, podemos
+confiar que <span class="math inline">\(\hat{p}\)</span> estará próximo
+de <span class="math inline">\(p\)</span>, especialmente considerando as
+propriedades de não viesamento e variância decrescente do estimador.</p>
+<div id="métodos-para-obtenção-de-estimadores-pontuais." class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Métodos para obtenção
+de Estimadores Pontuais.</h2>
+<div id="método-dos-momentos" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Método dos
+Momentos</h3>
+</div>
+<div id="método-da-máxima-verrossimilhança" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Método da Máxima
+Verrossimilhança</h3>
+</div>
+<div id="método-dos-mínimos-quadrados" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Método dos Mínimos
+Quadrados</h3>
+</div>
+</div>
 </div>
 
 

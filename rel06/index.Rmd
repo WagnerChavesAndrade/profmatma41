@@ -28,11 +28,75 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 --- 
 
-# Objetivo
+# Introdução
+Uma das realidades da amostragem aleatória é que, quando se extraem repetidas amostras da mesma população, há tendência da estatística amostral variar de uma amostra para outra, e também em realação ao verdadeiro valor do parâmetro, simplesmente em razão de fatores casuais relacionados com amostragem.
 
-Descrever o objetivo do relatório!
+Essa tendência é conhecida como variabilidade amostal. Assim quando fazemos inferências sobre uma população devemos considerar a variabilidade amostral.
 
-# Apresentação do relatório
+Sempre que faz uma estimação de uma variável aleatória, existe uma probabilidade de se errar essa estimação quando comparamos o valor estimado com o valor que realmente foi observado.
 
-Aqui será o local para apresentar o material sobre o relatório.
+O uso da amostra nos permite inferir os parâmetros da população a partir dos parâmetros da amostra através das chamadas Estimação Pontual e Estimação Intervalar.
+
+# Estimação Pontual.
+A necessidade de encontrarmos estimadores para determinados parâmetros se deve a diversas aplicações. Por exemplo, os estimadores apresentados até agora, nos informam um ponto amostral (estimador) que representará um ponto populacional (parâmetro). A este, denominamos de estimador
+pontual.
+
+**Definição:**
+
+Qualquer estatística cujos valores são usados para estimar τ(θ), em que τ(.) é alguma função
+do parâmetro θ, é definida ser um estimador pontual de τ(θ).
+
+Um estimador é sempre uma estatística que é uma função de uma amostra aleatória e que portanto, também é uma variável aleatória. Porém, uma estatística nem sempre é um estimador para
+um parâmetro de interesse. Usaremos como notação $\hat{θ}$ para representar um estimador de θ, ou mais
+geral, $(\hat{θ}_1,\hat{θ}_2, . . . ,\hat{θ}_k)$ é um vetor de estimadores de $(θ_1, θ_2, . . . , θ_k)$. Diremos também que o valor do estimador é chamado de estimativa pontual.
+
+
+
+**Exemplo 1:**
+
+Considere o tempo de vida útil de uma certa bateria automotiva de uma determinada marca, do
+qual retirou-se uma amostra de três baterias, cujos valores foram: $X_1 = 1$ ano, $X_2 = 1$, 6 anos e
+$X_3 = 1$, 4 anos. Então, em busca de saber a média (µ) do tempo de vida útil da bateria dessa marca,
+é intuitivo pensar na média amostral $\bar{X} = 1, 33$ anos como um valor plausível para representar o
+parâmetro µ desconhecido, com base nas informações disponíveis na amostra. Assim, o estimador
+para µ é $\bar{X} = 1, 33$ anos é sua estimativa.
+
+**Exemplo 2:**
+
+Suponhamos que uma fábrica de lâmpadas produza um certo tipo de lâmpada, e queremos estimar a proporção $p$ de lâmpadas defeituosas.Vamos realizar um teste onde retiramos uma amostra de $e$ lâmpadas da produção e contamos o número de lâmpadas defeituosas.
+
+Denotemos:
+
+* $X$ como o número de lâmpadas defeituosas na amostra de tamanho $n$.
+
+* $X$ segue uma distribuição binomial: $X\sim (n,p)$, onde $p$ é a proporção real de lâmpadas defeituosas que queremos estimar.
+
+Um estimador comum para a proporção $p$ é uma **proporção amostral de defeitos**. Chamaremos este estimador de $\hat{p}$, onde
+
+$$\hat{p}\;=\;\frac{X}{n}$$
+
+**Propriedades do estimador:**
+
+* **Esperança:** A esperança de $\hat{p}$ é igual a $np$, ou seja, $\hat{p}$ é um estimador não viciado de $p$.
+
+$$E(\hat{p})\;=\;E\,\left(\frac{X}{n}\right)\;=\;\frac{E (X)}{n}\;=\;\frac{np}{n}\;=\;p.$$
+
+
+* **Variância:** A variância de $\hat{p}$ é dado por:
+
+$$Var(\hat{p})\;=\;\frac{Var(X)}{n^2}\;=\;\frac{np(1-p)}{n^2}\;=\;\frac{p(1-p)}{n}.$$
+
+A variação diminui conforme $n$ aumenta, o que significa que o estimador se torna mais preciso com uma amostra maior.
+
+**Interpretação:**
+
+O estimador $\hat{p}\;=\;\frac{X}{n}$ no dá uma estimativa para a proporção $p$ de lâmpadas defeituosas na população. Com uma amostra grande, podemos confiar que $\hat{p}$ estará próximo de $p$, especialmente considerando as propriedades de não viesamento e variância decrescente do estimador.
+
+
+## Métodos para obtenção de Estimadores Pontuais.
+### Método dos Momentos
+### Método da Máxima Verrossimilhança
+### Método dos Mínimos Quadrados
+
+
 
