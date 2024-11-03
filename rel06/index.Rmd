@@ -79,12 +79,11 @@ $$\hat{p}\;=\;\frac{X}{n}$$
 
 * **Esperança:** A esperança de $\hat{p}$ é igual a $np$, ou seja, $\hat{p}$ é um estimador não viciado de $p$.
 
-$$E(\hat{p})\;=\;E\,\left(\frac{X}{n}\right)\;=\;\frac{E (X)}{n}\;=\;\frac{np}{n}\;=\;p.$$
 
 
 * **Variância:** A variância de $\hat{p}$ é dado por:
 
-$$Var(\hat{p})\;=\;\frac{Var(X)}{n^2}\;=\;\frac{np(1-p)}{n^2}\;=\;\frac{p(1-p)}{n}.$$
+
 
 A variação diminui conforme $n$ aumenta, o que significa que o estimador se torna mais preciso com uma amostra maior.
 
@@ -105,18 +104,16 @@ Esse método utiliza os momentos da amostra para construir um estimador para o p
 
 Seja uma amostra aleatória $X_1, X_2, . . . , X_n$ com $fdp$ ou $fp f_X(x; θ)$, com $θ = [θ_1, θ_2, . . . , θ_k]'∈ Θ$ em que $Θ$ é o espaço paramétrico. O k-ésimo momento amostral, denotado por $M_k$, é definido por
 
-$$M_k\;=\;\frac{1}{n}\sum _{i=1}^n\;X_{i}^k ,$$
+
 
 e o k_ésimo momento amostral em torno da média amostral $\bar{X}$, denotado por $M_{k}'$ é definino por
 
-$$M'_k\;=\;\frac{1}{n}\sum _{i=1}^n\;(X-\bar{X)}^k.$$
+
 
 **Definição: Momentos Populacionais**
 
-Seja uma amostra aleatória $X_1, X_2, . . . , X_n$ com $fdp$ ou $fp f_X (x; θ)$, com $θ = [θ_1, θ_2, . . . , θ_k] ∈ Θ$ em que $Θ$ é o espaço paramétrico. O k-ésimo momento populacional, denotado por $µ_k$ , é
-definido por
 
-$$\mu_k\;=\;E[X^k],$$
+
 
 e o k_ésimo momento populacional em torno da média populacional $\mu\;=\;E[X]$, denotado por $\mu'_k,$ é definido por
 
