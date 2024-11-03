@@ -120,7 +120,7 @@ $$\mu_k\;=\;E[X^k],$$
 
 e o k_ésimo momento populacional em torno da média populacional $\mu\;=\;E[X]$, denotado por $\mu'_k,$ é definido por
 
-$$\mu'_k\;=\;E[(X-\mu)^k].$$
+
 
 
 
