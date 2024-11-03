@@ -130,9 +130,6 @@ poderíamos reescrever $µ_k = µ_k(θ_1, θ_2, . . . , θ_k)$ e $µ'_k = µ_k(�
 O método consiste em igualam-se os momentos amostrais aos momentos teóricos e resolvem-se as equações para obter os estimadores, isto é,
 
 
-e obter a solução para as k equações. Diremos que $\hat{θ_1},\hat{θ_2}, . . .,\hat{θ_k}$ são os estimadores (EMM) de $θ_1, θ_2, . . . , θ_k$ pelo método dos momentos.
-
-
 **Exemplo 01: Distribuição Exponencial**
 
 A distribuição exponencial com parâmetro $\lambda$ tem a função de densidade:
