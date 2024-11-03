@@ -122,12 +122,7 @@ e o k_ésimo momento populacional em torno da média populacional $\mu\;=\;E[X]$
 
 $$\mu'_k\;=\;E[(X-\mu)^k].$$
 
-Geralmente $µ_k$ ou $µ$ é uma função conhecida e função dos k parâmetros $θ_1, θ_2, . . . , θ_k$
-. Portanto,
-poderíamos reescrever $µ_k = µ_k(θ_1, θ_2, . . . , θ_k)$ e $µ'_k = µ_k(θ_1, θ_2, . . . , θ_k).$
 
-
-O método consiste em igualam-se os momentos amostrais aos momentos teóricos e resolvem-se as equações para obter os estimadores, isto é,
 
 
 **Exemplo 01: Distribuição Exponencial**
@@ -178,7 +173,7 @@ $$\frac{1}{n}\sum _{i=1}^n\;X^2_{i}\;=\;\mu^2\;+\;\sigma^2$$
 Substituindo $\mu\;=\;\bar X$ , temos:
 
 $$\sigma^2\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar X^2$$
-
+git
 Assim, o estimador para $\sigma^2$, é
 
 $$\hat{\sigma}\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar X^2$$
