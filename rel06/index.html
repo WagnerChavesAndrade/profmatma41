@@ -496,6 +496,44 @@ teóricos e resolvem-se as equações para obter os estimadores, isto
 <p>e obter a solução para as k equações. Diremos que <span class="math inline">\(\hat{θ_1},\hat{θ_2}, . . .,\hat{θ_k}\)</span> são
 os estimadores (EMM) de <span class="math inline">\(θ_1, θ_2, . . . ,
 θ_k\)</span> pelo método dos momentos.</p>
+<p><strong>Exemplo 01: Distribuição Exponencial</strong></p>
+<p>A distribuição exponencial com parâmetro <span class="math inline">\(\lambda\)</span> tem a função de densidade:</p>
+<p><span class="math display">\[f(x;\lambda)\;=\;\lambda\,e^{-\lambda\,x},com\;x\geq\;0\]</span></p>
+<p>Para a distribuição exponencial, o primeiro momento populacional (ou
+médio) é:</p>
+<p><span class="math display">\[E[X]\;=\;\frac{1}{\lambda}\]</span></p>
+<p><strong>Igualando ao momento amostral</strong></p>
+<p><span class="math display">\[ \bar{X}\;=\;\frac{1}{n}\sum
+_{i=1}^n\;X_{i} \]</span> Seja <span class="math inline">\(\bar{X}\)</span> o momento amostral de ordem 1.
+Então, pelo método dos momentos, temos</p>
+<p><span class="math display">\[\bar{X}\;=\;\frac{1}{\lambda}\;\;e\;\;\hat\lambda\;=\;\frac{1}{\bar
+X}.\]</span></p>
+<p><strong>Exemplo 02: Distribuição Normal</strong></p>
+<p>A distribuição normal com média <span class="math inline">\(\mu\)</span> e variação <span class="math inline">\(\sigma^2\)</span> tem função de densidade:</p>
+<p><span class="math display">\[f(x;\mu,\;\sigma^2)\;=\;\frac{1}{\sqrt{2\pi\sigma^2}}e^{{-}\frac{(x-\mu)^2}{2\sigma^2}}\]</span></p>
+<p><strong>Encontrando os momentos populacionais</strong></p>
+<p>O primeiro momento populacional é <span class="math inline">\(E[X]\;=\;\mu\)</span></p>
+<p>O segundo momento populacional é <span class="math inline">\(E[X^2]\;=\;\mu^2\;+\;\sigma^2.\)</span></p>
+<p><strong>Igualando os momentos amostrais</strong></p>
+<p>O primeiro momento amostral(média amostral) é: <span class="math inline">\(\bar{X}\;=\;\frac{1}{n}\sum
+_{i=1}^n\;X_{i}\)</span></p>
+<p>O segundo momento amostral é <span class="math inline">\(\bar{X}\;=\;\frac{1}{n}\sum
+_{i=1}^n\;X^2_{i}\)</span></p>
+<p>Pelo método dos momentos, igualamos os momentos amostrais aos
+populacionais:</p>
+<p>Para o primeiro momento:</p>
+<p><span class="math display">\[\bar{X}\;=\;\mu\;\Rightarrow\;\hat{\mu}\;=\;\bar
+X\]</span></p>
+<p>Para o segundo momento:</p>
+<p><span class="math display">\[\frac{1}{n}\sum
+_{i=1}^n\;X^2_{i}\;=\;\mu^2\;+\;\sigma^2\]</span></p>
+<p>Substituindo <span class="math inline">\(\mu\;=\;\bar X\)</span> ,
+temos:</p>
+<p><span class="math display">\[\sigma^2\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar
+X^2\]</span></p>
+<p>Assim, o estimador para <span class="math inline">\(\sigma^2\)</span>, é</p>
+<p><span class="math display">\[\hat{\sigma}\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar
+X^2\]</span></p>
 </div>
 <div id="método-da-máxima-verrossimilhança" class="section level3" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Método da Máxima
