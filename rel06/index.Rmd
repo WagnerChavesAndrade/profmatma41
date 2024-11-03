@@ -133,7 +133,6 @@ $$M_j = µ_j(\hat{θ_1},\hat{θ_2}, . . . ,\hat{θ_k}
 ),\; para \;j = 1, 2, . . . , k,$$ ou
 
 
-$$M'_j = µ'_j(\hat{θ_1},\hat{θ_2}, . . .,\hat{θ_k}),\; para\; j = 1, 2, . . . , k, $$
 
 e obter a solução para as k equações. Diremos que $\hat{θ_1},\hat{θ_2}, . . .,\hat{θ_k}$ são os estimadores (EMM) de $θ_1, θ_2, . . . , θ_k$ pelo método dos momentos.
 
@@ -192,9 +191,9 @@ Assim, o estimador para $\sigma^2$, é
 $$\hat{\sigma}\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar X^2$$
 
 
-
-
 ### Método da Máxima Verrossimilhança
+
+
 ### Método dos Mínimos Quadrados
 
 
