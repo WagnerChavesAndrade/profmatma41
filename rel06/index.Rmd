@@ -1,6 +1,6 @@
 ---
 title: "Relatório 06"
-author: "Ben Dêivide"
+author: "Wagner Chaves Andrade"
 date: "07/02/2024"
 header-includes:
   - \usepackage{titling}
@@ -126,6 +126,19 @@ $$ \bar{X}\;=\;\frac{1}{n}\sum _{i=1}^n\;X_{i} $$
 Seja $\bar{X}$ o momento amostral de ordem 1. Então, pelo método dos momentos, temos
 
 $$\bar{X}\;=\;\frac{1}{\lambda}\;\;e\;\;\hat\lambda\;=\;\frac{1}{\bar X}.$$
+
+**Exemplo 02: Distribuição Normal**
+
+A distribuição normal com média $\mu$ e variação $\sigma^2$ tem função de densidade:
+
+$$f(x;\mu,\;\sigma^2)\;=\;\frac{1}{\sqrt{2\pi\sigma^2}}e^{{-}\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+**Encontrando os momentos populacionais**
+
+O primeiro momento populacional é $E[X]\;=\;\mu$
+
+O segundo momento populacional é $E[X^2]\;=\;\mu^2\;+\;\sigma^2.$
+
 
 
 **Definição: Momentos Populacionais**
