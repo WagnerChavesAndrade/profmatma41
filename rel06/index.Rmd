@@ -104,10 +104,11 @@ Esse método utiliza os momentos da amostra para construir um estimador para o p
 
 Seja uma amostra aleatória $X_1, X_2, . . . , X_n$ com $fdp$ ou $fp f_X(x; θ)$, com $θ = [θ_1, θ_2, . . . , θ_k]'∈ Θ$ em que $Θ$ é o espaço paramétrico. O k-ésimo momento amostral, denotado por $M_k$, é definido por
 
-
+$$M_k= \frac{1}{n}\;\sum_{i=1}^n\;X_i^k$$
 
 e o k_ésimo momento amostral em torno da média amostral $\bar{X}$, denotado por $M_{k}'$ é definino por
 
+$$M_k'\;= \frac{1}{n}\;\sum_{i=1}^n\;(X-\bar X)^k.$$
 
 
 **Definição: Momentos Populacionais**
