@@ -100,7 +100,7 @@ A estimativa pontual é uma técnica estatística usada para obter um valor espe
 
 Esse método utiliza os momentos da amostra para construir um estimador para o parâmetro da população. Ele se baseia na igualdade entre os momentos da amostra e os momentos teóricos da distribuição.
 
-** Definição: Momentos Amostrais**
+**Definição: Momentos Amostrais**
 
 Seja uma amostra aleatória $X_1, X_2, . . . , X_n$ com $fdp$ ou $fp f_X(x; θ)$, com $θ = [θ_1, θ_2, . . . , θ_k]'∈ Θ$ em que $Θ$ é o espaço paramétrico. O k-ésimo momento amostral, denotado por $M_k$, é definido por
 
