@@ -110,6 +110,23 @@ e o k_ésimo momento amostral em torno da média amostral $\bar{X}$, denotado po
 
 $$M_k'\;= \frac{1}{n}\;\sum_{i=1}^n\;(X-\bar X)^k.$$
 
+**Exemplo 01: Distribuição Exponencial**
+
+A distribuição exponencial com parâmetro $\lambda$ tem a função de densidade:
+
+$$f(x;\lambda)\;=\;\lambda\,e^{-\lambda\,x},com\;x\geq\;0$$
+
+Para a distribuição exponencial, o primeiro momento populacional (ou médio) é:
+
+$$E[X]\;=\;\frac{1}{\lambda}$$
+
+**Igualando ao momento amostral**
+
+$$ \bar{X}\;=\;\frac{1}{n}\sum _{i=1}^n\;X_{i} $$
+Seja $\bar{X}$ o momento amostral de ordem 1. Então, pelo método dos momentos, temos
+
+$$\bar{X}\;=\;\frac{1}{\lambda}\;\;e\;\;\hat\lambda\;=\;\frac{1}{\bar X}.$$
+
 
 **Definição: Momentos Populacionais**
 
