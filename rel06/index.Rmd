@@ -133,6 +133,29 @@ A distribuição normal com média $\mu$ e variação $\sigma^2$ tem função de
 
 
 $$f(x;\mu,\sigma^2)=\frac{1}{\sqrt{2\pi\sigma^2\;}}e^\frac{-(x-\mu)^2}{2\sigma^2}$$
+**Igualando os momentos amostrais**
+
+O primeiro momento amostral(média amostral) é: $\bar{X}\;=\;\frac{1}{n}\sum _{i=1}^n\;X_{i}$
+
+O segundo momento amostral é $\bar{X}\;=\;\frac{1}{n}\sum _{i=1}^n\;X^2_{i}$
+
+Pelo método dos momentos, igualamos os momentos amostrais aos populacionais:
+
+Para o primeiro momento: 
+
+
+$$\bar{X}\;=\;\mu\;\Rightarrow\;\hat{\mu}\;=\;\bar X$$
+
+Para o segundo momento:
+
+$$\frac{1}{n}\sum _{i=1}^n\;X^2_{i}\;=\;\mu^2\;+\;\sigma^2$$
+
+Substituindo $\mu\;=\;\bar X$ , temos:
+
+$$\sigma^2\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar X^2$$
+
+Assim, o estimador para $\sigma^2$, é
+
 
 
 **Encontrando os momentos populacionais**
