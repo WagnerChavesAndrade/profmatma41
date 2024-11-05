@@ -189,7 +189,29 @@ $$ln\; L(\theta)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).$$
 **Exemplo 01:** Distribuição Normal
 
 
-Suponha que temos uma amostra $ X=\;\{X_1,X_2,...,X_n \}$ de uma distribuição normal $n$
+Suponha que temos uma amostra $ X=\;\{X_1,X_2,...,X_n \}$ de uma distribuição normal $X_i\;\sim (\mu , \sigma^2)$ com variância $\sigma^2$ conhecida.
+
+**Função densidade:** A densidade para cada observação é
 
 
+$$f(x;\mu,)=\frac{1}{\sqrt{2\pi\sigma^2\;}}e^\frac{-(x-\mu)^2}{2\sigma^2}$$
+**Função de verossimilhança:** 
 
+$$ln\; L(\mu)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).$$
+
+**Log - verossimilhança:**
+
+$$ln\; L(\mu)\;=-\;\frac{n}{2}\;ln(2\pi\sigma^2)-\frac{1}{2\sigma^2}\sum_{i=1}^n\;(X_i-\mu)^2.$$
+
+**Maximizando a Log-Verossimilhança:**  Derivamos em relação a $\mu$μ e igualamos a zero:
+
+$$\frac{d}{d\mu}\;ln\;L(\mu)\;=\;\frac{1}{\sigma^2}\sum_{i=1}^n\;(X_i-\mu)\;=\;0.$$
+
+Solucionando, obtemos:
+
+$$\hat{\mu}\;=\;\frac{1}{n}\sum_{i=1}^nX_i\;,$$
+
+que é a média amostral $\bar {X}$, nosso estimador de $\mu$ por máxima verossimilhança.
+
+
+**Exemplo 02:** Distribuição 

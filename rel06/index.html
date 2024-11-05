@@ -529,7 +529,27 @@ para encontrar o valor de <span class="math inline">\(\theta\)</span>
 que maximiza a função de verossimilhança.</p>
 <p><strong>Exemplo 01:</strong> Distribuição Normal</p>
 <p>Suponha que temos uma amostra $ X=;{X_1,X_2,…,X_n }$ de uma
-distribuição normal <span class="math inline">\(n\)</span></p>
+distribuição normal <span class="math inline">\(X_i\;\sim (\mu ,
+\sigma^2)\)</span> com variância <span class="math inline">\(\sigma^2\)</span> conhecida.</p>
+<p><strong>Função densidade:</strong> A densidade para cada observação
+é</p>
+<p><span class="math display">\[f(x;\mu,)=\frac{1}{\sqrt{2\pi\sigma^2\;}}e^\frac{-(x-\mu)^2}{2\sigma^2}\]</span>
+<strong>Função de verossimilhança:</strong></p>
+<p><span class="math display">\[ln\;
+L(\mu)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).\]</span></p>
+<p><strong>Log - verossimilhança:</strong></p>
+<p><span class="math display">\[ln\;
+L(\mu)\;=-\;\frac{n}{2}\;ln(2\pi\sigma^2)-\frac{1}{2\sigma^2}\sum_{i=1}^n\;(X_i-\mu)^2.\]</span></p>
+<p><strong>Maximizando a Log-Verossimilhança:</strong> Derivamos em
+relação a <span class="math inline">\(\mu\)</span>μ e igualamos a
+zero:</p>
+<p><span class="math display">\[\frac{d}{d\mu}\;ln\;L(\mu)\;=\;\frac{1}{\sigma^2}\sum_{i=1}^n\;(X_i-\mu)\;=\;0.\]</span></p>
+<p>Solucionando, obtemos:</p>
+<p><span class="math display">\[\hat{\mu}\;=\;\frac{1}{n}\sum_{i=1}^nX_i\;,\]</span></p>
+<p>que é a média amostral <span class="math inline">\(\bar {X}\)</span>,
+nosso estimador de <span class="math inline">\(\mu\)</span> por máxima
+verossimilhança.</p>
+<p><strong>Exemplo 02:</strong> Distribuição</p>
 </div>
 </div>
 </div>
