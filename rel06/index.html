@@ -354,6 +354,8 @@ display: none;
 Estimadores Pontuais.</a>
 <ul>
 <li><a href="#método-dos-momentos." id="toc-método-dos-momentos."><span class="toc-section-number">2.1.1</span> Método dos Momentos.</a></li>
+<li><a href="#método-da-máxima-verossimilhança" id="toc-método-da-máxima-verossimilhança"><span class="toc-section-number">2.1.2</span> Método da Máxima
+Verossimilhança</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -496,10 +498,33 @@ temos:</p>
 <p><span class="math display">\[\sigma^2\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar
 X^2\]</span></p>
 <p>Assim, o estimador para <span class="math inline">\(\sigma^2\)</span>, é</p>
+<p><span class="math display">\[\hat{\sigma}\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar
+X^2\]</span></p>
 <p><strong>Encontrando os momentos populacionais</strong></p>
 <p>O primeiro momento populacional é <span class="math inline">\(E[X]\;=\;\mu\)</span></p>
 <p>O segundo momento populacional é <span class="math inline">\(E[X^2]\;=\;\mu^2\;+\;\sigma^2.\)</span></p>
-<p><strong>Definição: Momentos Populacionais</strong></p>
+</div>
+<div id="método-da-máxima-verossimilhança" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Método da Máxima
+Verossimilhança</h3>
+<p>O método da máxima verossimilhança é uma técnica usada para estimar
+parâmetros de uma distribuição ao maximizar a função de verossimilhança,
+que representa a probabilidade de observar a amostra dada, considerando
+o valor do parâmetro a ser estimado.</p>
+<p><strong>Função de Verossimilhança:</strong></p>
+<p>Seja uma amostra aleatória <span class="math inline">\(X_1, X_2, ...,
+X_n\)</span> com fdp ou fp conjunta <span class="math inline">\(f_X\;(x;\theta)\)</span>, com <span class="math inline">\(\theta\; \in\;\Theta\)</span> em que <span class="math inline">\(\Theta\)</span> é o espaço paramétrico. Considere
+ainda <span class="math inline">\(x_1, x_2, ..., x_n\)</span> a
+realização da amostra aleatória <span class="math inline">\(X_1, X_2,
+..., X_n\)</span>, então a função de verossimilhança é definida por:</p>
+<p><span class="math display">\[L(\theta;x_1,x_2,...,x_n)\;=\;\prod_{i=1}^n
+f_X(x_i;\theta).\]</span></p>
+<p><strong>Log-Verossimilhança:</strong> Para simplificar os cálculos,
+aplica-se o logaritmo na função de verossimilhança
+(log-verossimilhança):</p>
+<p><span class="math display">\[ln\;
+L(\theta)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).\]</span></p>
+<p><strong>Maximizar a Log-Verossimilhança:</strong> Deriva-se <span class="math inline">\(ln\;L(\theta)\)</span> em relação a <span class="math inline">\(\theta\)</span> e resolve-se <span class="math inline">\(\frac{d}{d\theta}\)</span></p>
 </div>
 </div>
 </div>

@@ -157,6 +157,8 @@ $$\sigma^2\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar X^2$$
 Assim, o estimador para $\sigma^2$, é
 
 
+$$\hat{\sigma}\;=\;\frac{1}{n}\sum_{i=1}^n\;X_i^2\;-\;\bar X^2$$
+
 
 **Encontrando os momentos populacionais**
 
@@ -166,8 +168,19 @@ O segundo momento populacional é $E[X^2]\;=\;\mu^2\;+\;\sigma^2.$
 
 
 
-**Definição: Momentos Populacionais**
 
+### Método da Máxima Verossimilhança 
 
+O método da máxima verossimilhança é uma técnica usada para estimar parâmetros de uma distribuição ao maximizar a função de verossimilhança, que representa a probabilidade de observar a amostra dada, considerando o valor do parâmetro a ser estimado.
 
+**Função de Verossimilhança:**
 
+Seja uma amostra aleatória $X_1, X_2, ..., X_n$ com fdp ou fp conjunta $f_X\;(x;\theta)$, com $\theta\; \in\;\Theta$ em que $\Theta$ é o espaço paramétrico. Considere ainda $x_1, x_2, ..., x_n$ a realização da amostra aleatória $X_1, X_2, ..., X_n$, então a função de verossimilhança é definida por:
+
+$$L(\theta;x_1,x_2,...,x_n)\;=\;\prod_{i=1}^n f_X(x_i;\theta).$$
+
+**Log-Verossimilhança:**  Para simplificar os cálculos, aplica-se o logaritmo na função de verossimilhança (log-verossimilhança):
+
+$$ln\; L(\theta)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).$$
+
+**Maximizar a Log-Verossimilhança:** Deriva-se $ln\;L(\theta)$ em relação a $\theta$ e resolve-se $\frac{d}{d\theta}$
