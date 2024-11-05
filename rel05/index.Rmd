@@ -86,7 +86,7 @@ $Var(Z_n)\;=\;Var\left[\frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}\right]\;=\;\fr
 
 Concluímos, portanto, que $\;Z_n$ é distribuída com média zero e variância 1. 
 
-$$Z_n\;=\;\longrightarrow\;\mathcal{N}(0,1)(0,1)\; $$
+$$Z_n\;=\;\longrightarrow\;\mathcal{N}(0,1)\; $$
 Vamos, agora, encontrar o formato de $Z_n$. Vamos definir uma nova variável, $Y_i$, da seguinte forma:
 
 $Y_i\;=\;\frac{X_i-\mu}{\sigma}$. Com isso, podemos escrever $Z_n$ da seguinte forma:

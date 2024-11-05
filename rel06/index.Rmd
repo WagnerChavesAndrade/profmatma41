@@ -183,4 +183,13 @@ $$L(\theta;x_1,x_2,...,x_n)\;=\;\prod_{i=1}^n f_X(x_i;\theta).$$
 
 $$ln\; L(\theta)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).$$
 
-**Maximizar a Log-Verossimilhança:** Deriva-se $ln\;L(\theta)$ em relação a $\theta$ e resolve-se $\frac{d}{d\theta}$
+**Maximizar a Log-Verossimilhança:** Deriva-se $ln\;L(\theta)$ em relação a $\theta$ e resolve-se $\frac{d}{d\theta}\;ln\;L(\theta)\;=\;0$ para encontrar o valor de $\theta$ que maximiza a função de verossimilhança.
+
+
+**Exemplo 01:** Distribuição Normal
+
+
+Suponha que temos uma amostra $ X=\;\{X_1,X_2,...,X_n \}$ de uma distribuição normal $n$
+
+
+
