@@ -255,6 +255,40 @@ onde $\bar X\;=\;\frac{1}{n}\sum_{i=1}^n\,X_i$ é a média amostral.
 Consiste em um estimador que minimiza a soma dos quadrados dos resíduos da regressão, de forma a maximizar o grau de ajuste do modelo aos dados observados. Um requisito para o método dos mínimos quadrados é que o fator imprevisível (erro) seja distribuído aleatoriamente e essa distribuição seja normal.
 
 
+**Definição**
+
+Dado um conjunto de dados $(x_i,y_i)$, com $i = 1, 2, ...,n$, queremos encontrar uma função linear da forma:
+
+$$y = \beta_0\;+\;\beta_1x$$
+
+onde:
+
+* $\beta_0$ é o intercepto da reta,
+
+* $\beta_1$ é o coeficiente angular (ou inclinação) da reta.
+
+O objetivo é minimizar a soma dos quadrados dos resíduos, dada por:
+
+$$S\;=\;\sum_{i=1}^n\,(y_i-\hat y_i)^2\;=\;\sum_{i=1}^n\,(y_i\,-\,(\beta_0\;+\;\beta_1\,x_i))^2$$
+**Derivando os Estimadores para $\beta_0$ e $\beta_1$**
+
+
+Para obter os valores que minimizam essa soma de quadrados, calculamos as derivadas parciais de $S$ em relação a $\beta_0$ e $\beta_1$ e as igualamos a zero, resultando no sistema de equações normais.
+
+
+
+
+$$
+\left\{
+\begin{array}{rcl}
+\dfrac{\partial S}{\partial \beta_0}&=&0\\
+\dfrac{\partial S}{\partial \beta_1}&=&0\\
+\end{array}
+\right.
+$$
+
+Resolvendo essas equações, encontramos:
+
 
 
 
