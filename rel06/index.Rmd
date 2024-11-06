@@ -225,7 +225,7 @@ onde $\lambda\;\geq\;0$ é o parâmetro da taxa, o qual queremos estimar.
 
 **Definindo a função de Verossimilhança:**
 
-Suponha que temos uma amostra $X\;=\;\{X_1, X_2, ..., X_n\}$ de uma variável aleatória exponencial com parâmetro $\lambda$.A função de verossimilhança para $\lambda$, dado $X$,é o produto das densidades para cada observação:
+
 
 $$L(\lambda)\;=\;\prod_{i=1}^n\;\lambda\,e^{-\lambda X_i}\;=\;\lambda^n\,e^{-\lambda\sum_{i=1}^n\,X_i}.$$
 **Log - Verossimilhança:**
