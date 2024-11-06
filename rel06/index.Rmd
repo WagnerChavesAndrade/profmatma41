@@ -194,7 +194,7 @@ Suponha que temos uma amostra $ X=\;\{X_1,X_2,...,X_n \}$ de uma distribuição 
 **Função densidade:** A densidade para cada observação é
 
 
-$$f(x;\mu,)=\frac{1}{\sqrt{2\pi\sigma^2\;}}e^\frac{-(x-\mu)^2}{2\sigma^2}$$
+$$f(x;\mu)=\frac{1}{\sqrt{2\pi\sigma^2\;}}e^\frac{-(x-\mu)^2}{2\sigma^2}$$
 **Função de verossimilhança:** 
 
 $$ln\; L(\mu)\;=\;\sum_{i=1}^n\;ln\;f(X_i;\theta).$$
@@ -214,4 +214,15 @@ $$\hat{\mu}\;=\;\frac{1}{n}\sum_{i=1}^nX_i\;,$$
 que é a média amostral $\bar {X}$, nosso estimador de $\mu$ por máxima verossimilhança.
 
 
-**Exemplo 02:** Distribuição 
+**Exemplo 02:** Distribuição Exponencial
+
+Vamos estimar o parâmetro da distribuição exponencial, que possui função densidade de probabilidade dada por:
+
+$$f(x,\lambda)\;=\; \lambda\,e^{-\lambda x}\;, x\geq\;0$$
+
+onde $\lambda\;\geq\;0$ é o parâmetro da taxa, o qual queremos estimar.
+
+
+**Definindo a função de Verossimilhança:**
+
+Suponha que temos uma amostra $X\;=\;\{X_1, X_2, ..., X_n\}$ de uma variável aleatória exponencial com parâmetro
