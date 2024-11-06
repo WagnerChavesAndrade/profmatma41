@@ -356,6 +356,8 @@ Estimadores Pontuais.</a>
 <li><a href="#método-dos-momentos." id="toc-método-dos-momentos."><span class="toc-section-number">2.1.1</span> Método dos Momentos.</a></li>
 <li><a href="#método-da-máxima-verossimilhança" id="toc-método-da-máxima-verossimilhança"><span class="toc-section-number">2.1.2</span> Método da Máxima
 Verossimilhança</a></li>
+<li><a href="#método-dos-mínimos-quadrados" id="toc-método-dos-mínimos-quadrados"><span class="toc-section-number">2.1.3</span> Método dos Mínimos
+Quadrados</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -558,7 +560,37 @@ x}\;, x\geq\;0\]</span></p>
 parâmetro da taxa, o qual queremos estimar.</p>
 <p><strong>Definindo a função de Verossimilhança:</strong></p>
 <p>Suponha que temos uma amostra <span class="math inline">\(X\;=\;\{X_1, X_2, ..., X_n\}\)</span> de uma
-variável aleatória exponencial com parâmetro</p>
+variável aleatória exponencial com parâmetro <span class="math inline">\(\lambda\)</span>.A função de verossimilhança para
+<span class="math inline">\(\lambda\)</span>, dado <span class="math inline">\(X\)</span>,é o produto das densidades para cada
+observação:</p>
+<p><span class="math display">\[L(\lambda)\;=\;\prod_{i=1}^n\;\lambda\,e^{-\lambda
+X_i}\;=\;\lambda^n\,e^{-\lambda\sum_{i=1}^n\,X_i}.\]</span> <strong>Log
+- Verossimilhança:</strong></p>
+<p>Para simplificar, tomamos o logaritmo da função de
+verossimilhança:</p>
+<p><span class="math display">\[ln\,L(\lambda)\;=\;n\,ln(\lambda)-\lambda
+\sum_{i=1}^n\,X_i.\]</span></p>
+<p><strong>Maximizar a Log - Verossimilhança:</strong></p>
+<p>Derivamos a log-verossimilhança em relação a <span class="math inline">\(\lambda\)</span>e igualamos a zero para encontrar
+o valor de <span class="math inline">\(\lambda\)</span> que maximiza a
+verossimilhança:</p>
+<p><span class="math display">\[\frac{d}{d\lambda}\,ln\,L(\lambda)\;=\;\frac{n}{\lambda}-\sum_{i=1}^n\,X_i\;=\;0
+\]</span> Resolvendo para <span class="math inline">\(\lambda\)</span>,
+temos</p>
+<p><span class="math display">\[\hat
+\lambda\;=\;\frac{n}{\sum_{i=1}^n\,X_i}\;=\;\frac{1}{\bar
+X},\]</span></p>
+<p>onde <span class="math inline">\(\bar
+X\;=\;\frac{1}{n}\sum_{i=1}^n\,X_i\)</span> é a média amostral.</p>
+</div>
+<div id="método-dos-mínimos-quadrados" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Método dos Mínimos
+Quadrados</h3>
+<p>Consiste em um estimador que minimiza a soma dos quadrados dos
+resíduos da regressão, de forma a maximizar o grau de ajuste do modelo
+aos dados observados. Um requisito para o método dos mínimos quadrados é
+que o fator imprevisível (erro) seja distribuído aleatoriamente e essa
+distribuição seja normal.</p>
 </div>
 </div>
 </div>
