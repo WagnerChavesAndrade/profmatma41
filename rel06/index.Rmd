@@ -1,5 +1,5 @@
 ---
-title: "Relatório 06"
+title: "Estimadores Pontuais - Relatório 06"
 author: "Wagner Chaves Andrade"
 date: "07/11/2024"
 header-includes:
