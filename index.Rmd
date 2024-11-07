@@ -169,4 +169,4 @@ Relatórios desenvolvidos:
 - [Relatório 03 (20/09/2024)](rel03/index.html){target="_blank"}
 - [Relatório 04 (11/10/2024)](rel04/index.html){target="_blank"}
 - [Relatório 05 (18/10/2024)](rel05/index.html){target="_blank"}
-- [Relatório 06 (07/11/2024) - Em desenvolvimento](rel06/index.html){target="_blank"}
+- [Relatório 06 (07/11/2024)](rel06/index.html){target="_blank"}
