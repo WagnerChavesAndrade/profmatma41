@@ -126,6 +126,10 @@ $$ \bar{X}\;=\;\frac{1}{n}\sum _{i=1}^n\;X_{i} $$
 Seja $\bar{X}$ o momento amostral de ordem 1. Então, pelo método dos momentos, temos
 
 $$\bar{X}\;=\;\frac{1}{\lambda}\;\;e\;\;\hat\lambda\;=\;\frac{1}{\bar X}.$$
+**Exemplo no RStudio:**
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_36.jpg)
+
 
 **Exemplo 02: Distribuição Normal**
 
@@ -166,7 +170,9 @@ O primeiro momento populacional é $E[X]\;=\;\mu$
 
 O segundo momento populacional é $E[X^2]\;=\;\mu^2\;+\;\sigma^2.$
 
+**Exemplo no RStudo**
 
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_37.jpg)
 
 
 ### Método da Máxima Verossimilhança 
@@ -214,6 +220,10 @@ $$\hat{\mu}\;=\;\frac{1}{n}\sum_{i=1}^nX_i\;,$$
 que é a média amostral $\bar {X}$, nosso estimador de $\mu$ por máxima verossimilhança.
 
 
+**Exemplo no RStudio**
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_39.jpg)
+
 **Exemplo 02:** Distribuição Exponencial
 
 Vamos estimar o parâmetro da distribuição exponencial, que possui função densidade de probabilidade dada por:
@@ -248,6 +258,11 @@ Resolvendo para $\lambda$, temos
 $$\hat \lambda\;=\;\frac{n}{\sum_{i=1}^n\,X_i}\;=\;\frac{1}{\bar X},$$
 
 onde $\bar X\;=\;\frac{1}{n}\sum_{i=1}^n\,X_i$ é a média amostral.
+
+**Exemplo no RStudio**
+
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_38.jpg)
 
 
 ### Método dos Mínimos Quadrados
@@ -290,5 +305,27 @@ $$
 Resolvendo essas equações, encontramos:
 
 
+* Estimador para $\beta_1:$
+
+$$\hat\beta_1\;=\;\frac{\sum_{i=1}^n\,(x_i-\bar x)\,(y_i-\bar y)}{\sum_{i=1}^n\,(x_i-\bar x)^2}$$
+
+* Estimador para $\beta_0:$
+
+
+$$\hat \beta_0\;=\;\bar y\,-\,\hat \beta_1x$$
+
+
+Essas são as estimativas pontuais para os parâmetros $\beta_0$ e $\beta_1$do modelo de regressão linear usando o método dos mínimos quadrados.
+
+
+**Exemplo no RStudio**
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_40.jpg)
+
+
+**Vantagens e Desvantagens dos métodos**
+
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_41.jpg)
 
 
