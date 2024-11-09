@@ -47,6 +47,20 @@ Suponha que medimos a altura média de uma amostra de pessoas e encontramos uma 
 A estimativa intervalar nos permite considerar a incerteza presente na amostra e obter uma estimativa mais confiável e prática do parâmetro populacional, sendo uma das ferramentas mais fundamentais na análise estatística.
 
 # Inferência na Diferença de Médias de Duas Distribuições Normais, Variâncias Conhecidas.
+
+Neste relatório, consideraremos as inferências estatísticas para a diferença de médias $\mu_1-\mu_2$ de duas distribuições normais, em que as variâncias $\sigma_1^2$ e $\sigma_2^2$ são conhecidas
+
+**Suposições para Inferência com Duas Amostras.**
+
+* $X_{11},\, X_{12}\,,...,\,X_{1n}$ é uma amostra aleatória proveniente da população 1;
+
+* $X_{21},\, X_{22}\,,...,\,X_{2n}$ é uma amostra aleatória proveniente da população 2;
+
+* As duas populações representadas por $X_1$ e $X_2$ são independentes;
+
+* Ambas as populações são normais.
+
+
 ### Dissertar sobre o Método da Quantidade Pivotal
 ### Definir uma quantidade pivotal para o problema
 ### Apresentar a distribuição da Quantidade Pivotal
