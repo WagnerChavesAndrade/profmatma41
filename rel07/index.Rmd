@@ -1,0 +1,46 @@
+---
+title: "Relatório 07: Estimação Intervalar"
+author: "Wagner Chaves Andrade"
+date: "22/11/2024"
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
+  - \posttitle{\end{center}}
+toc-title: "Sumário"
+output:
+  
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: yes
+    number_sections: yes
+    includes:
+      in_header: logo.html
+  pdf_document:
+    
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+--- 
+
+# Introdução
+
+A estimação intervalar é uma técnica da estatística inferencial usada para estimar um parâmetro populacional, como uma média ou proporção, com um intervalo de valores em vez de apenas um ponto específico. O intervalo é construído de forma a incluir o parâmetro verdadeiro da população com uma determinada probabilidade, chamada de nível de confiança.
+
+# Inferência na Diferença de Médias de Duas Distribuições Normais, Variâncias Conhecidas.
+### Dissertar sobre o Método da Quantidade Pivotal
+### Definir uma quantidade pivotal para o problema
+### Apresentar a distribuição da Quantidade Pivotal
+### Pivotar a Quantidade Pivotal
+### Apresentar o Intervalo de Confiança (I.C.)
+### Aplicar o I.C. a um conjunto de dados
+
+**Apresentação analítica do resulatado**
+
+**Apresentar do resultado usando o RStudio**
+

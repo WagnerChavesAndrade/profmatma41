@@ -9,11 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Ben Dêivide" />
+<meta name="author" content="Wagner Chaves Andrade" />
 
-<meta name="date" content="2022-12-04" />
 
-<title>Relatório 004</title>
+<title>Relatório 07: Estimação Intervalar</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -338,29 +337,74 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Relatório 004</h1>
-<h4 class="author">Ben Dêivide</h4>
-<h4 class="date">12/04/2022</h4>
+<h1 class="title toc-ignore">Relatório 07: Estimação Intervalar</h1>
+<h4 class="author">Wagner Chaves Andrade</h4>
+<h4 class="date">22/11/2024</h4>
 
 </div>
 
 <div id="TOC">
 <h2 id="toc-title">Sumário</h2>
 <ul>
-<li><a href="#objetivo" id="toc-objetivo"><span class="toc-section-number">1</span> Objetivo</a></li>
-<li><a href="#apresentação-do-relatório" id="toc-apresentação-do-relatório"><span class="toc-section-number">2</span> Apresentação do relatório</a></li>
+<li><a href="#introdução" id="toc-introdução"><span class="toc-section-number">1</span> Introdução</a></li>
+<li><a href="#inferência-na-diferença-de-médias-de-duas-distribuições-normais-variâncias-conhecidas." id="toc-inferência-na-diferença-de-médias-de-duas-distribuições-normais-variâncias-conhecidas."><span class="toc-section-number">2</span> Inferência na Diferença de Médias de
+Duas Distribuições Normais, Variâncias Conhecidas.</a>
+<ul>
+<li><a href="#dissertar-sobre-o-método-da-quantidade-pivotal" id="toc-dissertar-sobre-o-método-da-quantidade-pivotal"><span class="toc-section-number">2.0.1</span> Dissertar sobre o Método da
+Quantidade Pivotal</a></li>
+<li><a href="#definir-uma-quantidade-pivotal-para-o-problema" id="toc-definir-uma-quantidade-pivotal-para-o-problema"><span class="toc-section-number">2.0.2</span> Definir uma quantidade pivotal
+para o problema</a></li>
+<li><a href="#apresentar-a-distribuição-da-quantidade-pivotal" id="toc-apresentar-a-distribuição-da-quantidade-pivotal"><span class="toc-section-number">2.0.3</span> Apresentar a distribuição da
+Quantidade Pivotal</a></li>
+<li><a href="#pivotar-a-quantidade-pivotal" id="toc-pivotar-a-quantidade-pivotal"><span class="toc-section-number">2.0.4</span> Pivotar a Quantidade
+Pivotal</a></li>
+<li><a href="#apresentar-o-intervalo-de-confiança-i.c." id="toc-apresentar-o-intervalo-de-confiança-i.c."><span class="toc-section-number">2.0.5</span> Apresentar o Intervalo de
+Confiança (I.C.)</a></li>
+<li><a href="#aplicar-o-i.c.-a-um-conjunto-de-dados" id="toc-aplicar-o-i.c.-a-um-conjunto-de-dados"><span class="toc-section-number">2.0.6</span> Aplicar o I.C. a um conjunto de
+dados</a></li>
+</ul></li>
 </ul>
 </div>
 
 <hr />
-<div id="objetivo" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Objetivo</h1>
-<p>Descrever o objetivo do relatório!</p>
+<div id="introdução" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introdução</h1>
+<p>A estimação intervalar é uma técnica da estatística inferencial usada
+para estimar um parâmetro populacional, como uma média ou proporção, com
+um intervalo de valores em vez de apenas um ponto específico. O
+intervalo é construído de forma a incluir o parâmetro verdadeiro da
+população com uma determinada probabilidade, chamada de nível de
+confiança.</p>
 </div>
-<div id="apresentação-do-relatório" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Apresentação do
-relatório</h1>
-<p>Aqui será o local para apresentar o material sobre o relatório.</p>
+<div id="inferência-na-diferença-de-médias-de-duas-distribuições-normais-variâncias-conhecidas." class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Inferência na Diferença
+de Médias de Duas Distribuições Normais, Variâncias Conhecidas.</h1>
+<div id="dissertar-sobre-o-método-da-quantidade-pivotal" class="section level3" number="2.0.1">
+<h3><span class="header-section-number">2.0.1</span> Dissertar sobre o
+Método da Quantidade Pivotal</h3>
+</div>
+<div id="definir-uma-quantidade-pivotal-para-o-problema" class="section level3" number="2.0.2">
+<h3><span class="header-section-number">2.0.2</span> Definir uma
+quantidade pivotal para o problema</h3>
+</div>
+<div id="apresentar-a-distribuição-da-quantidade-pivotal" class="section level3" number="2.0.3">
+<h3><span class="header-section-number">2.0.3</span> Apresentar a
+distribuição da Quantidade Pivotal</h3>
+</div>
+<div id="pivotar-a-quantidade-pivotal" class="section level3" number="2.0.4">
+<h3><span class="header-section-number">2.0.4</span> Pivotar a
+Quantidade Pivotal</h3>
+</div>
+<div id="apresentar-o-intervalo-de-confiança-i.c." class="section level3" number="2.0.5">
+<h3><span class="header-section-number">2.0.5</span> Apresentar o
+Intervalo de Confiança (I.C.)</h3>
+</div>
+<div id="aplicar-o-i.c.-a-um-conjunto-de-dados" class="section level3" number="2.0.6">
+<h3><span class="header-section-number">2.0.6</span> Aplicar o I.C. a um
+conjunto de dados</h3>
+<p><strong>Apresentação analítica do resulatado</strong></p>
+<p><strong>Apresentar do resultado usando o RStudio</strong></p>
+</div>
 </div>
 
 
