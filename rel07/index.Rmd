@@ -46,7 +46,7 @@ Suponha que medimos a altura média de uma amostra de pessoas e encontramos uma 
 
 A estimativa intervalar nos permite considerar a incerteza presente na amostra e obter uma estimativa mais confiável e prática do parâmetro populacional, sendo uma das ferramentas mais fundamentais na análise estatística.
 
-# Inferência na Diferença de Médias de Duas Distribuições Normais, Variâncias Conhecidas.
+# Duas Distribuições Normais, Variâncias Conhecidas.
 
 Neste relatório, consideraremos as inferências estatísticas para a diferença de médias $\mu_1-\mu_2$ de duas distribuições normais, em que as variâncias $\sigma_1^2$ e $\sigma_2^2$ são conhecidas
 
