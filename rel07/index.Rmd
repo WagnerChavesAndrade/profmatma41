@@ -61,12 +61,59 @@ Neste relatório, consideraremos as inferências estatísticas para a diferença
 * Ambas as populações são normais.
 
 
-### Dissertar sobre o Método da Quantidade Pivotal
-### Definir uma quantidade pivotal para o problema
-### Apresentar a distribuição da Quantidade Pivotal
-### Pivotar a Quantidade Pivotal
-### Apresentar o Intervalo de Confiança (I.C.)
-### Aplicar o I.C. a um conjunto de dados
+# Método da Quantidade Pivotal
+
+O método da quantidade pivotal é uma técnica fundamental na inferência estatística, usada para construir intervalos de confiança. Ele explora uma estatística chamada de quantidade pivotal, que é uma função das variáveis amostrais e de um ou mais parâmetros desconhecidos e que possui uma distribuição conhecida. Isso torna o método extremamente útil para criar estimativas de intervalo, especialmente quando a distribuição exata dos estimadores é difícil de determinar.
+
+**Definição de uma Quantidade Pivotal**
+
+Uma quantidade pivotal, $Q(X;\theta)$, é uma função de uma amostra $X$ e do parâmetro $\theta$, e sua distribuição é independente do valor de $\theta$. Ou seja, se conhecemos a distribuíção de $Q(X;\theta)$, podemos usá-la para fazer inferências sobre $\theta$ sem depender do valor específico de $\theta$.
+
+**Exemplo: Intervalo de Confiança para a Média com Variância Conhecida**
+
+Considerando uma amostra $X_1,X_2,..., X_n$ extraída de uma distribuição normal $N(\mu;\sigma^2)$ com variância $\sigma^2$ conhecida, podemos definir a quantidade pivotal como:
+
+
+$$Z\;=\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}$$
+
+onde $\bar{X}$ é a média amostral e $Z\;\sim\;N\,(0,1)$ pela padronização da variável normal.
+
+
+A partir dessa quantidade pivotal, podemos estabelecer um intervalo de confiança para $\mu$:
+
+
+$$P\left(-\;z_{\frac{\alpha}{2}\;}\;\leq\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\;\leq\;z_{\frac{\alpha}{2}} \right)\;=\;1\;-\;\alpha$$
+
+Reorganizando, obtemos:
+
+
+$$P\left(\bar X-\;z_{\frac{\alpha}{2}\;}\frac{\sigma}{\sqrt n}\;\leq\;\mu\leq\;\bar X\;+\;z_{\frac{\alpha}{2}}\;\frac{\sigma}{\sqrt n} \right)\;=\;1\;-\;\alpha$$
+
+Esse é um intervalo de confiança $1 - \alpha$, para o parêmetro $\mu$, utilizando a quantidade pivotal $Z$.
+
+
+**Vantagens do Método da Quantidade Pivotal**
+
+
+* Generalizabilidade: O método é aplicável para diversos tipos de distribuições e amostras.
+
+* Construção de Intervalos de Confiança: Facilita a criação de intervalos de confiança precisos para diferentes parâmetros.
+
+* Independência do Parâmetro: Como a distribuição de uma quantidade pivotal não depende do parâmetro desconhecido, é mais fácil trabalhar com ela do que com estatísticas cuja distribuição varia com o parâmetro.
+
+**Desafios e Limitações**
+
+Para aplicar o método de quantidade pivotal, precisamos de pivôs cujas distribuições sejam conhecidas e independentes dos parâmetros. Em casos complexos, como amostras pequenas ou distribuições desconhecidas, a construção de quantidades pivots pode ser impraticável.
+
+
+
+
+
+## Definir uma quantidade pivotal para o problema
+## Apresentar a distribuição da Quantidade Pivotal
+## Pivotar a Quantidade Pivotal
+## Apresentar o Intervalo de Confiança (I.C.)
+## Aplicar o I.C. a um conjunto de dados
 
 **Apresentação analítica do resulatado**
 
