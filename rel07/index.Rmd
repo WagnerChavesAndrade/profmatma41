@@ -82,7 +82,7 @@ onde $\bar{X}$ é a média amostral e $Z\;\sim\;N\,(0,1)$ pela padronização da
 A partir dessa quantidade pivotal, podemos estabelecer um intervalo de confiança para $\mu$:
 
 
-$$P\left(-\;z_{\frac{\alpha}{2}\;}\;\leq\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt n}}\;\leq\;z_{\frac{\alpha}{2}} \right)\;=\;1\;-\;\alpha$$
+
 
 Reorganizando, obtemos:
 
