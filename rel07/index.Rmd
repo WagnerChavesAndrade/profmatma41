@@ -87,7 +87,7 @@ $$P\left(-\;z_{\frac{\alpha}{2}\;}\;\leq\;\frac{\bar X-\mu}{\frac{\sigma}{\sqrt 
 Reorganizando, obtemos:
 
 
-
+$$P\left(\bar X-\;z_{\frac{\alpha}{2}\;}\frac{\sigma}{\sqrt n}\;\leq\;\mu\leq\;\bar X\;+\;z_{\frac{\alpha}{2}}\;\frac{\sigma}{\sqrt n} \right)\;=\;1\;-\;\alpha$$
 
 Esse é um intervalo de confiança $1 - \alpha$, para o parêmetro $\mu$, utilizando a quantidade pivotal $Z$.
 
