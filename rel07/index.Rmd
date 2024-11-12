@@ -107,8 +107,6 @@ Para aplicar o método de quantidade pivotal, precisamos de pivôs cujas distrib
 
 
 
-
-
 ## Definir uma quantidade pivotal para o problema
 ## Apresentar a distribuição da Quantidade Pivotal
 ## Pivotar a Quantidade Pivotal
