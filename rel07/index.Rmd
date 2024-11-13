@@ -105,7 +105,29 @@ Esse é um intervalo de confiança $1 - \alpha$, para o parêmetro $\mu$, utiliz
 
 Para aplicar o método de quantidade pivotal, precisamos de pivôs cujas distribuições sejam conhecidas e independentes dos parâmetros. Em casos complexos, como amostras pequenas ou distribuições desconhecidas, a construção de quantidades pivots pode ser impraticável.
 
+## Definição do Problema
 
+Suponha que um fabricante de medicamentos deseja comparar a eficácia de dois novos medicamentos, $A$ e $B$, para tratar uma mesma doença. A eficácia de cada medicamento é medida pela redução média na pressão arterial de pacientes após um mês de uso.
+
+O fabricante conduziu um experimento em que aplicou o medicamento $A$ em um grupo de 40 pacientes e o medicamento $B$ em outro grupo independente de 35 pacientes. A eficácia de cada medicamento (ou seja, a redução média na pressão arterial) é suposta ser normalmente distribuída. A variância das reduções da pressão arterial é conhecida para cada grupo:
+
+* Para o medicamento $A$, a variância é $\sigma^2\;=\;20.$
+
+* Para o medicamento $B$, a variância é $\sigma^2\;=\;25.$
+
+As médias amostrais das reduções na pressão arterial observadas foram:
+
+* Para o medicamento $A$, $\bar X_1\;=\;15.$
+
+* Para o medicamento $B$, $\bar X_2\;=\;10.$
+
+O objetivo é construir um intervalo de confiança para a diferença nas médias populacionais de redução na pressão arterial dos medicamentos $A$ e $B$ com um nível de confiança de 95%.
+
+**SOLUÇÃO**
+
+Para determinar o intervalo de confiança para a diferença $\mu_1-\mu_2$  entre as médias populacionais de eficácia dos medicamentos, usamos a fórmula para um intervalo de confiança com variâncias conhecidas:
+
+$$$$
 
 ## Definir uma quantidade pivotal para o problema
 ## Apresentar a distribuição da Quantidade Pivotal

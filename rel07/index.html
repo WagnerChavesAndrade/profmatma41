@@ -351,15 +351,16 @@ display: none;
 Variâncias Conhecidas.</a></li>
 <li><a href="#método-da-quantidade-pivotal" id="toc-método-da-quantidade-pivotal"><span class="toc-section-number">3</span> Método da Quantidade Pivotal</a>
 <ul>
-<li><a href="#definir-uma-quantidade-pivotal-para-o-problema" id="toc-definir-uma-quantidade-pivotal-para-o-problema"><span class="toc-section-number">3.1</span> Definir uma quantidade pivotal
+<li><a href="#definição-do-problema" id="toc-definição-do-problema"><span class="toc-section-number">3.1</span> Definição do Problema</a></li>
+<li><a href="#definir-uma-quantidade-pivotal-para-o-problema" id="toc-definir-uma-quantidade-pivotal-para-o-problema"><span class="toc-section-number">3.2</span> Definir uma quantidade pivotal
 para o problema</a></li>
-<li><a href="#apresentar-a-distribuição-da-quantidade-pivotal" id="toc-apresentar-a-distribuição-da-quantidade-pivotal"><span class="toc-section-number">3.2</span> Apresentar a distribuição da
+<li><a href="#apresentar-a-distribuição-da-quantidade-pivotal" id="toc-apresentar-a-distribuição-da-quantidade-pivotal"><span class="toc-section-number">3.3</span> Apresentar a distribuição da
 Quantidade Pivotal</a></li>
-<li><a href="#pivotar-a-quantidade-pivotal" id="toc-pivotar-a-quantidade-pivotal"><span class="toc-section-number">3.3</span> Pivotar a Quantidade
+<li><a href="#pivotar-a-quantidade-pivotal" id="toc-pivotar-a-quantidade-pivotal"><span class="toc-section-number">3.4</span> Pivotar a Quantidade
 Pivotal</a></li>
-<li><a href="#apresentar-o-intervalo-de-confiança-i.c." id="toc-apresentar-o-intervalo-de-confiança-i.c."><span class="toc-section-number">3.4</span> Apresentar o Intervalo de
+<li><a href="#apresentar-o-intervalo-de-confiança-i.c." id="toc-apresentar-o-intervalo-de-confiança-i.c."><span class="toc-section-number">3.5</span> Apresentar o Intervalo de
 Confiança (I.C.)</a></li>
-<li><a href="#aplicar-o-i.c.-a-um-conjunto-de-dados" id="toc-aplicar-o-i.c.-a-um-conjunto-de-dados"><span class="toc-section-number">3.5</span> Aplicar o I.C. a um conjunto de
+<li><a href="#aplicar-o-i.c.-a-um-conjunto-de-dados" id="toc-aplicar-o-i.c.-a-um-conjunto-de-dados"><span class="toc-section-number">3.6</span> Aplicar o I.C. a um conjunto de
 dados</a></li>
 </ul></li>
 </ul>
@@ -474,24 +475,52 @@ parâmetro.</p></li>
 cujas distribuições sejam conhecidas e independentes dos parâmetros. Em
 casos complexos, como amostras pequenas ou distribuições desconhecidas,
 a construção de quantidades pivots pode ser impraticável.</p>
-<div id="definir-uma-quantidade-pivotal-para-o-problema" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Definir uma
+<div id="definição-do-problema" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Definição do
+Problema</h2>
+<p>Suponha que um fabricante de medicamentos deseja comparar a eficácia
+de dois novos medicamentos, <span class="math inline">\(A\)</span> e
+<span class="math inline">\(B\)</span>, para tratar uma mesma doença. A
+eficácia de cada medicamento é medida pela redução média na pressão
+arterial de pacientes após um mês de uso.</p>
+<p>O fabricante conduziu um experimento em que aplicou o medicamento
+<span class="math inline">\(A\)</span> em um grupo de 40 pacientes e o
+medicamento <span class="math inline">\(B\)</span> em outro grupo
+independente de 35 pacientes. A eficácia de cada medicamento (ou seja, a
+redução média na pressão arterial) é suposta ser normalmente
+distribuída. A variância das reduções da pressão arterial é conhecida
+para cada grupo:</p>
+<ul>
+<li><p>Para o medicamento <span class="math inline">\(A\)</span>, a
+variância é <span class="math inline">\(\sigma^2\;=\;20.\)</span></p></li>
+<li><p>Para o medicamento <span class="math inline">\(B\)</span>, a
+variância é <span class="math inline">\(\sigma^2\;=\;25.\)</span></p></li>
+</ul>
+<p>As médias amostrais das reduções na pressão arterial observadas
+foram:</p>
+<ul>
+<li><p>Para o medicamento <span class="math inline">\(A\)</span>, <span class="math inline">\(\bar X_1\;=\;15.\)</span></p></li>
+<li><p>Para o medicamento <span class="math inline">\(B\)</span>, <span class="math inline">\(\bar X_2\;=\;10.\)</span></p></li>
+</ul>
+</div>
+<div id="definir-uma-quantidade-pivotal-para-o-problema" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Definir uma
 quantidade pivotal para o problema</h2>
 </div>
-<div id="apresentar-a-distribuição-da-quantidade-pivotal" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Apresentar a
+<div id="apresentar-a-distribuição-da-quantidade-pivotal" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Apresentar a
 distribuição da Quantidade Pivotal</h2>
 </div>
-<div id="pivotar-a-quantidade-pivotal" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Pivotar a Quantidade
+<div id="pivotar-a-quantidade-pivotal" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Pivotar a Quantidade
 Pivotal</h2>
 </div>
-<div id="apresentar-o-intervalo-de-confiança-i.c." class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Apresentar o
+<div id="apresentar-o-intervalo-de-confiança-i.c." class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Apresentar o
 Intervalo de Confiança (I.C.)</h2>
 </div>
-<div id="aplicar-o-i.c.-a-um-conjunto-de-dados" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Aplicar o I.C. a um
+<div id="aplicar-o-i.c.-a-um-conjunto-de-dados" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Aplicar o I.C. a um
 conjunto de dados</h2>
 <p><strong>Apresentação analítica do resulatado</strong></p>
 <p><strong>Apresentar do resultado usando o RStudio</strong></p>
