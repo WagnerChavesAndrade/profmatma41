@@ -127,7 +127,15 @@ O objetivo é construir um intervalo de confiança para a diferença nas médias
 
 Para determinar o intervalo de confiança para a diferença $\mu_1-\mu_2$  entre as médias populacionais de eficácia dos medicamentos, usamos a fórmula para um intervalo de confiança com variâncias conhecidas:
 
-$$$$
+$$(\bar X_1\,-\,\bar X_2)\;\pm\;z_{\frac{\alpha}{2}}\,\sqrt {\frac{\sigma_1^2}{n_1}\,+\,\frac{\sigma_2^2}{n_2}}$$
+
+onde:
+
+* $z_{\frac{\alpha}{2}}$ é o valor critico da distribuição normal padrão para o nível de confiança desejado (para 95%, $z_{\frac{\alpha}{2}}\approx\, 1,96$).
+
+* $n_1\;=\;40$ e $n_2\;=\;35$ são os tamanhos das amostras para os medicamentos $A$ e $B$, respectivamente.
+
+
 
 ## Definir uma quantidade pivotal para o problema
 ## Apresentar a distribuição da Quantidade Pivotal
