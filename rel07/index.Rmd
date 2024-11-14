@@ -135,12 +135,37 @@ onde:
 
 * $n_1\;=\;40$ e $n_2\;=\;35$ são os tamanhos das amostras para os medicamentos $A$ e $B$, respectivamente.
 
+* Diferença entre as médias: 
+
+$$\bar X_1\,-\,\bar X_2\;=\;15 - 10 = 5 $$
+
+* Vaor crítico de (Z) para 95% de confiança:
+
+Para um nível de confiança de 95%, o valor crítico Z correspondente é aproximadamente 1,96 (que pode ser obtido de uma tabela de distribuição normal ou pela função qnorm no R).
+
+* Erro padrão da diferença entre as médias:
 
 
-## Definir uma quantidade pivotal para o problema
-## Apresentar a distribuição da Quantidade Pivotal
-## Pivotar a Quantidade Pivotal
-## Apresentar o Intervalo de Confiança (I.C.)
+$$\sqrt {\frac{\sigma_1^2}{n_1}\,+\,\frac{\sigma_2^2}{n_2}} = \sqrt {\frac{20}{40}\,+\,\frac{25}{35}}\;=\;\sqrt{0,5\,+\,0,7143}\;\approx\;1,102$$
+
+* Intervalo de confiança:
+
+O intervalo de confiança para a diferença entre as médias populacionais $(\mu_1-\mu_2)$ é dado por:
+
+$$(\bar X_1\,-\,\bar X_2)\,\pm\,Z\,\times Erro\;Padrão$$
+
+$$IC\;=\;5\,\pm\,1,96\,\times\,1,102$$
+
+$$IC\;=\;5\,\pm\,2,16$$
+
+Portanto, o intervalo de confiança de 95% para a diferença entre as médias populacionais de redução na pressão arterial dos medicamentos A e B é aproximadamente:
+
+$$[2,84\,;\,7,16]$$
+
+Com 95% de confiança, podemos afirmar que a diferença entre as médias populacionais de redução na pressão arterial para os medicamentos A e B está entre aproximadamente 2,84 e 7,16.
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_42.jpg)
+
 ## Aplicar o I.C. a um conjunto de dados
 
 **Apresentação analítica do resulatado**
