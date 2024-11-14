@@ -166,9 +166,10 @@ Com 95% de confiança, podemos afirmar que a diferença entre as médias populac
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_42.jpg)
 
-## Aplicar o I.C. a um conjunto de dados
+# Aplicar o I.C. a um conjunto de dados
 
 **Apresentação analítica do resulatado**
 
 **Apresentar do resultado usando o RStudio**
 
+**SOLUÇÃO NO RSTUDIO**
