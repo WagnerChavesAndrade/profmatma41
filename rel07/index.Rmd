@@ -166,10 +166,60 @@ Com 95% de confiança, podemos afirmar que a diferença entre as médias populac
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_42.jpg)
 
-# Aplicar o I.C. a um conjunto de dados
+# Aplicação do I.C. a um conjunto de dados
 
-**Apresentação analítica do resulatado**
+ Considere duas máquinas que produzem peças, dos quais estamos avaliando a resistência à tensão dessas máquinas (MPa). Retirou-se uma amostra de 8 peças de cada máquina, e obtendo as seguintes resistências:
 
-**Apresentar do resultado usando o RStudio**
+Máquina 1: $\{ 161, 147, 162, 161, 154, 136, 142, 147\}$
 
-**SOLUÇÃO NO RSTUDIO**
+Máquina 1: $\{ 140, 162, 147, 133, 130, 137, 137, 136\}$
+
+Considere que a resistência à tensão apresenta distribuição normal e que as variâncias populacionais são conhecidas para os dados obtidos pelas duas máquinas, porém iguais,encontre um estimador intervalar para a diferença das médias dos dois grupos, com um nível de confiança de 99% de probabilidade.
+
+## Apresentação analítica do resulatado
+
+* **Tamanho das amostras:** $n_1\,=\,n_2\,=\,8$ 
+
+* **Médias amostrais:**
+
+$$\bar X_1\;=\;\frac{161\,+\,147\,+\,162\,+\,161\,+\,154\,+\,136\,+\,142\,+\,147}{8}\;=\;151,25$$
+
+$$\bar X_2\;=\;\frac{140\,+\,162\,+\,147\,+\,133\,+\,130\,+\,137\,+\,137\,+\,136}{8}\;=\;140,25$$
+
+* **Diferença das médias:**
+
+$$\bar X_1\;-\;\bar X_2\;=\;151,25-140,24\;=\;11$$
+
+* **Variâncias amostrais:**
+
+$$s_1^2\;=\;\frac{\sum_1^n\,(X_{1i}-\bar X_1)^2}{n-1}$$
+
+$$s_2^2\;=\;\frac{\sum_2^n\,(X_{2i}-\bar X_2)^2}{n-1}$$
+
+Substituindo o respectivos valores, encontramos:
+
+$$s_1^2\;=\;\frac{(161-151,25)^2\;+\;(147-151,25)^2\;+\;. . .+(147-151,25)^2}{7}\;=\;79,93$$
+
+$$s_2^2\;=\;\frac{(140-140,25)^2\;+\;(162-140,25)^2\;+\;. . .+(136-140,25)^2}{7}\;=\;117,93$$
+
+* **Variância combinada:**
+
+$$s_p^2\;=\;\frac{(n_1-1)\,s_1^2\;+\;(n_2-1)\,s_2^2}{n_1+n_2-2}\;=\;\frac{(7\,\times79,93)\;+\;(7\,\times\,117,93)}{14}\;=\;98,93$$
+* **Erro Padrão das Diferenças das Médias:**
+
+$$\sqrt {s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}\;=\;\sqrt {98,93 \times\left(\frac{1}{8}+\frac{1}{8}\right)}\;=\;4,974$$
+
+* **Intervalo de Confiança:**
+
+$$IC\;=\;(\bar X_1\,-\,\bar X_2)\,\pm\,t_{\frac{\alpha}{2}}\times\;Erro\;padrão$$
+
+$$IC\;=\;11\,\pm\,2,977\,\times4,974$$
+
+$$IC\;=\;11\,\pm\,14,81$$
+
+$$IC\;=(\;-3,81;25,81)$$
+
+## Apresentação e solução usando o RStudio
+
+![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_44.jpg)
+
