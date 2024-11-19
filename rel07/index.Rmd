@@ -219,7 +219,7 @@ $$IC\;=\;11\,\pm\,14,81$$
 
 $$IC\;=(\;-3,81;25,81)$$
 
-## Apresentação e solução usando o RStudio
+## Apresentação e solução usando o RStudio.
 
 ![](C:/relatorios/profmatma41/imagens/TeXAux/imagem_44.jpg)
 
